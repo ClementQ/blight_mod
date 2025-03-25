@@ -1,4 +1,7 @@
 {
   "item.blight.pink_garnet": "Pink Garnet",
-  "item.blight.raw_pink_garnet": "Raw Pink Garnet"
+  "item.blight.raw_pink_garnet": "Raw Pink Garnet",
+
+  "block.blight.pink_garnet_block": "Block of Pink Garnet"
+
 }
