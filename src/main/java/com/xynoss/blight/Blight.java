@@ -1,6 +1,7 @@
 package com.xynoss.blight;
 
-import com.xynoss.blight.items.ModItems;
+import com.xynoss.blight.block.ModBlocks;
+import com.xynoss.blight.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -14,6 +15,8 @@ public class Blight implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

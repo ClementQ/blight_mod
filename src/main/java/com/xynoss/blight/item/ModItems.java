@@ -1,4 +1,4 @@
-package com.xynoss.blight.items;
+package com.xynoss.blight.item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import com.xynoss.blight.Blight;
 import net.minecraft.item.Item;
