@@ -13,6 +13,8 @@ public class ModItems {
 
 public static final Item PINK_GARNET = registerItem("pink_garnet", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"pink_garnet")))));
 public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"raw_pink_garnet")))));
+public static final Item BLIGHT_INGOT = registerItem("blight_ingot", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_ingot")))));
+public static final Item RAW_BLIGHT = registerItem("raw_blight", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"raw_blight")))));
 
 private static Item registerItem(String name, Item item) {
     return Registry.register(Registries.ITEM, Identifier.of(Blight.MOD_ID, name), item);

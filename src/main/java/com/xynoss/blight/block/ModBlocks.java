@@ -29,6 +29,22 @@ public class ModBlocks {
     );
 
 
+
+    public static final Block BLIGHT_BLOCK = registerBlock("blight_block", AbstractBlock.Settings.create().
+            strength(4f).
+            requiresTool()
+    );
+    public static final Block RAW_BLIGHT_BLOCK = registerBlock("raw_blight_block", AbstractBlock.Settings.create().
+            strength(3f).
+            requiresTool()
+    );
+    public static final Block BLIGHT_ORE = registerBlock("blight_ore", AbstractBlock.Settings.create().
+            strength(3f).
+            requiresTool()
+    );
+
+
+
     private static Block registerBlock(String name, AbstractBlock.Settings blockSettings) {
         RegistryKey<Block> key = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID, name));
         Block block = new Block(blockSettings.registryKey(key));

@@ -32,6 +32,19 @@ public class ModItemGroups {
                     })
                     .build());
 
+    public static final ItemGroup BLIGHT_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Blight.MOD_ID, "blight"),
+            FabricItemGroup.builder().icon(() ->new ItemStack(ModBlocks.BLIGHT_BLOCK))
+                    .displayName(Text.translatable("itemgroup.blight.blight"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.BLIGHT_BLOCK);
+                        entries.add(ModBlocks.RAW_BLIGHT_BLOCK);
+                        entries.add(ModBlocks.BLIGHT_ORE);
+                        entries.add(ModItems.BLIGHT_INGOT);
+                        entries.add(ModItems.RAW_BLIGHT);
+                    })
+                    .build());
+
 
     public static void registerItemGroups(){
 
