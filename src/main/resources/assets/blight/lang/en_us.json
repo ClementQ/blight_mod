@@ -2,5 +2,9 @@
   "item.blight.pink_garnet": "Pink Garnet",
   "item.blight.raw_pink_garnet": "Raw Pink Garnet",
 
-  "item.blight.pink_garnet_block": "Block of Pink Garnet"
+  "item.blight.pink_garnet_block": "Block of Pink Garnet",
+  "item.blight.raw_pink_garnet_block" : "Raw Block of Pink Garnet",
+
+  "itemgroup.blight.pink_garnet_items": "Pink Garnet Items",
+  "itemgroup.blight.pink_garnet_blocks": "Pink Garnet Blocks"
 }
