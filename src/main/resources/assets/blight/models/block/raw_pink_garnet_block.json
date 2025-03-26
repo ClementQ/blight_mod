@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "blight:block/pink_garnet_block"
+    "all": "blight:block/raw_pink_garnet_block"
   }
 }
 
