@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "blight:blight_block",
+    "blight:raw_blight_block",
+    "blight:blight_ore",
+    "blight:deepslate_blight_ore"
+  ]
+}

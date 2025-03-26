@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "blight:raw_blight_block"
+  ],
+  "result": {
+    "id": "blight:raw_blight",
+    "count": 9
+  }
+}

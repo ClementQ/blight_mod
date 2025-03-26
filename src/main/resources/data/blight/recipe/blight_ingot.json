@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "blight:blight_block"
+  ],
+  "result": {
+    "id": "blight:blight_ingot",
+    "count": 9
+  }
+}

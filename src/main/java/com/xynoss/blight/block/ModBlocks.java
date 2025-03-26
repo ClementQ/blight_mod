@@ -4,6 +4,7 @@ import com.xynoss.blight.Blight;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -13,6 +14,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 
 public class ModBlocks {
@@ -29,7 +31,7 @@ public class ModBlocks {
     );
 
 
-
+//Blight ore
     public static final Block BLIGHT_BLOCK = registerBlock("blight_block", AbstractBlock.Settings.create().
             strength(4f).
             requiresTool()
@@ -38,12 +40,24 @@ public class ModBlocks {
             strength(3f).
             requiresTool()
     );
-    public static final Block BLIGHT_ORE = registerBlock("blight_ore", AbstractBlock.Settings.create().
+    public static final Block BLIGHT_ORE = registerExperienceDroppingBlock("blight_ore",2,5,AbstractBlock.Settings.create().
             strength(3f).
             requiresTool()
     );
+    public static final Block DEEPSLATE_BLIGHT_ORE = registerExperienceDroppingBlock("deepslate_blight_ore",2,5,AbstractBlock.Settings.create().
+            strength(4f)
+            .requiresTool()
+            .sounds(BlockSoundGroup.DEEPSLATE)
+    );
 
 
+
+    private static Block registerExperienceDroppingBlock(String name, int minExp, int maxExp,AbstractBlock.Settings blockSettings) {
+        RegistryKey<Block> key = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID, name));
+        Block block = new ExperienceDroppingBlock(UniformIntProvider.create(minExp,maxExp),blockSettings.registryKey(key));
+        registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, key, block);
+    }
 
     private static Block registerBlock(String name, AbstractBlock.Settings blockSettings) {
         RegistryKey<Block> key = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID, name));
