@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "blight:magic_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "blight:pink_garnet"
+  }
+}

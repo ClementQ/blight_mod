@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_blight": {
+      "conditions": {
+        "items": [
+          {
+            "items": "blight:raw_blight"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:blight_ingot_from_smelting_raw_blight"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_blight"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:blight_ingot_from_smelting_raw_blight"
+    ]
+  }
+}

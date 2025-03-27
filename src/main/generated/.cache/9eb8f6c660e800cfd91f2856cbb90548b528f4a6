@@ -1,0 +1,9 @@
+// 1.21.4	-999999999-01-01T00:00:00	Blight/Block Loot Tables
+97e835da8a6886b0aa408a09aa0cc387c7259c80 data/blight/loot_table/blocks/blight_block.json
+39734aded8eb15c964269393680a9ea252e39360 data/blight/loot_table/blocks/blight_ore.json
+e26cb55b26a4de4bed3bd6885367b096ad0cf82b data/blight/loot_table/blocks/burning_stone.json
+a175dcfe558681125754d15196c7aab56291d29b data/blight/loot_table/blocks/deepslate_blight_ore.json
+9fdc321bf556e979b5f2abec4640df45a2c77bae data/blight/loot_table/blocks/magic_block.json
+04c4025046ed5405a99826a41b99821a7ccfe4da data/blight/loot_table/blocks/pink_garnet_block.json
+327d1b9a801167e03d65053f01340f5cb9069f56 data/blight/loot_table/blocks/raw_blight_block.json
+d96e243d53e539c5849489c07cb90a79044dafe3 data/blight/loot_table/blocks/raw_pink_garnet_block.json

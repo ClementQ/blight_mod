@@ -1,0 +1,4 @@
+// 1.21.4	-999999999-01-01T00:00:00	Blight/Tags for minecraft:block
+f5dbf6411e5502eeb112fc983416913901dffccd data/minecraft/tags/block/mineable/pickaxe.json
+d3f9f2d702fbc1f26db1911731d38ad3ca18c842 data/minecraft/tags/block/needs_diamond_tool.json
+ad8cab974f04da42c60095f0e8e83a73bfd44824 data/minecraft/tags/block/needs_iron_tool.json

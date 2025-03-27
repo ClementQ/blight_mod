@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "blight",
+  "ingredient": "blight:raw_blight",
+  "result": {
+    "id": "blight:blight_ingot"
+  }
+}
