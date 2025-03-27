@@ -19,6 +19,8 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.PINK_GARNET);
                         entries.add(ModItems.RAW_PINK_GARNET);
+                        entries.add(ModItems.CHISEL_ITEM);
+                        entries.add(ModItems.CAULIFLOWER);
                     })
                     .build());
 
@@ -29,8 +31,6 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.PINK_GARNET_BLOCK);
                         entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
-
-                        entries.add(ModItems.CHISEL_ITEM);
 
                     })
                     .build());
@@ -48,6 +48,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.BLIGHT_INGOT);
                         entries.add(ModItems.RAW_BLIGHT);
+                        entries.add(ModItems.STARLIGHT_ASHES);
                     })
                     .build());
 

@@ -12,14 +12,35 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-public static final Item PINK_GARNET = registerItem("pink_garnet", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"pink_garnet")))));
-public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"raw_pink_garnet")))));
+public static final Item PINK_GARNET = registerItem("pink_garnet", new Item(new Item.Settings()
+        .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"pink_garnet")))
+));
+public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", new Item(new Item.Settings()
+        .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"raw_pink_garnet")))
+));
 
-public static final Item BLIGHT_INGOT = registerItem("blight_ingot", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_ingot")))));
-public static final Item RAW_BLIGHT = registerItem("raw_blight", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"raw_blight")))));
+public static final Item BLIGHT_INGOT = registerItem("blight_ingot", new Item(new Item.Settings()
+        .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_ingot")))
+));
+public static final Item RAW_BLIGHT = registerItem("raw_blight", new Item(new Item.Settings()
+        .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"raw_blight")))
+));
 
-public static final Item CHISEL_ITEM = registerItem("chisel", new ChiselItem(new Item.Settings().maxDamage(32).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"chisel")))));
+public static final Item CHISEL_ITEM = registerItem("chisel", new ChiselItem(new Item.Settings()
+        .maxDamage(32)
+        .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"chisel")))
+));
+public static final Item CAULIFLOWER = registerItem("cauliflower", new Item(new Item.Settings()
+        .food(ModFoodComponents.CAULIFLOWER)
+        .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"cauliflower")))
+));
 
+public static final Item STARLIGHT_ASHES = registerItem("starlight_ashes", new Item(new Item.Settings()
+        .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"starlight_ashes")))
+));
+
+
+//Functions
 private static Item registerItem(String name, Item item) {
     return Registry.register(Registries.ITEM, Identifier.of(Blight.MOD_ID, name), item);
 }
