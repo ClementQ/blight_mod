@@ -1,6 +1,7 @@
 package com.xynoss.blight.block;
 
 import com.xynoss.blight.Blight;
+import com.xynoss.blight.block.custom.MagicBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -19,51 +20,60 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
 
-    public static final Block PINK_GARNET_BLOCK = registerBlock("pink_garnet_block", AbstractBlock.Settings.create().
-            strength(4f).
-            requiresTool().
-            sounds(BlockSoundGroup.AMETHYST_BLOCK)
-    );
-
-    public static final Block RAW_PINK_GARNET_BLOCK = registerBlock("raw_pink_garnet_block", AbstractBlock.Settings.create().
-            strength(3f).
-            requiresTool()
-    );
-
-
-//Blight ore
-    public static final Block BLIGHT_BLOCK = registerBlock("blight_block", AbstractBlock.Settings.create().
-            strength(4f).
-            requiresTool()
-    );
-    public static final Block RAW_BLIGHT_BLOCK = registerBlock("raw_blight_block", AbstractBlock.Settings.create().
-            strength(3f).
-            requiresTool()
-    );
-    public static final Block BLIGHT_ORE = registerExperienceDroppingBlock("blight_ore",2,5,AbstractBlock.Settings.create().
-            strength(3f).
-            requiresTool()
-    );
-    public static final Block DEEPSLATE_BLIGHT_ORE = registerExperienceDroppingBlock("deepslate_blight_ore",2,5,AbstractBlock.Settings.create().
-            strength(4f)
-            .requiresTool()
-            .sounds(BlockSoundGroup.DEEPSLATE)
-    );
+    public static final Block PINK_GARNET_BLOCK = registerBlock("pink_garnet_block", new Block(AbstractBlock.Settings.create()
+        .strength(4f)
+        .requiresTool()
+        .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+        .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"pink_garnet_block")))
+    ));
+    public static final Block RAW_PINK_GARNET_BLOCK = registerBlock("raw_pink_garnet_block", new Block(AbstractBlock.Settings.create()
+        .strength(3f)
+        .requiresTool()
+        .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"raw_pink_garnet_block")))
+    ));
+    public static final Block MAGIC_BLOCK = registerBlock("magic_block", new MagicBlock(AbstractBlock.Settings.create()
+        .strength(1f)
+        .requiresTool()
+        .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"magic_block")))
+    ));
 
 
 
-    private static Block registerExperienceDroppingBlock(String name, int minExp, int maxExp,AbstractBlock.Settings blockSettings) {
-        RegistryKey<Block> key = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID, name));
-        Block block = new ExperienceDroppingBlock(UniformIntProvider.create(minExp,maxExp),blockSettings.registryKey(key));
+//Blight Block
+    public static final Block BLIGHT_BLOCK = registerBlock("blight_block", new Block(AbstractBlock.Settings.create()
+        .strength(4f)
+        .requiresTool()
+        .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"blight_block")))
+    ));
+    public static final Block RAW_BLIGHT_BLOCK = registerBlock("raw_blight_block", new Block(AbstractBlock.Settings.create()
+        .strength(3f)
+        .requiresTool()
+        .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"raw_blight_block")))
+    ));
+
+//Blight Ore
+    public static final Block BLIGHT_ORE = registerBlock("blight_ore",new ExperienceDroppingBlock(
+        UniformIntProvider.create(2, 5),
+        AbstractBlock.Settings.create()
+        .strength(3f)
+        .requiresTool()
+        .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"blight_ore")))
+    ));
+    public static final Block DEEPSLATE_BLIGHT_ORE = registerBlock("deepslate_blight_ore",new ExperienceDroppingBlock(
+        UniformIntProvider.create(3, 6),
+        AbstractBlock.Settings.create().
+        strength(4f)
+        .requiresTool()
+        .sounds(BlockSoundGroup.DEEPSLATE)
+        .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"deepslate_blight_ore")))
+    ));
+
+
+
+//Function
+    private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, key, block);
-    }
-
-    private static Block registerBlock(String name, AbstractBlock.Settings blockSettings) {
-        RegistryKey<Block> key = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID, name));
-        Block block = new Block(blockSettings.registryKey(key));
-        registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, key, block);
+        return Registry.register(Registries.BLOCK, RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID, name)), block);
     }
 
     private static void registerBlockItem(String name, Block block) {

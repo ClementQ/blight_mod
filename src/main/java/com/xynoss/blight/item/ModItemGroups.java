@@ -44,9 +44,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RAW_BLIGHT_BLOCK);
                         entries.add(ModBlocks.BLIGHT_ORE);
                         entries.add(ModBlocks.DEEPSLATE_BLIGHT_ORE);
+                        entries.add(ModBlocks.MAGIC_BLOCK);
+
                         entries.add(ModItems.BLIGHT_INGOT);
                         entries.add(ModItems.RAW_BLIGHT);
-
                     })
                     .build());
 

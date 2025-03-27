@@ -11,6 +11,7 @@
   "item.blight.raw_blight_block" : "Raw Block of Blight",
   "item.blight.blight_ore" : "Blight Ore",
   "item.blight.deepslate_blight_ore" : "Deepslate Blight Ore",
+  "item.blight.magic_block" : "Magic Block",
 
   "itemgroup.blight.pink_garnet_items": "Pink Garnet Items",
   "itemgroup.blight.pink_garnet_blocks": "Pink Garnet Blocks",
