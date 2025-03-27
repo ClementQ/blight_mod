@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "blight:raw_blight_block",
-    "blight:blight_ore",
-    "blight:burning_stone"
-  ]
-}
