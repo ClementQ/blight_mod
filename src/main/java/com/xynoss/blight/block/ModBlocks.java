@@ -1,10 +1,12 @@
 package com.xynoss.blight.block;
 
 import com.xynoss.blight.Blight;
+import com.xynoss.blight.block.custom.BurningStone;
 import com.xynoss.blight.block.custom.MagicBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -66,6 +68,12 @@ public class ModBlocks {
         .requiresTool()
         .sounds(BlockSoundGroup.DEEPSLATE)
         .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"deepslate_blight_ore")))
+    ));
+    public static final Block BURNING_STONE = registerBlock("burning_stone", new BurningStone(AbstractBlock.Settings.create()
+            .strength(3f)
+            .requiresTool()
+            .luminance(state -> 5)
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"burning_stone")))
     ));
 
 

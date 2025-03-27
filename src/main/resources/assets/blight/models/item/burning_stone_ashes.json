@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "blight:item/starlight_ashes"
+    "layer0": "blight:item/burning_stone_ashes"
   }
 }

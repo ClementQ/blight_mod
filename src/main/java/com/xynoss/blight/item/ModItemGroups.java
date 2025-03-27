@@ -45,10 +45,11 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BLIGHT_ORE);
                         entries.add(ModBlocks.DEEPSLATE_BLIGHT_ORE);
                         entries.add(ModBlocks.MAGIC_BLOCK);
+                        entries.add(ModBlocks.BURNING_STONE);
 
                         entries.add(ModItems.BLIGHT_INGOT);
                         entries.add(ModItems.RAW_BLIGHT);
-                        entries.add(ModItems.STARLIGHT_ASHES);
+                        entries.add(ModItems.BURNING_STONE_ASHES);
                     })
                     .build());
 
