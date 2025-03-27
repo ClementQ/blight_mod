@@ -30,7 +30,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             @Override
             public void generate() {
 
-                List<ItemConvertible> BLIGHT_SMELTABLES = List.of(ModItems.RAW_BLIGHT, ModBlocks.BLIGHT_BLOCK,
+                List<ItemConvertible> BLIGHT_SMELTABLES = List.of(ModItems.RAW_BLIGHT, ModBlocks.BLIGHT_ORE,
                         ModBlocks.DEEPSLATE_BLIGHT_ORE);
 
                 offerSmelting(BLIGHT_SMELTABLES, RecipeCategory.MISC, ModItems.BLIGHT_INGOT, 0.25f, 200,"blight");
