@@ -3,6 +3,7 @@ package com.xynoss.blight.block;
 import com.xynoss.blight.Blight;
 import com.xynoss.blight.block.custom.BurningStone;
 import com.xynoss.blight.block.custom.MagicBlock;
+import com.xynoss.blight.block.custom.PinkGarnetLampBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -77,6 +78,10 @@ public class ModBlocks {
                         .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"pink_garnet_trapdoor")))
     ));
 
+    public static final Block PINK_GARNET_LAMP = registerBlock("pink_garnet_lamp", new PinkGarnetLampBlock(
+            AbstractBlock.Settings.create().strength(1f).luminance(state -> state.get(PinkGarnetLampBlock.CLICKED) ? 15 : 0)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"pink_garnet_lamp")))
+    ));
 
 
 

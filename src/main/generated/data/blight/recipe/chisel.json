@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": "blight:pink_garnet",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "G",
+    "S",
+    "S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "blight:chisel"
+  }
+}

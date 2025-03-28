@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "blight:block/pink_garnet_lamp"
+    },
+    "clicked=true": {
+      "model": "blight:block/pink_garnet_lamp_on"
+    }
+  }
+}
