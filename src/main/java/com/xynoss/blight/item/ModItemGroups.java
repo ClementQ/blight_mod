@@ -31,6 +31,20 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.PINK_GARNET_BLOCK);
                         entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
+                        entries.add(ModBlocks.MAGIC_BLOCK);
+
+                        entries.add(ModBlocks.PINK_GARNET_STAIRS);
+                        entries.add(ModBlocks.PINK_GARNET_SLAB);
+
+                        entries.add(ModBlocks.PINK_GARNET_BUTTON);
+                        entries.add(ModBlocks.PINK_GARNET_PRESSURE_PLATE);
+
+                        entries.add(ModBlocks.PINK_GARNET_FENCE);
+                        entries.add(ModBlocks.PINK_GARNET_FENCE_GATE);
+                        entries.add(ModBlocks.PINK_GARNET_WALL);
+
+                        entries.add(ModBlocks.PINK_GARNET_DOOR);
+                        entries.add(ModBlocks.PINK_GARNET_TRAPDOOR);
 
                     })
                     .build());
@@ -44,7 +58,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RAW_BLIGHT_BLOCK);
                         entries.add(ModBlocks.BLIGHT_ORE);
                         entries.add(ModBlocks.DEEPSLATE_BLIGHT_ORE);
-                        entries.add(ModBlocks.MAGIC_BLOCK);
                         entries.add(ModBlocks.BURNING_STONE);
 
                         entries.add(ModItems.BLIGHT_INGOT);

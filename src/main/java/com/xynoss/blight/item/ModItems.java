@@ -17,38 +17,43 @@ import java.util.List;
 
 public class ModItems {
 
-public static final Item PINK_GARNET = registerItem("pink_garnet", new Item(new Item.Settings()
-        .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"pink_garnet")))
-));
-public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", new Item(new Item.Settings()
-        .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"raw_pink_garnet")))
-));
+//Tuto Items
+    public static final Item PINK_GARNET = registerItem("pink_garnet", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"pink_garnet")))
+    ));
+    public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"raw_pink_garnet")))
+    ));
+    public static final Item CHISEL_ITEM = registerItem("chisel", new ChiselItem(new Item.Settings()
+            .maxDamage(32)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"chisel")))
+    ));
+    public static final Item CAULIFLOWER = registerItem("cauliflower", new Item(new Item.Settings()
+            .food(ModFoodComponents.CAULIFLOWER)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"cauliflower")))
+    ){
+        @Override
+        public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+            tooltip.add(Text.translatable("tooltip.blight.cauliflower.tooltip"));
+            super.appendTooltip(stack, context, tooltip, type);
+        }
+    });
 
-public static final Item BLIGHT_INGOT = registerItem("blight_ingot", new Item(new Item.Settings()
-        .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_ingot")))
-));
-public static final Item RAW_BLIGHT = registerItem("raw_blight", new Item(new Item.Settings()
-        .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"raw_blight")))
-));
 
-public static final Item CHISEL_ITEM = registerItem("chisel", new ChiselItem(new Item.Settings()
-        .maxDamage(32)
-        .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"chisel")))
-));
-public static final Item CAULIFLOWER = registerItem("cauliflower", new Item(new Item.Settings()
-        .food(ModFoodComponents.CAULIFLOWER)
-        .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"cauliflower")))
-){
-    @Override
-    public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
-        tooltip.add(Text.translatable("tooltip.blight.cauliflower.tooltip"));
-        super.appendTooltip(stack, context, tooltip, type);
-    }
-});
+//Blight Items
+    public static final Item BLIGHT_INGOT = registerItem("blight_ingot", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_ingot")))
+    ));
+    public static final Item RAW_BLIGHT = registerItem("raw_blight", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"raw_blight")))
+    ));
+    public static final Item BURNING_STONE_ASHES = registerItem("burning_stone_ashes", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"burning_stone_ashes")))
+    ));
 
-public static final Item BURNING_STONE_ASHES = registerItem("burning_stone_ashes", new Item(new Item.Settings()
-        .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"burning_stone_ashes")))
-));
+
+
+
 
 
 //Functions

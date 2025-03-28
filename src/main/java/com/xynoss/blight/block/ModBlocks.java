@@ -4,10 +4,7 @@ import com.xynoss.blight.Blight;
 import com.xynoss.blight.block.custom.BurningStone;
 import com.xynoss.blight.block.custom.MagicBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -22,6 +19,7 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
 
+//Tuto blocks/ores
     public static final Block PINK_GARNET_BLOCK = registerBlock("pink_garnet_block", new Block(AbstractBlock.Settings.create()
         .strength(4f)
         .requiresTool()
@@ -39,9 +37,50 @@ public class ModBlocks {
         .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"magic_block")))
     ));
 
+    public static final Block PINK_GARNET_STAIRS = registerBlock("pink_garnet_stairs", new StairsBlock(ModBlocks.PINK_GARNET_BLOCK.getDefaultState(),
+            AbstractBlock.Settings.create().strength(2f).requiresTool()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"pink_garnet_stairs")))
+    ));
+    public static final Block PINK_GARNET_SLAB = registerBlock("pink_garnet_slab", new SlabBlock(
+                AbstractBlock.Settings.create().strength(2f).requiresTool()
+                .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"pink_garnet_slab")))
+    ));
+
+    public static final Block PINK_GARNET_BUTTON = registerBlock("pink_garnet_button", new ButtonBlock(BlockSetType.IRON, 2,
+                AbstractBlock.Settings.create().strength(2f).requiresTool().noCollision()
+                .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"pink_garnet_button")))
+    ));
+    public static final Block PINK_GARNET_PRESSURE_PLATE = registerBlock("pink_garnet_pressure_plate", new PressurePlateBlock(BlockSetType.IRON,
+                AbstractBlock.Settings.create().strength(2f).requiresTool()
+                .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"pink_garnet_pressure_plate")))
+    ));
+
+    public static final Block PINK_GARNET_FENCE = registerBlock("pink_garnet_fence", new FenceBlock(
+                AbstractBlock.Settings.create().strength(2f).requiresTool()
+                .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"pink_garnet_fence")))
+    ));
+    public static final Block PINK_GARNET_FENCE_GATE = registerBlock("pink_garnet_fence_gate", new FenceGateBlock(WoodType.ACACIA,
+                AbstractBlock.Settings.create().strength(2f).requiresTool()
+                        .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"pink_garnet_fence_gate")))
+    ));
+    public static final Block PINK_GARNET_WALL = registerBlock("pink_garnet_wall", new WallBlock(
+                AbstractBlock.Settings.create().strength(2f).requiresTool()
+                        .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"pink_garnet_wall")))
+    ));
+
+    public static final Block PINK_GARNET_DOOR = registerBlock("pink_garnet_door", new DoorBlock(BlockSetType.IRON,
+                AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque()
+                        .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"pink_garnet_door")))
+    ));
+    public static final Block PINK_GARNET_TRAPDOOR = registerBlock("pink_garnet_trapdoor", new TrapdoorBlock(BlockSetType.IRON,
+                AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque()
+                        .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"pink_garnet_trapdoor")))
+    ));
 
 
-//Blight Block
+
+
+//Blight Blocks
     public static final Block BLIGHT_BLOCK = registerBlock("blight_block", new Block(AbstractBlock.Settings.create()
         .strength(4f)
         .requiresTool()
@@ -53,7 +92,7 @@ public class ModBlocks {
         .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"raw_blight_block")))
     ));
 
-//Blight Ore
+//Blight Ores
     public static final Block BLIGHT_ORE = registerBlock("blight_ore",new ExperienceDroppingBlock(
         UniformIntProvider.create(2, 5),
         AbstractBlock.Settings.create()

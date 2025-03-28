@@ -5,7 +5,20 @@
   "item.blight.raw_blight": "Raw Blight",
   "item.blight.chisel": "Chisel",
   "item.blight.cauliflower": "Cauliflower",
-  "item.blight.burning_stone_ashes": "Burning Stone Ashes",
+  "item.blight.pink_garnet_stairs": "Pink Garnet Stairs",
+  "item.blight.pink_garnet_slab": "Pink Garnet Slab",
+
+  "item.blight.pink_garnet_button": "Pink Garnet Button",
+  "item.blight.pink_garnet_pressure_plate": "Pink Garnet Pressure Plate",
+
+  "item.blight.pink_garnet_fence": "Pink Garnet Fence",
+  "item.blight.pink_garnet_fence_gate": "Pink Garnet Fence Gate",
+  "item.blight.pink_garnet_wall": "Pink Garnet Wall",
+
+  "item.blight.pink_garnet_door": "Pink Garnet Door",
+  "item.blight.pink_garnet_trapdoor": "Pink Garnet Trapdoor",
+
+
 
   "item.blight.pink_garnet_block": "Block of Pink Garnet",
   "item.blight.raw_pink_garnet_block" : "Raw Block of Pink Garnet",
@@ -15,6 +28,7 @@
   "item.blight.deepslate_blight_ore" : "Deepslate Blight Ore",
   "item.blight.magic_block" : "Magic Block",
   "item.blight.burning_stone" : "Burning Stone",
+  "item.blight.burning_stone_ashes": "Burning Stone Ashes",
 
   "itemgroup.blight.pink_garnet_items": "Pink Garnet Items",
   "itemgroup.blight.pink_garnet_blocks": "Pink Garnet Blocks",

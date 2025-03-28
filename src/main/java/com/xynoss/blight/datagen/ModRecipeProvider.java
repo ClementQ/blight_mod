@@ -37,20 +37,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerBlasting(BLIGHT_SMELTABLES, RecipeCategory.MISC, ModItems.BLIGHT_INGOT, 0.25f, 100,"blight");
 
                 offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.BLIGHT_INGOT, RecipeCategory.DECORATIONS, ModBlocks.BLIGHT_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_PINK_GARNET, RecipeCategory.DECORATIONS, ModBlocks.PINK_GARNET_BLOCK);
 
                 createShaped(RecipeCategory.MISC, ModItems.CHISEL_ITEM)
-                        .pattern(" G ")
-                        .pattern(" S ")
-                        .pattern(" s ")
-                        .input('R',ModItems.PINK_GARNET)
+                        .pattern("G")
+                        .pattern("S")
+                        .pattern("S")
+                        .input('G',ModItems.PINK_GARNET)
                         .input('S', Items.STICK)
-                        .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET));
+                        .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                        .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                        .offerTo(exporter);
 
                 createShapeless(RecipeCategory.MISC, ModItems.PINK_GARNET, 9)
                         .input(ModItems.CHISEL_ITEM)
-                        .criterion(hasItem(ModItems.CHISEL_ITEM), conditionsFromItem(ModItems.CHISEL_ITEM));
+                        .criterion(hasItem(ModItems.CHISEL_ITEM), conditionsFromItem(ModItems.CHISEL_ITEM))
+                        .offerTo(exporter);
 
-                createShapeless(RecipeCategory.MISC, ModItems.PINK_GARNET, 9)
+                createShapeless(RecipeCategory.MISC, ModItems.PINK_GARNET, 32)
                         .input(ModBlocks.MAGIC_BLOCK)
                         .criterion(hasItem(ModBlocks.MAGIC_BLOCK), conditionsFromItem(ModBlocks.MAGIC_BLOCK))
                         .offerTo(exporter, "raw_pink_garnet_from_magic_block");
