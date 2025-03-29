@@ -39,13 +39,33 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.BLIGHT_INGOT, RecipeCategory.DECORATIONS, ModBlocks.BLIGHT_BLOCK);
                 offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_PINK_GARNET, RecipeCategory.DECORATIONS, ModBlocks.PINK_GARNET_BLOCK);
 
-                createShaped(RecipeCategory.MISC, ModItems.CHISEL_ITEM)
-                        .pattern("G")
+                createShaped(RecipeCategory.TOOLS, ModItems.BLIGHT_SWORD)
+                        .pattern("B")
+                        .pattern("B")
                         .pattern("S")
-                        .pattern("S")
-                        .input('G',ModItems.PINK_GARNET)
+                        .input('B',ModItems.BLIGHT_INGOT)
                         .input('S', Items.STICK)
-                        .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                        .criterion(hasItem(ModItems.BLIGHT_INGOT), conditionsFromItem(ModItems.BLIGHT_INGOT))
+                        .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.TOOLS, ModItems.BLIGHT_PICKAXE)
+                        .pattern("BBB")
+                        .pattern(" S ")
+                        .pattern(" S ")
+                        .input('B',ModItems.BLIGHT_INGOT)
+                        .input('S', Items.STICK)
+                        .criterion(hasItem(ModItems.BLIGHT_INGOT), conditionsFromItem(ModItems.BLIGHT_INGOT))
+                        .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.TOOLS, ModItems.BLIGHT_SHOVEL)
+                        .pattern("B")
+                        .pattern("S")
+                        .pattern("S")
+                        .input('B',ModItems.BLIGHT_INGOT)
+                        .input('S', Items.STICK)
+                        .criterion(hasItem(ModItems.BLIGHT_INGOT), conditionsFromItem(ModItems.BLIGHT_INGOT))
                         .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                         .offerTo(exporter);
 

@@ -1,10 +1,13 @@
 package com.xynoss.blight.datagen;
 
 import com.xynoss.blight.block.ModBlocks;
+import com.xynoss.blight.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.item.BlockItem;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -37,6 +40,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.PINK_GARNET_FENCE);
         getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.PINK_GARNET_FENCE_GATE);
         getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.PINK_GARNET_WALL);
+
+//        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
+//                .add(ModBlocks.BURNING_STONE);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_BLIGHT_TOOL)
+                .add(ModBlocks.BURNING_STONE);
+
+//        getOrCreateTagBuilder(ModTags.Blocks.INCORRECT_FOR_BLIGHT_TOOL)
+//                .add(ModBlocks.BURNING_STONE)
+//                .forceAddTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL);
 
     }
 }

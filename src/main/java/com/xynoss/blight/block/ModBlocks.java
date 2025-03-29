@@ -4,18 +4,25 @@ import com.xynoss.blight.Blight;
 import com.xynoss.blight.block.custom.BurningStone;
 import com.xynoss.blight.block.custom.MagicBlock;
 import com.xynoss.blight.block.custom.PinkGarnetLampBlock;
+import com.xynoss.blight.item.ModItems;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.*;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
+import net.minecraft.world.BlockView;
+
+import java.util.List;
 
 
 public class ModBlocks {
@@ -118,7 +125,26 @@ public class ModBlocks {
             .requiresTool()
             .luminance(state -> 5)
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"burning_stone")))
-    ));
+    ){
+        @Override
+        public float calcBlockBreakingDelta(BlockState state, PlayerEntity player, BlockView world, BlockPos pos) {
+            float original = super.calcBlockBreakingDelta(state, player, world, pos);
+
+            // Vérifier si le joueur utilise un outil en blight
+            ItemStack tool = player.getMainHandStack();
+            if (!(tool.getItem() instanceof PickaxeItem) || !isBlight(tool)) {
+                // Réduire considérablement la vitesse de minage (0.05F = 20 fois plus lent)
+                return original * 0.05F;
+            }
+
+            return original;
+        }
+
+        private boolean isBlight(ItemStack stack) {
+            // Vérifier si l'outil est en blight
+            return stack.isOf(ModItems.BLIGHT_PICKAXE);
+        }
+    });
 
 
 

@@ -53,10 +53,18 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+//Blight Items
         itemModelGenerator.register(ModItems.RAW_BLIGHT, Models.GENERATED);
         itemModelGenerator.register(ModItems.BLIGHT_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.BURNING_STONE_ASHES, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.BLIGHT_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BLIGHT_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BLIGHT_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BLIGHT_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BLIGHT_HOE, Models.HANDHELD);
+
+//Tuto Items
         itemModelGenerator.register(ModItems.CHISEL_ITEM, Models.GENERATED);
         itemModelGenerator.register(ModItems.CAULIFLOWER, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_PINK_GARNET, Models.GENERATED);

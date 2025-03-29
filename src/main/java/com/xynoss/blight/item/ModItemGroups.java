@@ -65,6 +65,14 @@ public class ModItemGroups {
                         entries.add(ModItems.BLIGHT_INGOT);
                         entries.add(ModItems.RAW_BLIGHT);
                         entries.add(ModItems.BURNING_STONE_ASHES);
+
+                        entries.add(ModItems.BLIGHT_PICKAXE);
+                        entries.add(ModItems.BLIGHT_SWORD);
+                        entries.add(ModItems.BLIGHT_SHOVEL);
+                        entries.add(ModItems.BLIGHT_AXE);
+                        entries.add(ModItems.BLIGHT_HOE);
+
+
                     })
                     .build());
 
