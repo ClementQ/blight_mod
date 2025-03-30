@@ -37,9 +37,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ModItems.BLIGHT_HOE);
 
-//        getOrCreateTagBuilder(ModTags.Items.BLIGHT_TOOLS)
-//                .add(ModItems.BLIGHT_PICKAXE)
-//                .add(ModItems.BLIGHT_AXE);
         getOrCreateTagBuilder(ModTags.Items.BLIGHT_REPAIR)
                 .add(ModItems.BLIGHT_INGOT);
         getOrCreateTagBuilder(ModTags.Items.BLIGHT_TOOLS)

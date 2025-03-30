@@ -145,6 +145,24 @@ public class ModBlocks {
             return stack.isOf(ModItems.BLIGHT_PICKAXE);
         }
     });
+    public static final Block DEEPSLATE_ELDRANITE_ORE = registerBlock("deepslate_eldranite_ore",new ExperienceDroppingBlock(
+            UniformIntProvider.create(1, 1),
+            AbstractBlock.Settings.create().
+                    strength(4f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.DEEPSLATE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"deepslate_eldranite_ore")))
+    ));
+    public static final Block ELDRANITE_BLOCK = registerBlock("eldranite_block", new Block(AbstractBlock.Settings.create()
+            .strength(4f)
+            .requiresTool()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"eldranite_block")))
+    ));
+    public static final Block RAW_ELDRANITE_BLOCK = registerBlock("raw_eldranite_block", new Block(AbstractBlock.Settings.create()
+            .strength(4f)
+            .requiresTool()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"raw_eldranite_block")))
+    ));
 
 
 

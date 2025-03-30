@@ -3,9 +3,10 @@
     "blight:blight_block",
     "blight:blight_ore",
     "blight:deepslate_blight_ore",
+    "blight:burning_stone",
     "blight:pink_garnet_block",
     "blight:raw_pink_garnet_block",
     "blight:magic_block",
-    "blight:burning_stone"
+    "blight:deepslate_eldranite_ore"
   ]
 }

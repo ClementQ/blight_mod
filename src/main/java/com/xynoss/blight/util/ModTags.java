@@ -10,6 +10,7 @@ import net.minecraft.util.Identifier;
 public class ModTags {
     public static class Blocks{
 
+        //BLIGHT
         public static final TagKey<Block> NEEDS_BLIGHT_TOOL = createTag("needs_blight_tool");
         public static final TagKey<Block> INCORRECT_FOR_BLIGHT_TOOL = createTag("incorrect_for_blight_tool");
 

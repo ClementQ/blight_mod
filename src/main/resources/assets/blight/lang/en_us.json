@@ -1,8 +1,41 @@
 {
-  "item.blight.pink_garnet": "Pink Garnet",
-  "item.blight.raw_pink_garnet": "Raw Pink Garnet",
+//TOOLS
+  "item.blight.blight_sword": "Blight Sword",
+  "item.blight.blight_pickaxe": "Blight Pickaxe",
+  "item.blight.blight_axe": "Blight Axe",
+  "item.blight.blight_shovel": "Blight Shovel",
+  "item.blight.blight_hoe": "Blight Hoe",
+
+//ORES
+  //Ores Items
   "item.blight.blight_ingot": "Blight Ingot",
   "item.blight.raw_blight": "Raw Blight",
+  "item.blight.raw_eldranite": "Raw Eldranite",
+  "item.blight.eldranite_ingot": "Eldranite Ingot",
+
+  //Ores block
+  "item.blight.burning_stone" : "Burning Stone",
+  "itemgroup.blight.blight": "Blight",
+  "item.blight.deepslate_eldranite_ore": "Eldranite Ore",
+
+//Block
+  "item.blight.blight_block": "Block of Blight",
+  "item.blight.raw_blight_block" : "Raw Block of Blight",
+  "item.blight.blight_ore" : "Blight Ore",
+  "item.blight.deepslate_blight_ore" : "Deepslate Blight Ore",
+  "item.blight.raw_eldranite_block" : "Raw Eldranite Ore",
+  "item.blight.eldranite_block" : "Eldranite Ore",
+
+//ITEMS
+  "item.blight.burning_stone_ashes": "Burning Stone Ashes",
+
+//TOOLTIPS
+
+
+//TUTO
+  "item.blight.pink_garnet": "Pink Garnet",
+  "item.blight.raw_pink_garnet": "Raw Pink Garnet",
+
   "item.blight.chisel": "Chisel",
   "item.blight.cauliflower": "Cauliflower",
   "item.blight.pink_garnet_stairs": "Pink Garnet Stairs",
@@ -19,31 +52,11 @@
   "item.blight.pink_garnet_trapdoor": "Pink Garnet Trapdoor",
 
   "item.blight.pink_garnet_lamp": "Pink Garnet Lamp",
-
-  "item.blight.blight_sword": "Blight Sword",
-  "item.blight.blight_pickaxe": "Blight Pickaxe",
-  "item.blight.blight_axe": "Blight Axe",
-  "item.blight.blight_shovel": "Blight Shovel",
-  "item.blight.blight_hoe": "Blight Hoe",
-
-
-
-
-
   "item.blight.pink_garnet_block": "Block of Pink Garnet",
   "item.blight.raw_pink_garnet_block" : "Raw Block of Pink Garnet",
-  "item.blight.blight_block": "Block of Blight",
-  "item.blight.raw_blight_block" : "Raw Block of Blight",
-  "item.blight.blight_ore" : "Blight Ore",
-  "item.blight.deepslate_blight_ore" : "Deepslate Blight Ore",
   "item.blight.magic_block" : "Magic Block",
-  "item.blight.burning_stone" : "Burning Stone",
-  "item.blight.burning_stone_ashes": "Burning Stone Ashes",
-
   "itemgroup.blight.pink_garnet_items": "Pink Garnet Items",
   "itemgroup.blight.pink_garnet_blocks": "Pink Garnet Blocks",
-  "itemgroup.blight.blight": "Blight",
-
   "tooltip.blight.magic_block.tooltip" : "This block is very §9MAGICAL§r",
   "tooltip.blight.magic_block.tooltip.2" : "And this is cool !",
 

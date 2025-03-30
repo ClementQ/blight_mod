@@ -48,6 +48,13 @@ public class ModItems {
     public static final Item BURNING_STONE_ASHES = registerItem("burning_stone_ashes", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"burning_stone_ashes")))
     ));
+    public static final Item RAW_ELDRANITE = registerItem("raw_eldranite", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"raw_eldranite")))
+    ));
+    public static final Item ELDRANITE_INGOT = registerItem("eldranite_ingot", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"eldranite_ingot")))
+    ));
+
     //Tools
     public static final Item BLIGHT_SWORD = registerItem("blight_sword", new SwordItem(ModToolMaterials.BLIGHT, 3,-2.4f, new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_sword")))

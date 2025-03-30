@@ -61,10 +61,15 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BLIGHT_ORE);
                         entries.add(ModBlocks.DEEPSLATE_BLIGHT_ORE);
                         entries.add(ModBlocks.BURNING_STONE);
+                        entries.add(ModBlocks.DEEPSLATE_ELDRANITE_ORE);
+                        entries.add(ModBlocks.ELDRANITE_BLOCK);
+                        entries.add(ModBlocks.RAW_ELDRANITE_BLOCK);
 
                         entries.add(ModItems.BLIGHT_INGOT);
                         entries.add(ModItems.RAW_BLIGHT);
                         entries.add(ModItems.BURNING_STONE_ASHES);
+                        entries.add(ModItems.RAW_ELDRANITE);
+                        entries.add(ModItems.ELDRANITE_INGOT);
 
                         entries.add(ModItems.BLIGHT_PICKAXE);
                         entries.add(ModItems.BLIGHT_SWORD);

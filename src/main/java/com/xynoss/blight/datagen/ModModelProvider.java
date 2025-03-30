@@ -39,11 +39,17 @@ public class ModModelProvider extends FabricModelProvider {
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(PinkGarnetLampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
 
 //BLight Models
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLIGHT_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_BLIGHT_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_BLIGHT_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLIGHT_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLIGHT_BLOCK);
+
+        //ORES
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BURNING_STONE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLIGHT_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_BLIGHT_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_ELDRANITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ELDRANITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_ELDRANITE_BLOCK);
+
 
 
 
@@ -57,6 +63,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_BLIGHT, Models.GENERATED);
         itemModelGenerator.register(ModItems.BLIGHT_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.BURNING_STONE_ASHES, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_ELDRANITE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ELDRANITE_INGOT, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.BLIGHT_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BLIGHT_PICKAXE, Models.HANDHELD);

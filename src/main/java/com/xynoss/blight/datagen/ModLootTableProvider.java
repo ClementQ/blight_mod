@@ -64,11 +64,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 //Loottable Blight
         addDrop(ModBlocks.BLIGHT_BLOCK);
         addDrop(ModBlocks.RAW_BLIGHT_BLOCK);
-        addDrop(ModBlocks.BURNING_STONE);
 
         addDrop(ModBlocks.BLIGHT_ORE, multipleOreDrops(ModBlocks.BLIGHT_ORE, ModItems.RAW_BLIGHT, 1,3));
         addDrop(ModBlocks.DEEPSLATE_BLIGHT_ORE, multipleOreDrops(ModBlocks.DEEPSLATE_BLIGHT_ORE, ModItems.RAW_BLIGHT, 3,7));
+
         addDrop(ModBlocks.BURNING_STONE, createRequiredToolMultipleDrops(ModBlocks.BURNING_STONE, ModItems.BURNING_STONE_ASHES, 1, 3, ModItems.BLIGHT_PICKAXE));
+
+        addDrop(ModBlocks.DEEPSLATE_ELDRANITE_ORE, oreDrops(ModBlocks.DEEPSLATE_ELDRANITE_ORE, ModItems.RAW_ELDRANITE));
+        addDrop(ModBlocks.ELDRANITE_BLOCK);
+        addDrop(ModBlocks.RAW_ELDRANITE_BLOCK);
     }
 
 
