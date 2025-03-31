@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
 import net.minecraft.data.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Recipe;
@@ -16,8 +17,11 @@ import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
 
+import javax.tools.Tool;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
+
+import static net.minecraft.data.recipe.RecipeGenerator.hasItem;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
@@ -27,8 +31,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     @Override
     protected RecipeGenerator getRecipeGenerator(RegistryWrapper.WrapperLookup registryLookup, RecipeExporter exporter) {
         return new RecipeGenerator(registryLookup, exporter) {
+
+            public enum ToolType {
+                PICKAXE, AXE, SHOVEL, HOE, SWORD
+            }
+
             @Override
             public void generate() {
+
 
                 List<ItemConvertible> BLIGHT_SMELTABLES = List.of(ModItems.RAW_BLIGHT, ModBlocks.BLIGHT_ORE,
                         ModBlocks.DEEPSLATE_BLIGHT_ORE);
@@ -37,17 +47,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerBlasting(BLIGHT_SMELTABLES, RecipeCategory.MISC, ModItems.BLIGHT_INGOT, 0.25f, 100,"blight");
 
                 offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.BLIGHT_INGOT, RecipeCategory.DECORATIONS, ModBlocks.BLIGHT_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.ELDRANITE_INGOT, RecipeCategory.DECORATIONS, ModBlocks.ELDRANITE_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_ELDRANITE, RecipeCategory.DECORATIONS, ModBlocks.RAW_ELDRANITE_BLOCK);
                 offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_PINK_GARNET, RecipeCategory.DECORATIONS, ModBlocks.PINK_GARNET_BLOCK);
 
-                createShaped(RecipeCategory.MISC, ModItems.CHISEL_ITEM)
-                        .pattern("G")
-                        .pattern("S")
-                        .pattern("S")
-                        .input('G',ModItems.PINK_GARNET)
-                        .input('S', Items.STICK)
-                        .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
-                        .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
-                        .offerTo(exporter);
+                //BLIGHT TOOLS
+                createTool(ToolType.PICKAXE, ModItems.BLIGHT_PICKAXE, ModItems.BLIGHT_INGOT, "blight_pickaxe");
+                createTool(ToolType.AXE, ModItems.BLIGHT_AXE, ModItems.BLIGHT_INGOT, "blight_axe");
+                createTool(ToolType.SHOVEL, ModItems.BLIGHT_SHOVEL, ModItems.BLIGHT_INGOT, "blight_shovel");
+                createTool(ToolType.HOE, ModItems.BLIGHT_HOE, ModItems.BLIGHT_INGOT, "blight_hoe");
+                createTool(ToolType.SWORD, ModItems.BLIGHT_SWORD, ModItems.BLIGHT_INGOT, "blight_sword");
 
                 createShapeless(RecipeCategory.MISC, ModItems.PINK_GARNET, 9)
                         .input(ModItems.CHISEL_ITEM)
@@ -58,9 +67,29 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input(ModBlocks.MAGIC_BLOCK)
                         .criterion(hasItem(ModBlocks.MAGIC_BLOCK), conditionsFromItem(ModBlocks.MAGIC_BLOCK))
                         .offerTo(exporter, "raw_pink_garnet_from_magic_block");
+
+
+            }
+
+
+
+            public void createTool(ToolType toolType, Item tool, Item item, String recipePath){
+                if(toolType == ToolType.SWORD){
+                    createShaped(RecipeCategory.TOOLS, tool).pattern("I").pattern("I").pattern("S").input('I',item).input('S', Items.STICK).criterion(hasItem(item), conditionsFromItem(item)).criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK)).offerTo(exporter, recipePath);
+                } else if (toolType == ToolType.PICKAXE) {
+                    createShaped(RecipeCategory.TOOLS, tool).pattern("BBB").pattern(" S ").pattern(" S ").input('B',item).input('S', Items.STICK).criterion(hasItem(item), conditionsFromItem(item)).criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK)).offerTo(exporter, recipePath);
+                } else if (toolType == ToolType.SHOVEL) {
+                    createShaped(RecipeCategory.TOOLS, tool).pattern("B").pattern("S").pattern("S").input('B',item).input('S', Items.STICK).criterion(hasItem(item), conditionsFromItem(item)).criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK)).offerTo(exporter, recipePath);
+                } else if (toolType == ToolType.AXE) {
+                    createShaped(RecipeCategory.TOOLS, tool).pattern("BB").pattern("BS").pattern(" S").input('B',item).input('S', Items.STICK).criterion(hasItem(item), conditionsFromItem(item)).criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK)).offerTo(exporter, recipePath);
+                } else if (toolType == ToolType.HOE){
+                    createShaped(RecipeCategory.TOOLS, tool).pattern("BB").pattern(" S").pattern(" S").input('B',item).input('S', Items.STICK).criterion(hasItem(item), conditionsFromItem(item)).criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK)).offerTo(exporter, recipePath);
+                }
             }
         };
     }
+
+
 
     @Override
     public String getName() {

@@ -1,8 +1,48 @@
 {
-  "item.blight.pink_garnet": "Pink Garnet",
-  "item.blight.raw_pink_garnet": "Raw Pink Garnet",
+//TOOLS
+  "item.blight.blight_sword": "Blight Sword",
+  "item.blight.blight_pickaxe": "Blight Pickaxe",
+  "item.blight.blight_axe": "Blight Axe",
+  "item.blight.blight_shovel": "Blight Shovel",
+  "item.blight.blight_hoe": "Blight Hoe",
+
+//ORES
+  //Ores Items
   "item.blight.blight_ingot": "Blight Ingot",
   "item.blight.raw_blight": "Raw Blight",
+  "item.blight.raw_eldranite": "Raw Eldranite",
+  "item.blight.eldranite_ingot": "Eldranite Ingot",
+
+  //Ores block
+  "item.blight.burning_stone" : "Burning Stone",
+  "item.blight.eldranite_ore": "Eldranite Ore",
+  "item.blight.blight_ore" : "Blight Ore",
+  "item.blight.deepslate_blight_ore" : "Deepslate Blight Ore",
+  "item.blight.deepslate_mythrion_ore": "Deepslate Mythrion Ore",
+
+//Block
+  "item.blight.mythrion_block" : "Block of Mythrion",
+  "item.blight.blight_block": "Block of Blight",
+  "item.blight.eldranite_block" : "Block of Eldranite",
+  "item.blight.raw_mythrion_block" : "Raw Block of Mytrhion",
+  "item.blight.raw_blight_block" : "Raw Block of Blight",
+  "item.blight.raw_eldranite_block" : "Raw Block of Eldranite",
+
+//ITEMS
+  "item.blight.burning_stone_ashes": "Burning Stone Ashes",
+
+//TOOLTIPS
+
+//TABS
+  "itemgroup.blight.blight_blocks": "Blight Blocks",
+  "itemgroup.blight.blight_items": "Blight Items",
+  "itemgroup.blight.blight_tools": "Blight Tools",
+
+
+//TUTO
+  "item.blight.pink_garnet": "Pink Garnet",
+  "item.blight.raw_pink_garnet": "Raw Pink Garnet",
+
   "item.blight.chisel": "Chisel",
   "item.blight.cauliflower": "Cauliflower",
   "item.blight.pink_garnet_stairs": "Pink Garnet Stairs",
@@ -18,22 +58,12 @@
   "item.blight.pink_garnet_door": "Pink Garnet Door",
   "item.blight.pink_garnet_trapdoor": "Pink Garnet Trapdoor",
 
-
-
+  "item.blight.pink_garnet_lamp": "Pink Garnet Lamp",
   "item.blight.pink_garnet_block": "Block of Pink Garnet",
   "item.blight.raw_pink_garnet_block" : "Raw Block of Pink Garnet",
-  "item.blight.blight_block": "Block of Blight",
-  "item.blight.raw_blight_block" : "Raw Block of Blight",
-  "item.blight.blight_ore" : "Blight Ore",
-  "item.blight.deepslate_blight_ore" : "Deepslate Blight Ore",
   "item.blight.magic_block" : "Magic Block",
-  "item.blight.burning_stone" : "Burning Stone",
-  "item.blight.burning_stone_ashes": "Burning Stone Ashes",
-
   "itemgroup.blight.pink_garnet_items": "Pink Garnet Items",
   "itemgroup.blight.pink_garnet_blocks": "Pink Garnet Blocks",
-  "itemgroup.blight.blight": "Blight",
-
   "tooltip.blight.magic_block.tooltip" : "This block is very §9MAGICAL§r",
   "tooltip.blight.magic_block.tooltip.2" : "And this is cool !",
 

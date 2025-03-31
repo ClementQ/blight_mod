@@ -1,12 +1,12 @@
 package com.xynoss.blight.datagen;
 
 import com.xynoss.blight.block.ModBlocks;
+import com.xynoss.blight.block.custom.PinkGarnetLampBlock;
 import com.xynoss.blight.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.minecraft.client.data.BlockStateModelGenerator;
-import net.minecraft.client.data.ItemModelGenerator;
-import net.minecraft.client.data.Models;
+import net.minecraft.client.data.*;
+import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -33,25 +33,47 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.PINK_GARNET_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.PINK_GARNET_TRAPDOOR);
 
+        Identifier lampOffIdentifier = TexturedModel.CUBE_ALL.upload(ModBlocks.PINK_GARNET_LAMP, blockStateModelGenerator.modelCollector);
+        Identifier lampOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.PINK_GARNET_LAMP,"_on", Models.CUBE_ALL, TextureMap::all);
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.PINK_GARNET_LAMP)
+                .coordinate(BlockStateModelGenerator.createBooleanModelMap(PinkGarnetLampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
+
 //BLight Models
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLIGHT_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_BLIGHT_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_BLIGHT_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLIGHT_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLIGHT_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ELDRANITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_ELDRANITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MYTHRION_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_MYTHRION_BLOCK);
+
+        //ORES
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BURNING_STONE);
-
-
-
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLIGHT_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_BLIGHT_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ELDRANITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_MYTHRION_ORE);
 
 
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+//Blight Items
         itemModelGenerator.register(ModItems.RAW_BLIGHT, Models.GENERATED);
         itemModelGenerator.register(ModItems.BLIGHT_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.BURNING_STONE_ASHES, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_ELDRANITE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ELDRANITE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_MYTHRION, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MYTHRION_INGOT, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.BLIGHT_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BLIGHT_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BLIGHT_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BLIGHT_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BLIGHT_HOE, Models.HANDHELD);
+
+//Tuto Items
         itemModelGenerator.register(ModItems.CHISEL_ITEM, Models.GENERATED);
         itemModelGenerator.register(ModItems.CAULIFLOWER, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_PINK_GARNET, Models.GENERATED);

@@ -1,8 +1,12 @@
 // 1.21.4	-999999999-01-01T00:00:00	Blight/Block Loot Tables
 97e835da8a6886b0aa408a09aa0cc387c7259c80 data/blight/loot_table/blocks/blight_block.json
 39734aded8eb15c964269393680a9ea252e39360 data/blight/loot_table/blocks/blight_ore.json
-047cf5711f29d1d746aa13dcfd473865634dfb89 data/blight/loot_table/blocks/burning_stone.json
+a2e66ffbaa89f215a13d06cb4068e57e87f9f757 data/blight/loot_table/blocks/burning_stone.json
 a175dcfe558681125754d15196c7aab56291d29b data/blight/loot_table/blocks/deepslate_blight_ore.json
+c5bc497796245bcfc101c4984600a8bf8ebd7d13 data/blight/loot_table/blocks/deepslate_mythrion_ore.json
+39ab19dbdced4d60803d3e868f7c2f1018a8a6f3 data/blight/loot_table/blocks/eldranite_block.json
+c299a868a9f11d3d884283f552ea20259fd80948 data/blight/loot_table/blocks/eldranite_ore.json
+721df718818b5a40ebb5c288f2b10f0905f61141 data/blight/loot_table/blocks/mythrion_block.json
 04c4025046ed5405a99826a41b99821a7ccfe4da data/blight/loot_table/blocks/pink_garnet_block.json
 a66f0a58ad6c754d161ee0028c27e2167714a2ce data/blight/loot_table/blocks/pink_garnet_button.json
 fde6f181a6c3ca0c64d20bcb537adb8c296ee8fa data/blight/loot_table/blocks/pink_garnet_door.json
@@ -14,4 +18,6 @@ cdfc77370dc66bee161b6e5b39ee9c4f16474b79 data/blight/loot_table/blocks/pink_garn
 8b858759e6b090f4f008ec2c03a8244ebb368f3c data/blight/loot_table/blocks/pink_garnet_trapdoor.json
 29ea999aeffd77df8de1b7c77ca4be47d838968e data/blight/loot_table/blocks/pink_garnet_wall.json
 327d1b9a801167e03d65053f01340f5cb9069f56 data/blight/loot_table/blocks/raw_blight_block.json
+e5c328ae8cb8ad51302629df676dbcacc98489f6 data/blight/loot_table/blocks/raw_eldranite_block.json
+d6ae9c45c976f9129379df2e892261391bce489f data/blight/loot_table/blocks/raw_mythrion_block.json
 d96e243d53e539c5849489c07cb90a79044dafe3 data/blight/loot_table/blocks/raw_pink_garnet_block.json

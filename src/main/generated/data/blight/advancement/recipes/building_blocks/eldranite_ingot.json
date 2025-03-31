@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_eldranite_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "blight:eldranite_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:eldranite_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_eldranite_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:eldranite_ingot"
+    ]
+  }
+}

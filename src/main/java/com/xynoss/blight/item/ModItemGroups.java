@@ -46,23 +46,61 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PINK_GARNET_DOOR);
                         entries.add(ModBlocks.PINK_GARNET_TRAPDOOR);
 
+                        entries.add(ModBlocks.PINK_GARNET_LAMP);
+
                     })
                     .build());
 
-    public static final ItemGroup BLIGHT_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(Blight.MOD_ID, "blight"),
+
+//BLIGHT
+    public static final ItemGroup BLIGHT_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Blight.MOD_ID, "blight_block"),
             FabricItemGroup.builder().icon(() ->new ItemStack(ModBlocks.BLIGHT_BLOCK))
-                    .displayName(Text.translatable("itemgroup.blight.blight"))
+                    .displayName(Text.translatable("itemgroup.blight.blight_blocks"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.BLIGHT_BLOCK);
                         entries.add(ModBlocks.RAW_BLIGHT_BLOCK);
                         entries.add(ModBlocks.BLIGHT_ORE);
                         entries.add(ModBlocks.DEEPSLATE_BLIGHT_ORE);
                         entries.add(ModBlocks.BURNING_STONE);
+                        entries.add(ModBlocks.ELDRANITE_ORE);
+                        entries.add(ModBlocks.ELDRANITE_BLOCK);
+                        entries.add(ModBlocks.RAW_ELDRANITE_BLOCK);
+                        entries.add(ModBlocks.DEEPSLATE_MYTHRION_ORE);
+                        entries.add(ModBlocks.MYTHRION_BLOCK);
+                        entries.add(ModBlocks.RAW_MYTHRION_BLOCK);
 
+
+
+
+                    })
+                    .build());
+    public static final ItemGroup BLIGHT_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Blight.MOD_ID, "blight_ingot"),
+            FabricItemGroup.builder().icon(() ->new ItemStack(ModItems.BLIGHT_INGOT))
+                    .displayName(Text.translatable("itemgroup.blight.blight_items"))
+                    .entries((displayContext, entries) -> {
                         entries.add(ModItems.BLIGHT_INGOT);
                         entries.add(ModItems.RAW_BLIGHT);
                         entries.add(ModItems.BURNING_STONE_ASHES);
+                        entries.add(ModItems.RAW_ELDRANITE);
+                        entries.add(ModItems.ELDRANITE_INGOT);
+                        entries.add(ModItems.RAW_MYTHRION);
+                        entries.add(ModItems.MYTHRION_INGOT);
+
+                    })
+                    .build());
+    public static final ItemGroup BLIGHT_TOOLS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Blight.MOD_ID, "blight_pickaxe"),
+            FabricItemGroup.builder().icon(() ->new ItemStack(ModItems.BLIGHT_PICKAXE))
+                    .displayName(Text.translatable("itemgroup.blight.blight_tools"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.BLIGHT_PICKAXE);
+                        entries.add(ModItems.BLIGHT_SWORD);
+                        entries.add(ModItems.BLIGHT_SHOVEL);
+                        entries.add(ModItems.BLIGHT_AXE);
+                        entries.add(ModItems.BLIGHT_HOE);
+
                     })
                     .build());
 

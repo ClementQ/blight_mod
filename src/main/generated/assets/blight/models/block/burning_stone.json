@@ -2,5 +2,8 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "blight:block/burning_stone"
+  },
+  "mining": {
+    "required_tool": "blight_tools"
   }
 }

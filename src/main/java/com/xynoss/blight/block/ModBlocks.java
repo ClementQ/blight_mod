@@ -3,18 +3,26 @@ package com.xynoss.blight.block;
 import com.xynoss.blight.Blight;
 import com.xynoss.blight.block.custom.BurningStone;
 import com.xynoss.blight.block.custom.MagicBlock;
+import com.xynoss.blight.block.custom.PinkGarnetLampBlock;
+import com.xynoss.blight.item.ModItems;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.*;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
+import net.minecraft.world.BlockView;
+
+import java.util.List;
 
 
 public class ModBlocks {
@@ -77,6 +85,10 @@ public class ModBlocks {
                         .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"pink_garnet_trapdoor")))
     ));
 
+    public static final Block PINK_GARNET_LAMP = registerBlock("pink_garnet_lamp", new PinkGarnetLampBlock(
+            AbstractBlock.Settings.create().strength(1f).luminance(state -> state.get(PinkGarnetLampBlock.CLICKED) ? 15 : 0)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"pink_garnet_lamp")))
+    ));
 
 
 
@@ -113,6 +125,63 @@ public class ModBlocks {
             .requiresTool()
             .luminance(state -> 5)
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"burning_stone")))
+    ){
+        @Override
+        public float calcBlockBreakingDelta(BlockState state, PlayerEntity player, BlockView world, BlockPos pos) {
+            float original = super.calcBlockBreakingDelta(state, player, world, pos);
+
+            // Vérifier si le joueur utilise un outil en blight
+            ItemStack tool = player.getMainHandStack();
+            if (!(tool.getItem() instanceof PickaxeItem) || !isBlight(tool)) {
+                // Réduire considérablement la vitesse de minage (0.05F = 20 fois plus lent)
+                return original * 0.05F;
+            }
+
+            return original;
+        }
+
+        private boolean isBlight(ItemStack stack) {
+            // Vérifier si l'outil est en blight
+            return stack.isOf(ModItems.BLIGHT_PICKAXE);
+        }
+    });
+    //ELDRANITE
+    public static final Block ELDRANITE_ORE = registerBlock("eldranite_ore",new ExperienceDroppingBlock(
+            UniformIntProvider.create(1, 1),
+            AbstractBlock.Settings.create().
+                    strength(4f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.DEEPSLATE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"eldranite_ore")))
+    ));
+    public static final Block ELDRANITE_BLOCK = registerBlock("eldranite_block", new Block(AbstractBlock.Settings.create()
+            .strength(4f)
+            .requiresTool()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"eldranite_block")))
+    ));
+    public static final Block RAW_ELDRANITE_BLOCK = registerBlock("raw_eldranite_block", new Block(AbstractBlock.Settings.create()
+            .strength(4f)
+            .requiresTool()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"raw_eldranite_block")))
+    ));
+    //Mythrion
+    public static final Block DEEPSLATE_MYTHRION_ORE = registerBlock("deepslate_mythrion_ore",new ExperienceDroppingBlock(
+            UniformIntProvider.create(1, 1),
+            AbstractBlock.Settings.create().
+                    strength(4f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.DEEPSLATE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"deepslate_mythrion_ore")))
+    ));
+    public static final Block MYTHRION_BLOCK = registerBlock("mythrion_block", new Block(AbstractBlock.Settings.create()
+            .strength(4f)
+            .requiresTool()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"mythrion_block")))
+    ));
+    public static final Block RAW_MYTHRION_BLOCK = registerBlock("raw_mythrion_block", new Block(AbstractBlock.Settings.create()
+            .strength(4f)
+            .requiresTool()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"raw_mythrion_block")))
     ));
 
 
