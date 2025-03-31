@@ -1,6 +1,6 @@
 // 1.21.4	-999999999-01-01T00:00:00	Blight/Tags for minecraft:item
 f4f65da811b70bdb0899ce02fbd03e8063a03d1c data/blight/tags/item/blight_repair.json
-91361fc838b25cf9c31e3535ead82935a107af39 data/blight/tags/item/blight_tools.json
+bf0ff814484e4594d19952ce841fe9abff525b2a data/blight/tags/item/blight_tools.json
 59137a80725551822ffc70d4d879d3725e1735ea data/blight/tags/item/transformable_items.json
 98757f0c989586a536828b7c2f55e411bbb61b1a data/minecraft/tags/item/axes.json
 0d51f0638c23b7a897ae853653921ce06768eea6 data/minecraft/tags/item/hoes.json

@@ -25,6 +25,7 @@ f2c0ce0506c45516eb9940e47064b80ec69332d2 assets/blight/blockstates/raw_mythrion_
 8492249f37aef12e6ddf2bde67b96581ac20f06e assets/blight/blockstates/raw_pink_garnet_block.json
 6de6a61e3c6dcd0b7e6e6987620d8c88affa5ab9 assets/blight/items/blight_axe.json
 5077e6a12301d6633046928e44020bca9625c663 assets/blight/items/blight_block.json
+b6bd8883395bdbaa3adfd4904e7a256b9a5752ab assets/blight/items/blight_hammer.json
 ee13d84518bfb00690b42c7d1781bc31e97861be assets/blight/items/blight_hoe.json
 9b0d3961c31db157a1bf4fe7909c9cbf1249f79d assets/blight/items/blight_ingot.json
 bb7b64f8740cdf86b279691e5245c61343e45a77 assets/blight/items/blight_ore.json
@@ -112,6 +113,7 @@ f33debdecd1422453b44549d4c55dbe22524ac1f assets/blight/models/block/pink_garnet_
 0ae727ff3aa2fa0917e9e474c7c197654533e072 assets/blight/models/block/raw_mythrion_block.json
 76dea315afe0a7f1d9e8da6e8aa16759f4ecb4ef assets/blight/models/block/raw_pink_garnet_block.json
 1a6a8b0c2c3294a6809d50813e1b708f0afd4650 assets/blight/models/item/blight_axe.json
+757c1157159c40e10142bd3e3f1e428c810cc07d assets/blight/models/item/blight_hammer.json
 04a029e51ed19cb5dfb58638fba3de60241bf732 assets/blight/models/item/blight_hoe.json
 5be34fac1503271982c57f59b29ee4164bb8eb2a assets/blight/models/item/blight_ingot.json
 8a45ec648a7636bc82165031af40f8225fd79a44 assets/blight/models/item/blight_pickaxe.json

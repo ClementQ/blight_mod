@@ -1,5 +1,6 @@
 package com.xynoss.blight.item;
 import com.xynoss.blight.item.custom.ChiselItem;
+import com.xynoss.blight.item.custom.HammerItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import com.xynoss.blight.Blight;
 import net.minecraft.item.*;
@@ -76,6 +77,9 @@ public class ModItems {
     ));
     public static final Item BLIGHT_HOE = registerItem("blight_hoe", new SwordItem(ModToolMaterials.BLIGHT, 0,-3.0f, new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_hoe")))
+    ));
+    public static final Item BLIGHT_HAMMER = registerItem("blight_hammer", new HammerItem(ModToolMaterials.BLIGHT, 7,-3.4f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_hammer")))
     ));
 
 
