@@ -26,7 +26,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PINK_GARNET_BLOCK)
                 .add(ModBlocks.RAW_PINK_GARNET_BLOCK)
                 .add(ModBlocks.MAGIC_BLOCK)
-                .add(ModBlocks.DEEPSLATE_ELDRANITE_ORE)
+                .add(ModBlocks.ELDRANITE_ORE)
         ;
 
 
@@ -40,7 +40,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.BLIGHT_ORE)
                 .add(ModBlocks.DEEPSLATE_BLIGHT_ORE)
-                .add(ModBlocks.DEEPSLATE_ELDRANITE_ORE)
+                .add(ModBlocks.ELDRANITE_ORE)
         ;
 
         getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.PINK_GARNET_FENCE);

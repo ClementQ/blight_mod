@@ -54,6 +54,12 @@ public class ModItems {
     public static final Item ELDRANITE_INGOT = registerItem("eldranite_ingot", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"eldranite_ingot")))
     ));
+    public static final Item RAW_MYTHRION = registerItem("raw_mythrion", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"raw_mythrion")))
+    ));
+    public static final Item MYTHRION_INGOT = registerItem("mythrion_ingot", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"mythrion_ingot")))
+    ));
 
     //Tools
     public static final Item BLIGHT_SWORD = registerItem("blight_sword", new SwordItem(ModToolMaterials.BLIGHT, 3,-2.4f, new Item.Settings()

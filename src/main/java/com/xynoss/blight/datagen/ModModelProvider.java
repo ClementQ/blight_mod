@@ -41,18 +41,17 @@ public class ModModelProvider extends FabricModelProvider {
 //BLight Models
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_BLIGHT_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLIGHT_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ELDRANITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_ELDRANITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MYTHRION_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_MYTHRION_BLOCK);
 
         //ORES
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BURNING_STONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLIGHT_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_BLIGHT_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_ELDRANITE_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ELDRANITE_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_ELDRANITE_BLOCK);
-
-
-
-
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ELDRANITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_MYTHRION_ORE);
 
 
     }
@@ -65,6 +64,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BURNING_STONE_ASHES, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_ELDRANITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ELDRANITE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_MYTHRION, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MYTHRION_INGOT, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.BLIGHT_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BLIGHT_PICKAXE, Models.HANDHELD);

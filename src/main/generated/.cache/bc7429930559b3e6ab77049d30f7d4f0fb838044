@@ -2,7 +2,7 @@
 2dcea1f24b384e8bc49abef42bffc8da746b07e7 data/blight/tags/block/needs_blight_tool.json
 0c3afe952012c59f8d8c742180f9b3c76fb1b25f data/minecraft/tags/block/fence_gates.json
 17e5fd38c2497aff1bd050941d76c5f23dea7311 data/minecraft/tags/block/fences.json
-1ed350821452c0aa3d6fd7fb346d86ef1cff1243 data/minecraft/tags/block/mineable/pickaxe.json
-826933e8224fe54bbf9d7c9c573ec183767c3ce4 data/minecraft/tags/block/needs_diamond_tool.json
+678c26b16a5f2a95305b881455b736cc9162a9f6 data/minecraft/tags/block/mineable/pickaxe.json
+1fb1184f8a78bd8dab88236bddea24c18719777e data/minecraft/tags/block/needs_diamond_tool.json
 ad8cab974f04da42c60095f0e8e83a73bfd44824 data/minecraft/tags/block/needs_iron_tool.json
 c682f7c33111cefc99c91f39219e0b65f17c80ba data/minecraft/tags/block/walls.json

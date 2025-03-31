@@ -70,9 +70,13 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.BURNING_STONE, createRequiredToolMultipleDrops(ModBlocks.BURNING_STONE, ModItems.BURNING_STONE_ASHES, 1, 3, ModItems.BLIGHT_PICKAXE));
 
-        addDrop(ModBlocks.DEEPSLATE_ELDRANITE_ORE, oreDrops(ModBlocks.DEEPSLATE_ELDRANITE_ORE, ModItems.RAW_ELDRANITE));
+        addDrop(ModBlocks.ELDRANITE_ORE, oreDrops(ModBlocks.ELDRANITE_ORE, ModItems.RAW_ELDRANITE));
         addDrop(ModBlocks.ELDRANITE_BLOCK);
         addDrop(ModBlocks.RAW_ELDRANITE_BLOCK);
+
+        addDrop(ModBlocks.DEEPSLATE_MYTHRION_ORE, oreDrops(ModBlocks.DEEPSLATE_MYTHRION_ORE, ModItems.RAW_MYTHRION));
+        addDrop(ModBlocks.MYTHRION_BLOCK);
+        addDrop(ModBlocks.RAW_MYTHRION_BLOCK);
     }
 
 

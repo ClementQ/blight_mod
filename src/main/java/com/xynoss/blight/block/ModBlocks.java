@@ -145,13 +145,14 @@ public class ModBlocks {
             return stack.isOf(ModItems.BLIGHT_PICKAXE);
         }
     });
-    public static final Block DEEPSLATE_ELDRANITE_ORE = registerBlock("deepslate_eldranite_ore",new ExperienceDroppingBlock(
+    //ELDRANITE
+    public static final Block ELDRANITE_ORE = registerBlock("eldranite_ore",new ExperienceDroppingBlock(
             UniformIntProvider.create(1, 1),
             AbstractBlock.Settings.create().
                     strength(4f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.DEEPSLATE)
-                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"deepslate_eldranite_ore")))
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"eldranite_ore")))
     ));
     public static final Block ELDRANITE_BLOCK = registerBlock("eldranite_block", new Block(AbstractBlock.Settings.create()
             .strength(4f)
@@ -162,6 +163,25 @@ public class ModBlocks {
             .strength(4f)
             .requiresTool()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"raw_eldranite_block")))
+    ));
+    //Mythrion
+    public static final Block DEEPSLATE_MYTHRION_ORE = registerBlock("deepslate_mythrion_ore",new ExperienceDroppingBlock(
+            UniformIntProvider.create(1, 1),
+            AbstractBlock.Settings.create().
+                    strength(4f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.DEEPSLATE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"deepslate_mythrion_ore")))
+    ));
+    public static final Block MYTHRION_BLOCK = registerBlock("mythrion_block", new Block(AbstractBlock.Settings.create()
+            .strength(4f)
+            .requiresTool()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"mythrion_block")))
+    ));
+    public static final Block RAW_MYTHRION_BLOCK = registerBlock("raw_mythrion_block", new Block(AbstractBlock.Settings.create()
+            .strength(4f)
+            .requiresTool()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"raw_mythrion_block")))
     ));
 
 

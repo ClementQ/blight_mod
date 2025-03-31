@@ -15,21 +15,28 @@
 
   //Ores block
   "item.blight.burning_stone" : "Burning Stone",
-  "itemgroup.blight.blight": "Blight",
-  "item.blight.deepslate_eldranite_ore": "Eldranite Ore",
-
-//Block
-  "item.blight.blight_block": "Block of Blight",
-  "item.blight.raw_blight_block" : "Raw Block of Blight",
+  "item.blight.eldranite_ore": "Eldranite Ore",
   "item.blight.blight_ore" : "Blight Ore",
   "item.blight.deepslate_blight_ore" : "Deepslate Blight Ore",
-  "item.blight.raw_eldranite_block" : "Raw Eldranite Ore",
-  "item.blight.eldranite_block" : "Eldranite Ore",
+  "item.blight.deepslate_mythrion_ore": "Deepslate Mythrion Ore",
+
+//Block
+  "item.blight.mythrion_block" : "Block of Mythrion",
+  "item.blight.blight_block": "Block of Blight",
+  "item.blight.eldranite_block" : "Block of Eldranite",
+  "item.blight.raw_mythrion_block" : "Raw Block of Mytrhion",
+  "item.blight.raw_blight_block" : "Raw Block of Blight",
+  "item.blight.raw_eldranite_block" : "Raw Block of Eldranite",
 
 //ITEMS
   "item.blight.burning_stone_ashes": "Burning Stone Ashes",
 
 //TOOLTIPS
+
+//TABS
+  "itemgroup.blight.blight_blocks": "Blight Blocks",
+  "itemgroup.blight.blight_items": "Blight Items",
+  "itemgroup.blight.blight_tools": "Blight Tools",
 
 
 //TUTO
