@@ -47,6 +47,12 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.BLIGHT_HOE)
                 .add(ModItems.BLIGHT_HAMMER);
 
+        getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.BLIGHT_HELMET)
+                .add(ModItems.BLIGHT_CHESTPLPATE)
+                .add(ModItems.BLIGHT_LEGGINGS)
+                .add(ModItems.BLIGHT_BOOTS);
+
 
     }
 }

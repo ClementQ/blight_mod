@@ -7,6 +7,12 @@
   "item.blight.blight_hoe": "Blight Hoe",
   "item.blight.blight_hammer": "Blight Hammer",
 
+//ARMORS
+  "item.blight.blight_helmet": "Blight Helmet",
+  "item.blight.blight_chestplate": "Blight Chestplate",
+  "item.blight.blight_leggings": "Blight Leggings",
+  "item.blight.blight_boots": "Blight Boots",
+
 //ORES
   //Ores Items
   "item.blight.blight_ingot": "Blight Ingot",

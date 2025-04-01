@@ -4,6 +4,8 @@ import com.xynoss.blight.item.custom.HammerItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import com.xynoss.blight.Blight;
 import net.minecraft.item.*;
+import net.minecraft.item.equipment.EquipmentType;
+import net.minecraft.item.equipment.trim.ArmorTrim;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -82,6 +84,23 @@ public class ModItems {
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_hammer")))
     ));
 
+    //ARMORS
+    public static final Item BLIGHT_HELMET = registerItem("blight_helmet", new ArmorItem(ModArmorMaterials.BLIGHT, EquipmentType.HELMET,new Item.Settings()
+            .maxDamage(EquipmentType.HELMET.getMaxDamage(37))
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_helmet")))
+    ));
+    public static final Item BLIGHT_CHESTPLPATE = registerItem("blight_chestplate", new ArmorItem(ModArmorMaterials.BLIGHT, EquipmentType.CHESTPLATE,new Item.Settings()
+            .maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(37))
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_chestplate")))
+    ));
+    public static final Item BLIGHT_LEGGINGS = registerItem("blight_leggings", new ArmorItem(ModArmorMaterials.BLIGHT, EquipmentType.LEGGINGS,new Item.Settings()
+            .maxDamage(EquipmentType.LEGGINGS.getMaxDamage(37))
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_leggings")))
+    ));
+    public static final Item BLIGHT_BOOTS = registerItem("blight_boots", new ArmorItem(ModArmorMaterials.BLIGHT, EquipmentType.BOOTS,new Item.Settings()
+            .maxDamage(EquipmentType.BOOTS.getMaxDamage(37))
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_boots")))
+    ));
 
 
 
