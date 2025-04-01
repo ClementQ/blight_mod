@@ -3,9 +3,11 @@ package com.xynoss.blight.block;
 import com.xynoss.blight.Blight;
 import com.xynoss.blight.block.custom.BurningStone;
 import com.xynoss.blight.block.custom.MagicBlock;
+import com.xynoss.blight.block.custom.OreBlocks;
 import com.xynoss.blight.block.custom.PinkGarnetLampBlock;
 import com.xynoss.blight.item.ModItems;
 import com.xynoss.blight.item.custom.HammerItem;
+import com.xynoss.blight.util.ModTags;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
@@ -166,13 +168,14 @@ public class ModBlocks {
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"raw_eldranite_block")))
     ));
     //Mythrion
-    public static final Block DEEPSLATE_MYTHRION_ORE = registerBlock("deepslate_mythrion_ore",new ExperienceDroppingBlock(
+    public static final Block DEEPSLATE_MYTHRION_ORE = registerBlock("deepslate_mythrion_ore",new OreBlocks(
             UniformIntProvider.create(1, 1),
             AbstractBlock.Settings.create().
                     strength(4f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.DEEPSLATE)
-                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"deepslate_mythrion_ore")))
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"deepslate_mythrion_ore"))),
+            ModTags.Items.BLIGHT_TOOLS
     ));
     public static final Block MYTHRION_BLOCK = registerBlock("mythrion_block", new Block(AbstractBlock.Settings.create()
             .strength(4f)

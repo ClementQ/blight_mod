@@ -1,6 +1,10 @@
 {
   "values": [
     "blight:blight_pickaxe",
+    "blight:blight_sword",
+    "blight:blight_shovel",
+    "blight:blight_axe",
+    "blight:blight_hoe",
     "blight:blight_hammer"
   ]
 }
