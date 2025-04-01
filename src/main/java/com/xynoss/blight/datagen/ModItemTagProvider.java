@@ -40,13 +40,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ModTags.Items.BLIGHT_REPAIR)
                 .add(ModItems.BLIGHT_INGOT);
         getOrCreateTagBuilder(ModTags.Items.BLIGHT_TOOLS)
-                .add(ModItems.BLIGHT_PICKAXE)
-                .add(ModItems.BLIGHT_SWORD)
-                .add(ModItems.BLIGHT_SHOVEL)
-                .add(ModItems.BLIGHT_AXE)
-                .add(ModItems.BLIGHT_HOE)
-                .add(ModItems.BLIGHT_HAMMER);
-
+                .add(ModItems.BLIGHT_PICKAXE);
 
     }
 }

@@ -3,11 +3,8 @@ package com.xynoss.blight.block;
 import com.xynoss.blight.Blight;
 import com.xynoss.blight.block.custom.BurningStone;
 import com.xynoss.blight.block.custom.MagicBlock;
-import com.xynoss.blight.block.custom.OreBlocks;
 import com.xynoss.blight.block.custom.PinkGarnetLampBlock;
 import com.xynoss.blight.item.ModItems;
-import com.xynoss.blight.item.custom.HammerItem;
-import com.xynoss.blight.util.ModTags;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
@@ -118,13 +115,13 @@ public class ModBlocks {
     public static final Block DEEPSLATE_BLIGHT_ORE = registerBlock("deepslate_blight_ore",new ExperienceDroppingBlock(
         UniformIntProvider.create(3, 6),
         AbstractBlock.Settings.create().
-        strength(10f, 1200f)
+        strength(4f)
         .requiresTool()
         .sounds(BlockSoundGroup.DEEPSLATE)
         .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"deepslate_blight_ore")))
     ));
     public static final Block BURNING_STONE = registerBlock("burning_stone", new BurningStone(AbstractBlock.Settings.create()
-            .strength(4)
+            .strength(3f)
             .requiresTool()
             .luminance(state -> 5)
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"burning_stone")))
@@ -135,7 +132,7 @@ public class ModBlocks {
 
             // Vérifier si le joueur utilise un outil en blight
             ItemStack tool = player.getMainHandStack();
-            if (!(tool.getItem() instanceof PickaxeItem) && !(tool.getItem() instanceof HammerItem) || !isBlight(tool)) {
+            if (!(tool.getItem() instanceof PickaxeItem) || !isBlight(tool)) {
                 // Réduire considérablement la vitesse de minage (0.05F = 20 fois plus lent)
                 return original * 0.05F;
             }
@@ -145,7 +142,7 @@ public class ModBlocks {
 
         private boolean isBlight(ItemStack stack) {
             // Vérifier si l'outil est en blight
-            return stack.isOf(ModItems.BLIGHT_PICKAXE) || stack.isOf(ModItems.BLIGHT_HAMMER);
+            return stack.isOf(ModItems.BLIGHT_PICKAXE);
         }
     });
     //ELDRANITE
@@ -168,14 +165,13 @@ public class ModBlocks {
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"raw_eldranite_block")))
     ));
     //Mythrion
-    public static final Block DEEPSLATE_MYTHRION_ORE = registerBlock("deepslate_mythrion_ore",new OreBlocks(
+    public static final Block DEEPSLATE_MYTHRION_ORE = registerBlock("deepslate_mythrion_ore",new ExperienceDroppingBlock(
             UniformIntProvider.create(1, 1),
             AbstractBlock.Settings.create().
                     strength(4f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.DEEPSLATE)
-                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"deepslate_mythrion_ore"))),
-            ModTags.Items.BLIGHT_TOOLS
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"deepslate_mythrion_ore")))
     ));
     public static final Block MYTHRION_BLOCK = registerBlock("mythrion_block", new Block(AbstractBlock.Settings.create()
             .strength(4f)
