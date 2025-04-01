@@ -1,5 +1,5 @@
 // 1.21.4	-999999999-01-01T00:00:00	Blight/Tags for minecraft:block
-6b14383b152a4df21ddf33eb93448e7e95b83360 data/blight/tags/block/needs_blight_tool.json
+2dcea1f24b384e8bc49abef42bffc8da746b07e7 data/blight/tags/block/needs_blight_tool.json
 0c3afe952012c59f8d8c742180f9b3c76fb1b25f data/minecraft/tags/block/fence_gates.json
 17e5fd38c2497aff1bd050941d76c5f23dea7311 data/minecraft/tags/block/fences.json
 678c26b16a5f2a95305b881455b736cc9162a9f6 data/minecraft/tags/block/mineable/pickaxe.json
