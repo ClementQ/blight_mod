@@ -12,6 +12,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
@@ -102,7 +104,12 @@ public class ModItems {
             .maxDamage(EquipmentType.BOOTS.getMaxDamage(37))
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_boots")))
     ));
-
+    public static final Item BLIGHT_HORSE_ARMOR = registerItem("blight_horse_armor",
+            new AnimalArmorItem(ModArmorMaterials.BLIGHT, AnimalArmorItem.Type.EQUESTRIAN, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, false,
+                    new Item.Settings()
+                            .maxCount(1)
+                            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_horse_armor")))
+            ));
 
 
 
