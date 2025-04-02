@@ -4,6 +4,7 @@ import com.xynoss.blight.Blight;
 import com.xynoss.blight.block.ModBlocks;
 import com.xynoss.blight.block.custom.PinkGarnetLampBlock;
 import com.xynoss.blight.item.ModItems;
+import com.xynoss.blight.item.equipment.ModEquipmentAssetKeys;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.client.data.*;
@@ -80,10 +81,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BLIGHT_HAMMER, Models.HANDHELD);
 
         //ARMORS
-        itemModelGenerator.registerArmor(ModItems.BLIGHT_HELMET, RegistryKey.of(RegistryKey.ofRegistry(Identifier.ofVanilla("equipment_asset")), Identifier.of(Blight.MOD_ID, "blight")), "helmet", false);
-        itemModelGenerator.registerArmor(ModItems.BLIGHT_CHESTPLPATE, RegistryKey.of(RegistryKey.ofRegistry(Identifier.ofVanilla("equipment_asset")), Identifier.of(Blight.MOD_ID, "blight")), "chestplate", false);
-        itemModelGenerator.registerArmor(ModItems.BLIGHT_LEGGINGS, RegistryKey.of(RegistryKey.ofRegistry(Identifier.ofVanilla("equipment_asset")), Identifier.of(Blight.MOD_ID, "blight")), "leggings", false);
-        itemModelGenerator.registerArmor(ModItems.BLIGHT_BOOTS, RegistryKey.of(RegistryKey.ofRegistry(Identifier.ofVanilla("equipment_asset")), Identifier.of(Blight.MOD_ID, "blight")), "boots", false);
+        itemModelGenerator.registerArmor(ModItems.BLIGHT_HELMET, ModEquipmentAssetKeys.BLIGHT,"helmet", false);
+        itemModelGenerator.registerArmor(ModItems.BLIGHT_CHESTPLPATE, ModEquipmentAssetKeys.BLIGHT,"chestplate", false);
+        itemModelGenerator.registerArmor(ModItems.BLIGHT_LEGGINGS, ModEquipmentAssetKeys.BLIGHT,"leggings", false);
+        itemModelGenerator.registerArmor(ModItems.BLIGHT_BOOTS, ModEquipmentAssetKeys.BLIGHT,"boots", false);
+        itemModelGenerator.register(ModItems.BLIGHT_HORSE_ARMOR, Models.GENERATED);
 
 //Tuto Items
         itemModelGenerator.register(ModItems.CHISEL_ITEM, Models.GENERATED);

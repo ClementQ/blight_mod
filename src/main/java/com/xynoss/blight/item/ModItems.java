@@ -1,6 +1,7 @@
 package com.xynoss.blight.item;
 import com.xynoss.blight.item.custom.ChiselItem;
 import com.xynoss.blight.item.custom.HammerItem;
+import com.xynoss.blight.item.custom.ModArmorItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import com.xynoss.blight.Blight;
 import net.minecraft.item.*;
@@ -11,6 +12,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
@@ -85,23 +88,28 @@ public class ModItems {
     ));
 
     //ARMORS
-    public static final Item BLIGHT_HELMET = registerItem("blight_helmet", new ArmorItem(ModArmorMaterials.BLIGHT, EquipmentType.HELMET,new Item.Settings()
+    public static final Item BLIGHT_HELMET = registerItem("blight_helmet", new ModArmorItem(ModArmorMaterials.BLIGHT, EquipmentType.HELMET,new Item.Settings()
             .maxDamage(EquipmentType.HELMET.getMaxDamage(37))
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_helmet")))
     ));
-    public static final Item BLIGHT_CHESTPLPATE = registerItem("blight_chestplate", new ArmorItem(ModArmorMaterials.BLIGHT, EquipmentType.CHESTPLATE,new Item.Settings()
+    public static final Item BLIGHT_CHESTPLPATE = registerItem("blight_chestplate", new ModArmorItem(ModArmorMaterials.BLIGHT, EquipmentType.CHESTPLATE,new Item.Settings()
             .maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(37))
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_chestplate")))
     ));
-    public static final Item BLIGHT_LEGGINGS = registerItem("blight_leggings", new ArmorItem(ModArmorMaterials.BLIGHT, EquipmentType.LEGGINGS,new Item.Settings()
+    public static final Item BLIGHT_LEGGINGS = registerItem("blight_leggings", new ModArmorItem(ModArmorMaterials.BLIGHT, EquipmentType.LEGGINGS,new Item.Settings()
             .maxDamage(EquipmentType.LEGGINGS.getMaxDamage(37))
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_leggings")))
     ));
-    public static final Item BLIGHT_BOOTS = registerItem("blight_boots", new ArmorItem(ModArmorMaterials.BLIGHT, EquipmentType.BOOTS,new Item.Settings()
+    public static final Item BLIGHT_BOOTS = registerItem("blight_boots", new ModArmorItem(ModArmorMaterials.BLIGHT, EquipmentType.BOOTS,new Item.Settings()
             .maxDamage(EquipmentType.BOOTS.getMaxDamage(37))
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_boots")))
     ));
-
+    public static final Item BLIGHT_HORSE_ARMOR = registerItem("blight_horse_armor",
+            new AnimalArmorItem(ModArmorMaterials.BLIGHT, AnimalArmorItem.Type.EQUESTRIAN, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, false,
+                    new Item.Settings()
+                            .maxCount(1)
+                            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_horse_armor")))
+            ));
 
 
 

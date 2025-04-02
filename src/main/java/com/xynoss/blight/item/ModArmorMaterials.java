@@ -1,6 +1,7 @@
 package com.xynoss.blight.item;
 
 import com.xynoss.blight.Blight;
+import com.xynoss.blight.item.equipment.ModEquipmentAssetKeys;
 import com.xynoss.blight.util.ModTags;
 import net.minecraft.item.equipment.*;
 import net.minecraft.registry.RegistryKey;
@@ -17,5 +18,5 @@ public class ModArmorMaterials implements ArmorMaterials {
         map.put(EquipmentType.CHESTPLATE, 6);
         map.put(EquipmentType.HELMET, 2);
         map.put(EquipmentType.BODY, 4);
-    }), 15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 5.0F, 3.0F, ModTags.Items.BLIGHT_REPAIR, RegistryKey.of(RegistryKey.ofRegistry(Identifier.ofVanilla("equipment_asset")), Identifier.of(Blight.MOD_ID, "blight")));
+    }), 15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 5.0F, 3.0F, ModTags.Items.BLIGHT_REPAIR, ModEquipmentAssetKeys.BLIGHT);
 }
