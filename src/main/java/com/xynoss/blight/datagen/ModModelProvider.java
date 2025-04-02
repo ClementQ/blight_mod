@@ -86,7 +86,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(ModItems.BLIGHT_LEGGINGS, ModEquipmentAssetKeys.BLIGHT,"leggings", false);
         itemModelGenerator.registerArmor(ModItems.BLIGHT_BOOTS, ModEquipmentAssetKeys.BLIGHT,"boots", false);
         itemModelGenerator.register(ModItems.BLIGHT_HORSE_ARMOR, Models.GENERATED);
-        itemModelGenerator.registerWithTintedOverlay();
 
 //Tuto Items
         itemModelGenerator.register(ModItems.CHISEL_ITEM, Models.GENERATED);
