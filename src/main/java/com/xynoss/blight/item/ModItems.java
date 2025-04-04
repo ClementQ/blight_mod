@@ -12,11 +12,14 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.resource.featuretoggle.FeatureFlag;
+import net.minecraft.resource.featuretoggle.FeatureFlags;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
+import java.awt.*;
 import java.util.List;
 
 public class ModItems {
@@ -111,7 +114,8 @@ public class ModItems {
                             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_horse_armor")))
             ));
 
-
+    public static final Item FARFARAWAY_SMITHING_TEMPLATE = registerItem("farfaraway_armor_trim_smithing_template",
+            SmithingTemplateItem.of(new Item.Settings().Identifier.of(Blight.MOD_ID, "farfaraway"));
 
 
 
