@@ -1,11 +1,14 @@
 package com.xynoss.blight.datagen;
 
+import com.xynoss.blight.Blight;
 import com.xynoss.blight.block.ModBlocks;
 import com.xynoss.blight.block.custom.PinkGarnetLampBlock;
 import com.xynoss.blight.item.ModItems;
+import com.xynoss.blight.item.equipment.ModEquipmentAssetKeys;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.client.data.*;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -54,6 +57,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_MYTHRION_ORE);
 
 
+
+
+
     }
 
     @Override
@@ -72,6 +78,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BLIGHT_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BLIGHT_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BLIGHT_HOE, Models.HANDHELD);
+
+        //ARMORS
+        itemModelGenerator.registerArmor(ModItems.BLIGHT_HELMET, ModEquipmentAssetKeys.BLIGHT,"helmet", false);
+        itemModelGenerator.registerArmor(ModItems.BLIGHT_CHESTPLPATE, ModEquipmentAssetKeys.BLIGHT,"chestplate", false);
+        itemModelGenerator.registerArmor(ModItems.BLIGHT_LEGGINGS, ModEquipmentAssetKeys.BLIGHT,"leggings", false);
+        itemModelGenerator.registerArmor(ModItems.BLIGHT_BOOTS, ModEquipmentAssetKeys.BLIGHT,"boots", false);
+        itemModelGenerator.register(ModItems.BLIGHT_HORSE_ARMOR, Models.GENERATED);
 
 //Tuto Items
         itemModelGenerator.register(ModItems.CHISEL_ITEM, Models.GENERATED);

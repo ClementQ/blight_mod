@@ -101,6 +101,11 @@ public class ModItemGroups {
                         entries.add(ModItems.BLIGHT_AXE);
                         entries.add(ModItems.BLIGHT_HOE);
 
+                        entries.add(ModItems.BLIGHT_HELMET);
+                        entries.add(ModItems.BLIGHT_CHESTPLPATE);
+                        entries.add(ModItems.BLIGHT_LEGGINGS);
+                        entries.add(ModItems.BLIGHT_BOOTS);
+
                     })
                     .build());
 

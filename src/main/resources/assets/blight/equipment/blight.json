@@ -1,0 +1,19 @@
+{
+  "layers": {
+    "horse_body": [
+      {
+        "texture": "blight:blight"
+      }
+    ],
+    "humanoid": [
+      {
+        "texture": "blight:blight"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "blight:blight"
+      }
+    ]
+  }
+}

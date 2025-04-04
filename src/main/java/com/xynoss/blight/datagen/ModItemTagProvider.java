@@ -40,7 +40,25 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ModTags.Items.BLIGHT_REPAIR)
                 .add(ModItems.BLIGHT_INGOT);
         getOrCreateTagBuilder(ModTags.Items.BLIGHT_TOOLS)
-                .add(ModItems.BLIGHT_PICKAXE);
+                .add(ModItems.BLIGHT_PICKAXE)
+                .add(ModItems.BLIGHT_SWORD)
+                .add(ModItems.BLIGHT_SHOVEL)
+                .add(ModItems.BLIGHT_AXE)
+                .add(ModItems.BLIGHT_HOE)
+                .add(ModItems.BLIGHT_HAMMER);
+
+        getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.BLIGHT_HELMET)
+                .add(ModItems.BLIGHT_CHESTPLPATE)
+                .add(ModItems.BLIGHT_LEGGINGS)
+                .add(ModItems.BLIGHT_BOOTS);
+
+        getOrCreateTagBuilder(ModTags.Items.BLIGHT_ARMOR)
+                .add(ModItems.BLIGHT_HELMET)
+                .add(ModItems.BLIGHT_CHESTPLPATE)
+                .add(ModItems.BLIGHT_LEGGINGS)
+                .add(ModItems.BLIGHT_BOOTS);
+
 
     }
 }

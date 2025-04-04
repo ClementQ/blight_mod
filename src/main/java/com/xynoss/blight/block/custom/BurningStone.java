@@ -6,6 +6,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.particle.ParticleTypes;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
@@ -22,11 +23,11 @@ public class BurningStone extends Block {
 
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
-        if (!entity.bypassesSteppingEffects() && entity instanceof LivingEntity) {
-            entity.serverDamage(world.getDamageSources().hotFloor(), 1.0F);
+        if (!entity.bypassesSteppingEffects() && entity instanceof LivingEntity livingEntity) {
+            if (world instanceof ServerWorld serverWorld) {
+                livingEntity.damage(serverWorld, serverWorld.getDamageSources().hotFloor(), 1.0F);
+            }
         }
-
-        super.onSteppedOn(world, pos, state, entity);
     }
 
     @Override
