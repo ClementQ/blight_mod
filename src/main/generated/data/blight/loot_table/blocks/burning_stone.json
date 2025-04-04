@@ -7,7 +7,7 @@
         {
           "condition": "minecraft:match_tool",
           "predicate": {
-            "items": "blight:blight_pickaxe"
+            "items": "#blight:blight_tools"
           }
         },
         {
@@ -40,7 +40,7 @@
         {
           "condition": "minecraft:match_tool",
           "predicate": {
-            "items": "blight:blight_pickaxe"
+            "items": "#blight:blight_tools"
           }
         },
         {

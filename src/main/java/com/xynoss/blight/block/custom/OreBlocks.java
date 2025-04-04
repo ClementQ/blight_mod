@@ -21,6 +21,7 @@ public class OreBlocks extends ExperienceDroppingBlock {
         this.neededTool = neededTool;
     }
 
+    // function de detection
     @Override
     public float calcBlockBreakingDelta(BlockState state, PlayerEntity player, BlockView world, BlockPos pos) {
         float original = super.calcBlockBreakingDelta(state, player, world, pos);
@@ -33,4 +34,5 @@ public class OreBlocks extends ExperienceDroppingBlock {
         }
         return original;
     }
+
 }

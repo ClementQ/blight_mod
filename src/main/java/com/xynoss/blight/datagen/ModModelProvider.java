@@ -78,6 +78,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BLIGHT_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BLIGHT_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BLIGHT_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BLIGHT_HAMMER, Models.HANDHELD);
 
         //ARMORS
         itemModelGenerator.registerArmor(ModItems.BLIGHT_HELMET, ModEquipmentAssetKeys.BLIGHT,"helmet", false);
