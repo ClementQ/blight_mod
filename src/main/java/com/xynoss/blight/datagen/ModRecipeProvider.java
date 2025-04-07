@@ -14,13 +14,14 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.ShapedRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
-import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.*;
 import net.minecraft.util.Identifier;
 
 import javax.tools.Tool;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
+import static net.minecraft.command.argument.RegistryKeyArgumentType.registryKey;
 import static net.minecraft.data.recipe.RecipeGenerator.hasItem;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
@@ -67,7 +68,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input(ModBlocks.MAGIC_BLOCK)
                         .criterion(hasItem(ModBlocks.MAGIC_BLOCK), conditionsFromItem(ModBlocks.MAGIC_BLOCK))
                         .offerTo(exporter, "raw_pink_garnet_from_magic_block");
-
 
             }
 

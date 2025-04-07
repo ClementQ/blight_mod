@@ -6,9 +6,11 @@ import com.xynoss.blight.component.ModDataComponentTypes;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.world.ClientWorld;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.LoreComponent;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
@@ -21,6 +23,7 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.Map;
@@ -53,6 +56,15 @@ public class ChiselItem extends Item {
                 world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
 
                 context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
+
+                if (context.getStack().get(ModDataComponentTypes.COORDINATES) != null) {
+                    // Assigner une valeur à la propriété CHISEL_USED avec un comportement booléen
+                    ModDataComponentTypes.CHISEL_USED = (stack, entity, seed, modelTransformationMode) -> {
+                        // Vérifie si l'ItemStack a la donnée "COORDINATES", retourne true si oui, false sinon
+                        return stack.get(ModDataComponentTypes.COORDINATES) != null;
+                    };
+                }
+
             }
         }
 
@@ -69,6 +81,7 @@ public class ChiselItem extends Item {
 
         if (stack.get(ModDataComponentTypes.COORDINATES) != null){
             tooltip.add(Text.literal("Last block changed at " + stack.get(ModDataComponentTypes.COORDINATES)));
+            tooltip.add(Text.literal("Used " + stack.get(ModDataComponentTypes.CHISEL_USED)));
         }
 
         super.appendTooltip(stack, context, tooltip, type);

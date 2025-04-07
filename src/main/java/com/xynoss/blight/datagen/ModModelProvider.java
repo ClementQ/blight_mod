@@ -3,11 +3,15 @@ package com.xynoss.blight.datagen;
 import com.xynoss.blight.Blight;
 import com.xynoss.blight.block.ModBlocks;
 import com.xynoss.blight.block.custom.PinkGarnetLampBlock;
+import com.xynoss.blight.component.ModDataComponentTypes;
 import com.xynoss.blight.item.ModItems;
 import com.xynoss.blight.item.equipment.ModEquipmentAssetKeys;
+import com.xynoss.blight.util.ModModelPredicates;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.client.data.*;
+import net.minecraft.client.render.item.model.ItemModel;
+import net.minecraft.client.render.item.property.bool.BooleanProperty;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 
@@ -88,7 +92,17 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BLIGHT_HORSE_ARMOR, Models.GENERATED);
 
 //Tuto Items
-        itemModelGenerator.register(ModItems.CHISEL_ITEM, Models.GENERATED);
+        //itemModelGenerator.register(ModItems.CHISEL_ITEM, Models.GENERATED);
+        itemModelGenerator.registerCondition(ModItems.CHISEL_ITEM,
+//                ItemModels.hasComponentProperty(ModDataComponentTypes.CHISEL_USED),
+//                ItemModels.basic(itemModelGenerator.registerSubModel(ModItems.CHISEL_ITEM, "_used", Models.GENERATED)),
+//                ItemModels.basic(ModelIds.getItemModelId(ModItems.CHISEL_ITEM))
+//        );
+//
+
+        itemModelGenerator.output.accept(ModItems.CHISEL_ITEM, ItemModels.condition(, ItemModels.basic(itemModelGenerator.registerSubModel(ModItems.CHISEL_ITEM, "_used", Models.GENERATED)),ItemModels.basic(ModelIds.getItemModelId(ModItems.CHISEL_ITEM)))));
+
+
         itemModelGenerator.register(ModItems.CAULIFLOWER, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_PINK_GARNET, Models.GENERATED);
         itemModelGenerator.register(ModItems.PINK_GARNET, Models.GENERATED);

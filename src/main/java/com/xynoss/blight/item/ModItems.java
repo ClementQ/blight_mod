@@ -18,6 +18,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 
 import java.awt.*;
 import java.util.List;
@@ -113,9 +114,6 @@ public class ModItems {
                             .maxCount(1)
                             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_horse_armor")))
             ));
-
-    public static final Item FARFARAWAY_SMITHING_TEMPLATE = registerItem("farfaraway_armor_trim_smithing_template",
-            SmithingTemplateItem.of(new Item.Settings().Identifier.of(Blight.MOD_ID, "farfaraway"));
 
 
 
