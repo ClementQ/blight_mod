@@ -12,6 +12,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.client.data.*;
 import net.minecraft.client.render.item.model.ItemModel;
 import net.minecraft.client.render.item.property.bool.BooleanProperty;
+import net.minecraft.component.DataComponentTypes;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 
@@ -93,14 +94,20 @@ public class ModModelProvider extends FabricModelProvider {
 
 //Tuto Items
         //itemModelGenerator.register(ModItems.CHISEL_ITEM, Models.GENERATED);
-        itemModelGenerator.registerCondition(ModItems.CHISEL_ITEM,
+//        itemModelGenerator.registerCondition(ModItems.CHISEL_ITEM,
 //                ItemModels.hasComponentProperty(ModDataComponentTypes.CHISEL_USED),
 //                ItemModels.basic(itemModelGenerator.registerSubModel(ModItems.CHISEL_ITEM, "_used", Models.GENERATED)),
 //                ItemModels.basic(ModelIds.getItemModelId(ModItems.CHISEL_ITEM))
 //        );
 //
 
-        itemModelGenerator.output.accept(ModItems.CHISEL_ITEM, ItemModels.condition(, ItemModels.basic(itemModelGenerator.registerSubModel(ModItems.CHISEL_ITEM, "_used", Models.GENERATED)),ItemModels.basic(ModelIds.getItemModelId(ModItems.CHISEL_ITEM)))));
+
+        itemModelGenerator.output.accept(ModItems.CHISEL_ITEM,
+                ItemModels.condition(ItemModels.hasComponentProperty(ModDataComponentTypes.CHISEL_USED),
+                        ItemModels.basic(itemModelGenerator.registerSubModel(ModItems.CHISEL_ITEM, "_used", Models.GENERATED)),
+                        ItemModels.basic(ModelIds.getItemModelId(ModItems.CHISEL_ITEM))
+                )
+        );
 
 
         itemModelGenerator.register(ModItems.CAULIFLOWER, Models.GENERATED);
