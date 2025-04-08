@@ -90,6 +90,10 @@ public class ModItems {
     public static final Item BLIGHT_HAMMER = registerItem("blight_hammer", new HammerItem(ModToolMaterials.BLIGHT, 7,-3.4f, new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_hammer")))
     ));
+    public static final Item BLIGHT_BOW = registerItem("blight_bow", new BowItem(new Item.Settings()
+            .maxDamage(500)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_bow")))
+    ));
 
     //ARMORS
     public static final Item BLIGHT_HELMET = registerItem("blight_helmet", new ModArmorItem(ModArmorMaterials.BLIGHT, EquipmentType.HELMET,new Item.Settings()

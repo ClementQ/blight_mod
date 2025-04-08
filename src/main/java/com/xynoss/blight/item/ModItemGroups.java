@@ -101,6 +101,7 @@ public class ModItemGroups {
                         entries.add(ModItems.BLIGHT_AXE);
                         entries.add(ModItems.BLIGHT_HOE);
                         entries.add(ModItems.BLIGHT_HAMMER);
+                        entries.add(ModItems.BLIGHT_BOW);
 
                         entries.add(ModItems.BLIGHT_HELMET);
                         entries.add(ModItems.BLIGHT_CHESTPLPATE);
