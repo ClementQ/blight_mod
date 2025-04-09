@@ -38,7 +38,4 @@ public class ModItemModelGenerator {
         ItemModel.Unbaked unbaked4 = ItemModels.basic(this.ModRegisterSubModel(item, "_pulling_2", Models.BOW));
         this.output.accept(item, ItemModels.condition(ItemModels.usingItemProperty(), ItemModels.rangeDispatch(new UseDurationProperty(false), 0.05F, unbaked2, new RangeDispatchItemModel.Entry[]{ItemModels.rangeDispatchEntry(unbaked3, 0.65F), ItemModels.rangeDispatchEntry(unbaked4, 0.9F)}), unbaked));
     }
-    public void ModRegister(){
-        this.ModRegisterBow(ModItems.BLIGHT_BOW);
-    }
 }

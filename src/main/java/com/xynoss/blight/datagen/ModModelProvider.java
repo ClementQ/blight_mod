@@ -68,6 +68,10 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+
+        ModItemModelGenerator custom = new ModItemModelGenerator(itemModelGenerator.output, itemModelGenerator.modelCollector);
+
+
 //Blight Items
         itemModelGenerator.register(ModItems.RAW_BLIGHT, Models.GENERATED);
         itemModelGenerator.register(ModItems.BLIGHT_INGOT, Models.GENERATED);
@@ -83,9 +87,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BLIGHT_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BLIGHT_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BLIGHT_HAMMER, Models.HANDHELD);
-        itemModelGenerator.registerBow(ModItems.BLIGHT_BOW);
-
-
+        custom.ModRegisterBow(ModItems.BLIGHT_BOW);
 
         //ARMORS
         itemModelGenerator.registerArmor(ModItems.BLIGHT_HELMET, ModEquipmentAssetKeys.BLIGHT,"helmet", false);
