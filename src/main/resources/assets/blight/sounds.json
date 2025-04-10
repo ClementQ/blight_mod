@@ -1,0 +1,38 @@
+{
+  "chisel_use": {
+    "subtitle": "sounds.blight.chisel_use",
+    "sounds": [
+      "blight:chisel_use"
+    ]
+  },
+  "magic_block_break": {
+    "subtitle": "sounds.blight.magic_block_break",
+    "sounds": [
+      "blight:magic_block_break"
+    ]
+  },
+  "magic_block_step": {
+    "subtitle": "sounds.blight.magic_block_step",
+    "sounds": [
+      "blight:magic_block_step"
+    ]
+  },
+  "magic_block_place": {
+    "subtitle": "sounds.blight.magic_block_place",
+    "sounds": [
+      "blight:magic_block_place"
+    ]
+  },
+  "magic_block_hit": {
+    "subtitle": "sounds.blight.magic_block_hit",
+    "sounds": [
+      "blight:magic_block_hit"
+    ]
+  },
+  "magic_block_fall": {
+    "subtitle": "sounds.blight.magic_block_fall",
+    "sounds": [
+      "blight:magic_block_fall"
+    ]
+  }
+}

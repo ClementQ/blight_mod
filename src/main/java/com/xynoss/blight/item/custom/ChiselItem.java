@@ -4,6 +4,7 @@ package com.xynoss.blight.item.custom;
 import com.xynoss.blight.block.ModBlocks;
 import com.xynoss.blight.component.ModDataComponentTypes;
 import com.xynoss.blight.item.ModItems;
+import com.xynoss.blight.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -54,7 +55,7 @@ public class ChiselItem extends Item {
                 context.getStack().damage(1, ((ServerWorld) world), ((ServerPlayerEntity) context.getPlayer()),
                         item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
 
-                world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
+                world.playSound(null, context.getBlockPos(), ModSounds.CHISEL_USED, SoundCategory.BLOCKS);
 
                 context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
                 context.getStack().set(ModDataComponentTypes.CHISEL_USED, true);

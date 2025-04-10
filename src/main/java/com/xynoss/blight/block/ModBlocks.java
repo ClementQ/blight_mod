@@ -7,25 +7,21 @@ import com.xynoss.blight.block.custom.OreBlocks;
 import com.xynoss.blight.block.custom.PinkGarnetLampBlock;
 import com.xynoss.blight.item.ModItems;
 import com.xynoss.blight.item.custom.HammerItem;
+import com.xynoss.blight.sound.ModSounds;
 import com.xynoss.blight.util.ModTags;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
-import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
-import net.minecraft.registry.tag.TagKey;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.BlockView;
-
-import java.util.List;
 
 
 public class ModBlocks {
@@ -45,6 +41,7 @@ public class ModBlocks {
     public static final Block MAGIC_BLOCK = registerBlock("magic_block", new MagicBlock(AbstractBlock.Settings.create()
         .strength(1f)
         .requiresTool()
+            .sounds(ModSounds.MAGIC_BLOCK_SOUND)
         .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"magic_block")))
     ));
 
