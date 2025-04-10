@@ -34,5 +34,13 @@
     "sounds": [
       "blight:magic_block_fall"
     ]
+  },
+  "arise": {
+    "sounds": [
+      {
+        "name": "blight:arise",
+        "stream": true
+      }
+    ]
   }
 }

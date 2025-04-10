@@ -2,6 +2,7 @@ package com.xynoss.blight.item;
 import com.xynoss.blight.item.custom.ChiselItem;
 import com.xynoss.blight.item.custom.HammerItem;
 import com.xynoss.blight.item.custom.ModArmorItem;
+import com.xynoss.blight.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import com.xynoss.blight.Blight;
 import net.minecraft.item.*;
@@ -69,6 +70,13 @@ public class ModItems {
     ));
     public static final Item MYTHRION_INGOT = registerItem("mythrion_ingot", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"mythrion_ingot")))
+    ));
+
+    //MUSIC
+    public static final Item ARISE_MUSIC_DISC = registerItem("arise_music_disc", new Item(new Item.Settings()
+            .jukeboxPlayable(ModSounds.ARISE_KEY)
+            .maxCount(1)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"arise_music_disc")))
     ));
 
     //Tools
