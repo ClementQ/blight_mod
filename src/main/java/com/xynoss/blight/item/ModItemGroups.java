@@ -87,6 +87,7 @@ public class ModItemGroups {
                         entries.add(ModItems.ELDRANITE_INGOT);
                         entries.add(ModItems.RAW_MYTHRION);
                         entries.add(ModItems.MYTHRION_INGOT);
+                        entries.add(ModItems.MUSIC_DISC_ARISE);
 
                     })
                     .build());

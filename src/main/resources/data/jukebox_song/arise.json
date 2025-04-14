@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.blight.music_disc_arise.desc"
+  },
+  "length_in_seconds": 144,
+  "sound_event": "blight:records/music_disc_arise"
+}

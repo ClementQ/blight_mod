@@ -22,7 +22,7 @@ public class ModRegisterEvents {
         AttackEntityCallback.EVENT.register((player, world, hand, entity, hitResult) -> {
             if (player.getMainHandStack().getItem() == Items.END_ROD && !world.isClient){
                 if (entity instanceof SheepEntity sheepEntity){
-                    player.sendMessage(Text.literal("UI"), false);
+                    player.sendMessage(Text.literal("Vil"), false);
                     sheepEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, 40, 6));
                 }
                 return ActionResult.PASS;

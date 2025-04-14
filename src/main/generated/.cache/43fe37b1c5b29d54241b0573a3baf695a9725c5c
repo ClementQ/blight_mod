@@ -48,6 +48,7 @@ f505c544223f1fc743faa92fb818799e3f14b3c4 assets/blight/items/eldranite_block.jso
 143f634fdd83461010e86fcc289f64effcb69a23 assets/blight/items/eldranite_ingot.json
 12ddefcb30e6ded6a41351abc8617e5ffbb87e49 assets/blight/items/eldranite_ore.json
 d73f1f1f0df2c5e0834a045f7afae75af0f60222 assets/blight/items/magic_block.json
+812cb0148e7469abb4b793878e5058dd6c9ffedd assets/blight/items/music_disc_arise.json
 622ca4f1d74d4fb63769df589392a38b2eef9f98 assets/blight/items/mythrion_block.json
 3882f956d6b2d3f9a5b6967870e340a73684a00c assets/blight/items/mythrion_ingot.json
 3240c3d08a2bdc030c985cf68a9a0e3ee0ffb412 assets/blight/items/pink_garnet.json
@@ -183,6 +184,7 @@ ad94619097fc579835acd03fc32df10b7057c4e1 assets/blight/models/item/blight_sword.
 7a3f51b4709fbed0d470103fd424de153bcad769 assets/blight/models/item/chisel.json
 8defc3533b6aaa2eb59567205bccd3a8ab31502c assets/blight/models/item/chisel_used.json
 79dca1a24147cf5204b93c94bd9e04e5b180b68b assets/blight/models/item/eldranite_ingot.json
+34adae33ed40671160e013b12dda48fa941e7e50 assets/blight/models/item/music_disc_arise.json
 8707b2dc67326c30b13cf8ddac68ab8b3e248192 assets/blight/models/item/mythrion_ingot.json
 53ad40861fc9c97ac19054ec01115048c226790d assets/blight/models/item/pink_garnet.json
 61e4d7f1eaddc01a3a8c5a1fc0d1265f55b71615 assets/blight/models/item/pink_garnet_door.json
