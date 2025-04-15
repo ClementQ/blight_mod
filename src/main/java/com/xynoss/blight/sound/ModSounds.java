@@ -6,9 +6,13 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvent;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+
+import static net.minecraft.registry.Registry.registerReference;
 
 public class ModSounds {
     public static final SoundEvent CHISEL_USED = registerSoundEvent("chisel_use");
@@ -22,10 +26,10 @@ public class ModSounds {
     public static final BlockSoundGroup MAGIC_BLOCK_SOUND = new BlockSoundGroup(1f,1f,
             MAGIC_BLOCK_BREAK,MAGIC_BLOCK_STEP,MAGIC_BLOCK_PLACE,MAGIC_BLOCK_HIT,MAGIC_BLOCK_FALL);
 
-    //MUSIC
+    //music disc
     public static final SoundEvent ARISE = registerSoundEvent("arise");
-    public static final RegistryKey<JukeboxSong> ARISE_KEY =
-            RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(Blight.MOD_ID, "arise"));
+    public static final RegistryKey<JukeboxSong> ARISE_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(Blight.MOD_ID, "arise"));
+
 
 
     private static SoundEvent registerSoundEvent(String name){
@@ -34,6 +38,7 @@ public class ModSounds {
     }
 
     public static void registerSounds(){
+
         Blight.LOGGER.info("Registering Mod Sounds for " + Blight.MOD_ID);
     }
 }

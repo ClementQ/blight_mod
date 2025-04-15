@@ -71,6 +71,11 @@ public class ModItems {
     public static final Item MYTHRION_INGOT = registerItem("mythrion_ingot", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"mythrion_ingot")))
     ));
+    public static final Item MUSIC_DISC_ARISE = registerItem("music_disc_arise", new Item(new Item.Settings()
+            .jukeboxPlayable(ModSounds.ARISE_KEY)
+            .maxCount(1)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"music_disc_arise")))
+    ));
 
     //MUSIC
     public static final Item ARISE_MUSIC_DISC = registerItem("arise_music_disc", new Item(new Item.Settings()

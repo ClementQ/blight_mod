@@ -80,7 +80,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ELDRANITE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_MYTHRION, Models.GENERATED);
         itemModelGenerator.register(ModItems.MYTHRION_INGOT, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ARISE_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MUSIC_DISC_ARISE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.BLIGHT_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BLIGHT_PICKAXE, Models.HANDHELD);
