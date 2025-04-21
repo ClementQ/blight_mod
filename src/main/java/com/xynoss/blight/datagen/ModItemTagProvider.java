@@ -4,6 +4,7 @@ import com.xynoss.blight.item.ModItems;
 import com.xynoss.blight.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
@@ -76,6 +77,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.BLIGHT_CHESTPLPATE)
                 .add(ModItems.BLIGHT_LEGGINGS)
                 .add(ModItems.BLIGHT_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.WOOL_CARPETS)
+                .add(ModItems.MUSIC_DISC_ARISE);
 
 
     }
