@@ -7,21 +7,15 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import com.xynoss.blight.Blight;
 import net.minecraft.item.*;
 import net.minecraft.item.equipment.EquipmentType;
-import net.minecraft.item.equipment.trim.ArmorTrim;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
-import net.minecraft.resource.featuretoggle.FeatureFlag;
-import net.minecraft.resource.featuretoggle.FeatureFlags;
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.Rarity;
 
-import java.awt.*;
 import java.util.List;
 
 public class ModItems {
@@ -78,7 +72,7 @@ public class ModItems {
     ));
 
     //Tools
-    public static final Item BLIGHT_SWORD = registerItem("blight_sword", new SwordItem(ModToolMaterials.BLIGHT, 3,-2.4f, new Item.Settings()
+    public static final Item BLIGHT_SWORD = registerItem("blight_sword", new SwordItem(ModToolMaterials.BLIGHT, 40,-2.4f, new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_sword")))
     ));
     public static final Item BLIGHT_PICKAXE = registerItem("blight_pickaxe", new PickaxeItem(ModToolMaterials.BLIGHT, 1,-2.8f, new Item.Settings()
@@ -100,6 +94,28 @@ public class ModItems {
             .maxDamage(500)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_bow")))
     ));
+
+
+    //MYTHRION
+    public static final Item MYTHRION_SWORD = registerItem("mythrion_sword", new SwordItem(ModToolMaterials.MYTHRION, 10,-2.4f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"mythrion_sword")))
+    ));
+    public static final Item MYTHRION_PICKAXE = registerItem("mythrion_pickaxe", new PickaxeItem(ModToolMaterials.MYTHRION, 1,-2.8f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"mythrion_pickaxe")))
+    ));
+    public static final Item MYTHRION_SHOVEL = registerItem("mythrion_shovel", new ShovelItem(ModToolMaterials.BLIGHT, 1.5f,-3.0f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"mythrion_shovel")))
+    ));
+    public static final Item MYTHRION_AXE = registerItem("mythrion_axe", new AxeItem(ModToolMaterials.BLIGHT, 6,-3.2f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"mythrion_axe")))
+    ));
+    public static final Item MYTHRION_HOE = registerItem("mythrion_hoe", new SwordItem(ModToolMaterials.BLIGHT, 0,-3.0f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"mythrion_hoe")))
+    ));
+    public static final Item MYTHRION_HAMMER = registerItem("mythrion_hammer", new HammerItem(ModToolMaterials.BLIGHT, 7,-3.4f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"mythrion_hammer")))
+    ));
+
 
     //ARMORS
     public static final Item BLIGHT_HELMET = registerItem("blight_helmet", new ModArmorItem(ModArmorMaterials.BLIGHT, EquipmentType.HELMET,new Item.Settings()

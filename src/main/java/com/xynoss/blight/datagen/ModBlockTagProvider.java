@@ -47,9 +47,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.PINK_GARNET_FENCE_GATE);
         getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.PINK_GARNET_WALL);
 
+
+        //NEEDS BLIGHT TOOLS
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_BLIGHT_TOOL)
-                .add(ModBlocks.BURNING_STONE)
+//                .add(ModBlocks.BURNING_STONE)
                 .add(ModBlocks.DEEPSLATE_MYTHRION_ORE)
+        ;
+
+        //NEEDS MYTHRION TOOLS
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_MYTHRION_TOOL)
+                .add(ModBlocks.BURNING_STONE)
         ;
 
 

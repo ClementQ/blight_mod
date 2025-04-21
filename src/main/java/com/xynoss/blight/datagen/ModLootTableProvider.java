@@ -70,7 +70,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BLIGHT_ORE, multipleOreDrops(ModBlocks.BLIGHT_ORE, ModItems.RAW_BLIGHT, 1,3));
         addDrop(ModBlocks.DEEPSLATE_BLIGHT_ORE, multipleOreDrops(ModBlocks.DEEPSLATE_BLIGHT_ORE, ModItems.RAW_BLIGHT, 3,7));
 
-        addDrop(ModBlocks.BURNING_STONE, createRequiredToolMultipleDrops(ModBlocks.BURNING_STONE, ModItems.BURNING_STONE_ASHES, 1, 3, ModTags.Items.BLIGHT_TOOLS));
+//        addDrop(ModBlocks.BURNING_STONE, createRequiredToolMultipleDrops(ModBlocks.BURNING_STONE, ModItems.BURNING_STONE_ASHES, 1, 3, ModTags.Items.BLIGHT_TOOLS));
 
         addDrop(ModBlocks.ELDRANITE_ORE, oreDrops(ModBlocks.ELDRANITE_ORE, ModItems.RAW_ELDRANITE));
         addDrop(ModBlocks.ELDRANITE_BLOCK);
@@ -79,6 +79,12 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DEEPSLATE_MYTHRION_ORE, createRequiredToolMultipleDrops(ModBlocks.DEEPSLATE_MYTHRION_ORE, ModItems.RAW_MYTHRION, 1, 3, ModTags.Items.BLIGHT_TOOLS));
         addDrop(ModBlocks.MYTHRION_BLOCK);
         addDrop(ModBlocks.RAW_MYTHRION_BLOCK);
+
+//Lootable Mythrion
+        addDrop(ModBlocks.BURNING_STONE, createRequiredToolMultipleDrops(ModBlocks.BURNING_STONE, ModItems.BURNING_STONE_ASHES, 1, 3, ModTags.Items.MYTHRION_TOOLS));
+
+
+
     }
 
 

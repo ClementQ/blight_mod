@@ -132,7 +132,7 @@ public class ModBlocks {
 
             // Vérifier si le joueur utilise un outil en blight
             ItemStack tool = player.getMainHandStack();
-            if (!(tool.getItem() instanceof PickaxeItem) && !(tool.getItem() instanceof HammerItem) || !isBlight(tool)) {
+            if (!(tool.getItem() instanceof PickaxeItem) && !(tool.getItem() instanceof HammerItem) || !isMythrion(tool)) {
                 // Réduire considérablement la vitesse de minage (0.05F = 20 fois plus lent)
                 return original * 0.05F;
             }
@@ -140,9 +140,9 @@ public class ModBlocks {
             return original;
         }
 
-        private boolean isBlight(ItemStack stack) {
+        private boolean isMythrion(ItemStack stack) {
             // Vérifier si l'outil est en blight
-            return stack.isOf(ModItems.BLIGHT_PICKAXE) || stack.isOf(ModItems.BLIGHT_HAMMER);
+            return stack.isOf(ModItems.MYTHRION_PICKAXE) || stack.isOf(ModItems.MYTHRION_HAMMER);
         }
     });
     //ELDRANITE
@@ -166,8 +166,7 @@ public class ModBlocks {
     ));
     //Mythrion
     public static final Block DEEPSLATE_MYTHRION_ORE = registerBlock("deepslate_mythrion_ore",new OreBlocks(
-            UniformIntProvider.create(1, 1),
-            AbstractBlock.Settings.create().
+            UniformIntProvider.create(1, 1), AbstractBlock.Settings.create().
                     strength(4f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.DEEPSLATE)

@@ -59,6 +59,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createTool(ToolType.HOE, ModItems.BLIGHT_HOE, ModItems.BLIGHT_INGOT, "blight_hoe");
                 createTool(ToolType.SWORD, ModItems.BLIGHT_SWORD, ModItems.BLIGHT_INGOT, "blight_sword");
 
+                //MYTHRION TOOLS
+                createTool(ToolType.PICKAXE, ModItems.MYTHRION_PICKAXE, ModItems.MYTHRION_INGOT, "mythrion_pickaxe");
+                createTool(ToolType.AXE, ModItems.MYTHRION_AXE, ModItems.MYTHRION_INGOT, "mythrion_axe");
+                createTool(ToolType.SHOVEL, ModItems.MYTHRION_SHOVEL, ModItems.MYTHRION_INGOT, "mythrion_shovel");
+                createTool(ToolType.HOE, ModItems.MYTHRION_HOE, ModItems.MYTHRION_INGOT, "mythrion_hoe");
+                createTool(ToolType.SWORD, ModItems.MYTHRION_SWORD, ModItems.MYTHRION_INGOT, "mythrion_sword");
+
                 createShapeless(RecipeCategory.MISC, ModItems.PINK_GARNET, 9)
                         .input(ModItems.CHISEL_ITEM)
                         .criterion(hasItem(ModItems.CHISEL_ITEM), conditionsFromItem(ModItems.CHISEL_ITEM))

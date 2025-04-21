@@ -1,13 +1,21 @@
 {
 //TOOLS
-  "item.blight.blight_sword": "Blight Sword",
-  "item.blight.blight_pickaxe": "Blight Pickaxe",
-  "item.blight.blight_axe": "Blight Axe",
-  "item.blight.blight_shovel": "Blight Shovel",
-  "item.blight.blight_hoe": "Blight Hoe",
-  "item.blight.blight_hammer": "Blight Hammer",
-  "item.blight.blight_bow": "Blight Bow",
+  "item.blight.blight_sword":     "Blight Sword",
+  "item.blight.blight_pickaxe":   "Blight Pickaxe",
+  "item.blight.blight_axe":       "Blight Axe",
+  "item.blight.blight_shovel":    "Blight Shovel",
+  "item.blight.blight_hoe":       "Blight Hoe",
+  "item.blight.blight_hammer":    "Blight Hammer",
+  "item.blight.blight_bow":       "Blight Bow",
   "item.blight.music_disc_arise": "Arise Music Disc",
+
+  "item.blight.mythrion_sword":   "Mythrion Sword",
+  "item.blight.mythrion_pickaxe": "Mythrion Pickaxe",
+  "item.blight.mythrion_axe":     "Mythrion Axe",
+  "item.blight.mythrion_shovel":  "Mythrion Shovel",
+  "item.blight.mythrion_hoe":     "Mythrion Hoe",
+  "item.blight.mythrion_hammer":  "Mythrion Hammer",
+
   "item.blight.music_disc_arise.desc": "The song of a certain boss",
 
 //ARMORS

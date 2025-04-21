@@ -7,7 +7,7 @@
         {
           "condition": "minecraft:match_tool",
           "predicate": {
-            "items": "#blight:blight_tools"
+            "items": "#blight:mythrion_tools"
           }
         },
         {
@@ -40,7 +40,7 @@
         {
           "condition": "minecraft:match_tool",
           "predicate": {
-            "items": "#blight:blight_tools"
+            "items": "#blight:mythrion_tools"
           }
         },
         {

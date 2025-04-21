@@ -109,6 +109,13 @@ public class ModItemGroups {
                         entries.add(ModItems.BLIGHT_LEGGINGS);
                         entries.add(ModItems.BLIGHT_BOOTS);
 
+                        entries.add(ModItems.MYTHRION_PICKAXE);
+                        entries.add(ModItems.MYTHRION_SWORD);
+                        entries.add(ModItems.MYTHRION_SHOVEL);
+                        entries.add(ModItems.MYTHRION_AXE);
+                        entries.add(ModItems.MYTHRION_HOE);
+                        entries.add(ModItems.MYTHRION_HAMMER);
+
                     })
                     .build());
 

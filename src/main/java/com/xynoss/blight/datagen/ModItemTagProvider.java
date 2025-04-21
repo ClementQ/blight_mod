@@ -26,17 +26,24 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Items.STICK)
                 .add(Items.APPLE);
 
+        //TOOLS
         getOrCreateTagBuilder(ItemTags.SWORDS)
-                .add(ModItems.BLIGHT_SWORD);
+                .add(ModItems.BLIGHT_SWORD)
+                .add(ModItems.MYTHRION_SWORD);
         getOrCreateTagBuilder(ItemTags.PICKAXES)
-                .add(ModItems.BLIGHT_PICKAXE);
+                .add(ModItems.BLIGHT_PICKAXE)
+                .add(ModItems.MYTHRION_PICKAXE);
         getOrCreateTagBuilder(ItemTags.SHOVELS)
-                .add(ModItems.BLIGHT_SHOVEL);
+                .add(ModItems.BLIGHT_SHOVEL)
+                .add(ModItems.MYTHRION_SHOVEL);
         getOrCreateTagBuilder(ItemTags.AXES)
-                .add(ModItems.BLIGHT_AXE);
+                .add(ModItems.BLIGHT_AXE)
+                .add(ModItems.MYTHRION_AXE);
         getOrCreateTagBuilder(ItemTags.HOES)
-                .add(ModItems.BLIGHT_HOE);
+                .add(ModItems.BLIGHT_HOE)
+                .add(ModItems.MYTHRION_HOE);
 
+        //BLIGHT TOOLS
         getOrCreateTagBuilder(ModTags.Items.BLIGHT_REPAIR)
                 .add(ModItems.BLIGHT_INGOT);
         getOrCreateTagBuilder(ModTags.Items.BLIGHT_TOOLS)
@@ -46,6 +53,17 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.BLIGHT_AXE)
                 .add(ModItems.BLIGHT_HOE)
                 .add(ModItems.BLIGHT_HAMMER);
+
+        //MYTHRION TOOLS
+        getOrCreateTagBuilder(ModTags.Items.MYTHRION_REPAIR)
+                .add(ModItems.MYTHRION_INGOT);
+        getOrCreateTagBuilder(ModTags.Items.MYTHRION_TOOLS)
+                .add(ModItems.MYTHRION_PICKAXE)
+                .add(ModItems.MYTHRION_SWORD)
+                .add(ModItems.MYTHRION_SHOVEL)
+                .add(ModItems.MYTHRION_AXE)
+                .add(ModItems.MYTHRION_HOE)
+                .add(ModItems.MYTHRION_HAMMER);
 
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.BLIGHT_HELMET)

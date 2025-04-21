@@ -90,6 +90,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BLIGHT_HAMMER, Models.HANDHELD);
         custom.ModRegisterBow(ModItems.BLIGHT_BOW);
 
+        itemModelGenerator.register(ModItems.MYTHRION_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.MYTHRION_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.MYTHRION_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.MYTHRION_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.MYTHRION_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.MYTHRION_HAMMER, Models.HANDHELD);
+
 
         //ARMORS
         itemModelGenerator.registerArmor(ModItems.BLIGHT_HELMET, ModEquipmentAssetKeys.BLIGHT,"helmet", false);
