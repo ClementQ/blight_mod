@@ -91,5 +91,7 @@
   "tooltip.blight.chisel.shift_down" :"This item chisels blocks into §6Bricks",
   "tooltip.blight.chisel" :"Press §eShift§r for more information",
 
-  "tooltip.blight.cauliflower.tooltip": "This is a nice cauliflower"
+  "tooltip.blight.cauliflower.tooltip": "This is a nice cauliflower",
+
+  "effect.blight.slimey" : "Slimey"
 }

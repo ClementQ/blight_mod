@@ -2,6 +2,7 @@ package com.xynoss.blight;
 
 import com.xynoss.blight.block.ModBlocks;
 import com.xynoss.blight.component.ModDataComponentTypes;
+import com.xynoss.blight.effect.ModEffects;
 import com.xynoss.blight.item.ModFuelItems;
 import com.xynoss.blight.item.ModItemGroups;
 import com.xynoss.blight.item.ModItems;
@@ -27,7 +28,7 @@ public class Blight implements ModInitializer {
 		ModDataComponentTypes.registerDataComponentTypes();
 		ModRegisterEvents.registerEvents();
 		ModSounds.registerSounds();
-
+		ModEffects.registerEffects();
 
 	}
 }

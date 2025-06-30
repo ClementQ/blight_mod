@@ -145,6 +145,7 @@ public class ModBlocks {
             return stack.isOf(ModItems.MYTHRION_PICKAXE) || stack.isOf(ModItems.MYTHRION_HAMMER);
         }
     });
+
     //ELDRANITE
     public static final Block ELDRANITE_ORE = registerBlock("eldranite_ore",new ExperienceDroppingBlock(
             UniformIntProvider.create(1, 1),
@@ -200,7 +201,7 @@ public class ModBlocks {
     }
 
     public static void registerModBlocks(){
-        Blight.LOGGER.info("Registering Mod Blocks for" + Blight.MOD_ID);
+        Blight.LOGGER.info("Registering Mod Blocks for " + Blight.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModBlocks.PINK_GARNET_BLOCK);
