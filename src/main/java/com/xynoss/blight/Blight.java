@@ -6,12 +6,15 @@ import com.xynoss.blight.effect.ModEffects;
 import com.xynoss.blight.item.ModFuelItems;
 import com.xynoss.blight.item.ModItemGroups;
 import com.xynoss.blight.item.ModItems;
+import com.xynoss.blight.potion.ModBrewingRecipe;
+import com.xynoss.blight.potion.ModPotions;
 import com.xynoss.blight.sound.ModSounds;
 import com.xynoss.blight.util.ModRegisterEvents;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 
 //important things
 public class Blight implements ModInitializer {
@@ -29,6 +32,10 @@ public class Blight implements ModInitializer {
 		ModRegisterEvents.registerEvents();
 		ModSounds.registerSounds();
 		ModEffects.registerEffects();
+		ModPotions.registerPotions();
+		ModBrewingRecipe.registerModBrewingRecipe();
+
+
 
 	}
 }
