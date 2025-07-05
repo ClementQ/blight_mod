@@ -98,5 +98,8 @@
   "item.minecraft.splash_potion.effect.slimey_potion" : "Slimey Splash Potion",
   "item.minecraft.lingering_potion.effect.slimey_potion" : "Slimey Lingering Potion",
 
-  "enchantment.blight.lightning_striker" : "Lightning Striker"
+  "enchantment.blight.lightning_striker" : "Lightning Striker",
+
+  "block.blight.cauliflower_crop" : "Cauliflower Crop",
+  "item.blight.cauliflower_seeds" : "Cauliflower Seeds"
 }

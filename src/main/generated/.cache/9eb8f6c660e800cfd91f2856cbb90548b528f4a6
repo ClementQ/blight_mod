@@ -2,6 +2,7 @@
 97e835da8a6886b0aa408a09aa0cc387c7259c80 data/blight/loot_table/blocks/blight_block.json
 39734aded8eb15c964269393680a9ea252e39360 data/blight/loot_table/blocks/blight_ore.json
 65cd4bc602d99b4c209844a5f77c950d69e39ce8 data/blight/loot_table/blocks/burning_stone.json
+6deabd3285b4a1641e6d57e010e9efdfa969410c data/blight/loot_table/blocks/cauliflower_crop.json
 a175dcfe558681125754d15196c7aab56291d29b data/blight/loot_table/blocks/deepslate_blight_ore.json
 f44e61b6b2fd27101d5436201c7e8943a97f3944 data/blight/loot_table/blocks/deepslate_mythrion_ore.json
 39ab19dbdced4d60803d3e868f7c2f1018a8a6f3 data/blight/loot_table/blocks/eldranite_block.json

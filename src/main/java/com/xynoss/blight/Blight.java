@@ -4,6 +4,7 @@ import com.xynoss.blight.block.ModBlocks;
 import com.xynoss.blight.component.ModDataComponentTypes;
 import com.xynoss.blight.effect.ModEffects;
 import com.xynoss.blight.enchantement.ModEnchantmentEffects;
+import com.xynoss.blight.item.ModCompostable;
 import com.xynoss.blight.item.ModFuelItems;
 import com.xynoss.blight.item.ModItemGroups;
 import com.xynoss.blight.item.ModItems;
@@ -36,7 +37,7 @@ public class Blight implements ModInitializer {
 		ModPotions.registerPotions();
 		ModBrewingRecipe.registerModBrewingRecipe();
 		ModEnchantmentEffects.registerEnchantmentEffects();
-
+		ModCompostable.registerCompostable();
 
 
 	}

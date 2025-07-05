@@ -1,4 +1,5 @@
 package com.xynoss.blight.item;
+import com.xynoss.blight.block.ModBlocks;
 import com.xynoss.blight.item.custom.ChiselItem;
 import com.xynoss.blight.item.custom.HammerItem;
 import com.xynoss.blight.item.custom.ModArmorItem;
@@ -41,6 +42,11 @@ public class ModItems {
             super.appendTooltip(stack, context, tooltip, type);
         }
     });
+    public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds", new BlockItem(ModBlocks.CAULIFLOWER_CROP,
+                    new Item.Settings()
+                            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"cauliflower_seeds")))
+            )
+    );
 
 
 //Blight Items
@@ -86,7 +92,7 @@ public class ModItems {
     public static final Item BLIGHT_AXE = registerItem("blight_axe", new AxeItem(ModToolMaterials.BLIGHT, 6,-3.2f, new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_axe")))
     ));
-    public static final Item BLIGHT_HOE = registerItem("blight_hoe", new SwordItem(ModToolMaterials.BLIGHT, 0,-3.0f, new Item.Settings()
+    public static final Item BLIGHT_HOE = registerItem("blight_hoe", new HoeItem(ModToolMaterials.BLIGHT, 0,-3.0f, new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_hoe")))
     ));
     public static final Item BLIGHT_HAMMER = registerItem("blight_hammer", new HammerItem(ModToolMaterials.BLIGHT, 7,-3.4f, new Item.Settings()
@@ -111,7 +117,7 @@ public class ModItems {
     public static final Item MYTHRION_AXE = registerItem("mythrion_axe", new AxeItem(ModToolMaterials.BLIGHT, 6,-3.2f, new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"mythrion_axe")))
     ));
-    public static final Item MYTHRION_HOE = registerItem("mythrion_hoe", new SwordItem(ModToolMaterials.BLIGHT, 0,-3.0f, new Item.Settings()
+    public static final Item MYTHRION_HOE = registerItem("mythrion_hoe", new HoeItem(ModToolMaterials.BLIGHT, 0,-3.0f, new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"mythrion_hoe")))
     ));
     public static final Item MYTHRION_HAMMER = registerItem("mythrion_hammer", new HammerItem(ModToolMaterials.BLIGHT, 7,-3.4f, new Item.Settings()
@@ -146,16 +152,16 @@ public class ModItems {
 
 
 //Functions
-private static Item registerItem(String name, Item item) {
-    return Registry.register(Registries.ITEM, Identifier.of(Blight.MOD_ID, name), item);
-}
-
-public static void registerModItems() {
-    Blight.LOGGER.info("Registering Mod Items for " + Blight.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(PINK_GARNET);
-            entries.add(RAW_PINK_GARNET);
-        });
+    private static Item registerItem(String name, Item item) {
+        return Registry.register(Registries.ITEM, Identifier.of(Blight.MOD_ID, name), item);
     }
+
+    public static void registerModItems() {
+        Blight.LOGGER.info("Registering Mod Items for " + Blight.MOD_ID);
+
+            ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+                entries.add(PINK_GARNET);
+                entries.add(RAW_PINK_GARNET);
+            });
+        }
 }

@@ -1,16 +1,14 @@
 package com.xynoss.blight.block;
 
 import com.xynoss.blight.Blight;
-import com.xynoss.blight.block.custom.BurningStone;
-import com.xynoss.blight.block.custom.MagicBlock;
-import com.xynoss.blight.block.custom.OreBlocks;
-import com.xynoss.blight.block.custom.PinkGarnetLampBlock;
+import com.xynoss.blight.block.custom.*;
 import com.xynoss.blight.item.ModItems;
 import com.xynoss.blight.item.custom.HammerItem;
 import com.xynoss.blight.sound.ModSounds;
 import com.xynoss.blight.util.ModTags;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -90,6 +88,10 @@ public class ModBlocks {
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"pink_garnet_lamp")))
     ));
 
+    public static final Block CAULIFLOWER_CROP = registerBlockWithoutBlockItem("cauliflower_crop", new CauliflowerCropBlock(
+            AbstractBlock.Settings.create().noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"cauliflower_crop")))
+    ));
 
 
 //Blight Blocks
@@ -190,6 +192,10 @@ public class ModBlocks {
 //Function
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID, name)), block);
+    }
+
+    private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID, name)), block);
     }
 
