@@ -47,6 +47,11 @@ public class ModItems {
                             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"cauliflower_seeds")))
             )
     );
+    public static final Item HONEY_BERRIES = registerItem("honey_berries", new BlockItem(ModBlocks.HONEY_BERRY_BUSH,
+            new Item.Settings()
+                    .food(ModFoodComponents.HONEY_BERRY)
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID, "honey_berries")))
+    ));
 
 
 //Blight Items

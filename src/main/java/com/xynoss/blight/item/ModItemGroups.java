@@ -22,6 +22,7 @@ public class ModItemGroups {
                         entries.add(ModItems.CHISEL_ITEM);
                         entries.add(ModItems.CAULIFLOWER);
                         entries.add(ModItems.CAULIFLOWER_SEEDS);
+                        entries.add(ModItems.HONEY_BERRIES);
                     })
                     .build());
 

@@ -101,5 +101,8 @@
   "enchantment.blight.lightning_striker" : "Lightning Striker",
 
   "block.blight.cauliflower_crop" : "Cauliflower Crop",
-  "item.blight.cauliflower_seeds" : "Cauliflower Seeds"
+  "item.blight.cauliflower_seeds" : "Cauliflower Seeds",
+
+  "item.blight.honey_berries" : "Honey Berries",
+  "block.blight.honey_berry_bush" : "Honey Berry Bush"
 }

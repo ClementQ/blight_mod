@@ -2,6 +2,7 @@ package com.xynoss.blight.datagen;
 
 import com.xynoss.blight.block.ModBlocks;
 import com.xynoss.blight.block.custom.CauliflowerCropBlock;
+import com.xynoss.blight.block.custom.HoneyBerryBushBlock;
 import com.xynoss.blight.block.custom.PinkGarnetLampBlock;
 import com.xynoss.blight.component.ModDataComponentTypes;
 import com.xynoss.blight.item.ModItems;
@@ -43,6 +44,8 @@ public class ModModelProvider extends FabricModelProvider {
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(PinkGarnetLampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
 
         blockStateModelGenerator.registerCrop(ModBlocks.CAULIFLOWER_CROP, CauliflowerCropBlock.AGE, 0,1,2,3,4,5,6);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.HONEY_BERRY_BUSH, BlockStateModelGenerator.CrossType.NOT_TINTED,
+                HoneyBerryBushBlock.AGE, 0,1,2,3);
 
 //BLight Models
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_BLIGHT_BLOCK);
