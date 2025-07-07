@@ -1,2 +1,4 @@
 // 1.21.4	-999999999-01-01T00:00:00	Blight/Blight Dynamic Registries
 2437b7c3657880b528c4e49acf176323be49ce98 data/blight/enchantment/lightning_striker.json
+8b5ed45b816f8d5ef23828a9520a5cef94dd8f82 data/blight/worldgen/configured_feature/blight_ore.json
+1d39361e802a61bda8b267939baf64739a044449 data/blight/worldgen/placed_feature/bligh_ore_placed.json
