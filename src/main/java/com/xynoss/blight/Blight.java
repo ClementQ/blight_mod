@@ -12,6 +12,7 @@ import com.xynoss.blight.potion.ModBrewingRecipe;
 import com.xynoss.blight.potion.ModPotions;
 import com.xynoss.blight.sound.ModSounds;
 import com.xynoss.blight.util.ModRegisterEvents;
+import com.xynoss.blight.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -38,6 +39,7 @@ public class Blight implements ModInitializer {
 		ModBrewingRecipe.registerModBrewingRecipe();
 		ModEnchantmentEffects.registerEnchantmentEffects();
 		ModCompostable.registerCompostable();
+		ModWorldGeneration.generationModWorldGen();
 
 
 	}
