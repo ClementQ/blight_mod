@@ -108,7 +108,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 //Lootable Mythrion
         addDrop(ModBlocks.BURNING_STONE, createRequiredToolMultipleDrops(ModBlocks.BURNING_STONE, ModItems.BURNING_STONE_ASHES, 1, 3, ModTags.Items.MYTHRION_TOOLS));
 
-
+//Lootable Nyxium
+        addDrop(ModBlocks.NYXIUM_ORE, createRequiredToolMultipleDrops(ModBlocks.NYXIUM_ORE, ModItems.RAW_NYXIUM, 1, 3, ModTags.Items.MYTHRION_TOOLS));
+        addDrop(ModBlocks.MYTHRION_BLOCK);
+        addDrop(ModBlocks.RAW_MYTHRION_BLOCK);
 
     }
 

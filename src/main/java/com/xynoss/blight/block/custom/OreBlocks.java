@@ -26,10 +26,10 @@ public class OreBlocks extends ExperienceDroppingBlock {
     public float calcBlockBreakingDelta(BlockState state, PlayerEntity player, BlockView world, BlockPos pos) {
         float original = super.calcBlockBreakingDelta(state, player, world, pos);
 
-        // Vérifier si le joueur utilise un outil en blight
+        // Check if player use the correct tool for mining
         ItemStack handedTool = player.getMainHandStack();
         if (!handedTool.isIn(neededTool)) {
-            // Réduire considérablement la vitesse de minage (0.05F = 20 fois plus lent)
+            // Vastly reduce mining speed (0.05F = 20 times more lower)
             return original * 0.05F;
         }
         return original;

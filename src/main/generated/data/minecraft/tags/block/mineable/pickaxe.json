@@ -8,6 +8,8 @@
     "blight:raw_pink_garnet_block",
     "blight:magic_block",
     "blight:eldranite_ore",
-    "blight:deepslate_mythrion_ore"
+    "blight:eldranite_block",
+    "blight:nyxium_ore",
+    "blight:nyxium_block"
   ]
 }

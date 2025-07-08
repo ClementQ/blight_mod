@@ -1,9 +1,9 @@
 // 1.21.4	-999999999-01-01T00:00:00	Blight/Tags for minecraft:block
 1fbd674040e0ea7374cea3ea6bdd8e2aa06389d1 data/blight/tags/block/needs_blight_tool.json
-2dcea1f24b384e8bc49abef42bffc8da746b07e7 data/blight/tags/block/needs_mythrion_tool.json
+9bc5b6258e5e5c96973d0ced72eee4a3700f716b data/blight/tags/block/needs_mythrion_tool.json
 0c3afe952012c59f8d8c742180f9b3c76fb1b25f data/minecraft/tags/block/fence_gates.json
 17e5fd38c2497aff1bd050941d76c5f23dea7311 data/minecraft/tags/block/fences.json
-678c26b16a5f2a95305b881455b736cc9162a9f6 data/minecraft/tags/block/mineable/pickaxe.json
+5183286e29002c065f2370cbd5cd26b7b517659c data/minecraft/tags/block/mineable/pickaxe.json
 1fb1184f8a78bd8dab88236bddea24c18719777e data/minecraft/tags/block/needs_diamond_tool.json
 ad8cab974f04da42c60095f0e8e83a73bfd44824 data/minecraft/tags/block/needs_iron_tool.json
 c682f7c33111cefc99c91f39219e0b65f17c80ba data/minecraft/tags/block/walls.json

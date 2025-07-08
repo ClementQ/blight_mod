@@ -76,6 +76,12 @@ public class ModItems {
     public static final Item MYTHRION_INGOT = registerItem("mythrion_ingot", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"mythrion_ingot")))
     ));
+    public static final Item RAW_NYXIUM = registerItem("raw_nyxium", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"raw_nyxium")))
+    ));
+    public static final Item NYXIUM_INGOT = registerItem("nyxium_ingot", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"nyxium_ingot")))
+    ));
 
     //MUSIC
     public static final Item MUSIC_DISC_ARISE = registerItem("music_disc_arise", new Item(new Item.Settings()

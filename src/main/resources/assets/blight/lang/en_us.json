@@ -33,6 +33,8 @@
   "item.blight.eldranite_ingot": "Eldranite Ingot",
   "item.blight.mythrion_ingot": "Mythrion Ingot",
   "item.blight.raw_mythrion": "Raw Mythrion",
+  "item.blight.raw_nyxium": "Raw Nyxium",
+  "item.blight.nyxium_ingot": "Nyxium Ingot",
 
   //Ores block
   "item.blight.burning_stone" : "Burning Stone",
@@ -40,6 +42,7 @@
   "item.blight.blight_ore" : "Blight Ore",
   "item.blight.deepslate_blight_ore" : "Deepslate Blight Ore",
   "item.blight.deepslate_mythrion_ore": "Deepslate Mythrion Ore",
+  "item.blight.nyxium_ore" : "Nyxium Ore",
 
 //Block
   "item.blight.mythrion_block" : "Block of Mythrion",
@@ -48,6 +51,8 @@
   "item.blight.raw_mythrion_block" : "Raw Block of Mytrhion",
   "item.blight.raw_blight_block" : "Raw Block of Blight",
   "item.blight.raw_eldranite_block" : "Raw Block of Eldranite",
+  "item.blight.nyxium_block" : "Block of Nyxium",
+  "item.blight.raw_nyxium_block" : "Raw Block of Nyxium",
 
 //ITEMS
   "item.blight.burning_stone_ashes": "Burning Stone Ashes",

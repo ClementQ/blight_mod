@@ -71,6 +71,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DEEPSLATE_MYTHRION_ORE);
                         entries.add(ModBlocks.MYTHRION_BLOCK);
                         entries.add(ModBlocks.RAW_MYTHRION_BLOCK);
+                        entries.add(ModBlocks.RAW_NYXIUM_BLOCK);
+                        entries.add(ModBlocks.NYXIUM_BLOCK);
+                        entries.add(ModBlocks.NYXIUM_ORE);
 
 
 
@@ -89,6 +92,9 @@ public class ModItemGroups {
                         entries.add(ModItems.ELDRANITE_INGOT);
                         entries.add(ModItems.RAW_MYTHRION);
                         entries.add(ModItems.MYTHRION_INGOT);
+                        entries.add(ModItems.NYXIUM_INGOT);
+                        entries.add(ModItems.RAW_NYXIUM);
+
 
                     })
                     .build());

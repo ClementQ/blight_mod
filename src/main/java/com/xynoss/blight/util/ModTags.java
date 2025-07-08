@@ -18,6 +18,12 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_MYTHRION_TOOL = createTag("needs_mythrion_tool");
         public static final TagKey<Block> INCORRECT_FOR_MYTHRION_TOOL = createTag("incorrect_for_mythrion_tool");
 
+        //NYXIUM
+        public static final TagKey<Block> NEEDS_NYXIUM_TOOL = createTag("needs_nyxium_tool");
+        public static final TagKey<Block> INCORRECT_FOR_NYXIUM_TOOL = createTag("incorrect_for_nyxium_tool");
+
+
+
         private static TagKey<Block> createTag(String name){
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID, name));
         }

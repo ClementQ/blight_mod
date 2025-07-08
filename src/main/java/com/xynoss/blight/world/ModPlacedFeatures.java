@@ -21,6 +21,7 @@ public class ModPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> BLIGHT_ORE_PLACED_KEY = registerKey("bligh_ore_placed");
     public static final RegistryKey<PlacedFeature> ELDRANITE_ORE_PLACED_KEY = registerKey("eldranite_ore_placed");
+    public static final RegistryKey<PlacedFeature> MYTHRION_ORE_PLACED_KEY = registerKey("mythrion_ore_placed");
 
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
@@ -37,6 +38,12 @@ public class ModPlacedFeatures {
                 ModOrePlacement.modifiersWithCount(14,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80)))
                 );
+
+        //Mythrion ORE
+        register(context, MYTHRION_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MYTHRION_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(14,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80)))
+        );
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {

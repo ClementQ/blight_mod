@@ -27,6 +27,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RAW_PINK_GARNET_BLOCK)
                 .add(ModBlocks.MAGIC_BLOCK)
                 .add(ModBlocks.ELDRANITE_ORE)
+                .add(ModBlocks.ELDRANITE_BLOCK)
+                .add(ModBlocks.NYXIUM_ORE)
+                .add(ModBlocks.NYXIUM_BLOCK)
         ;
 
 
@@ -57,6 +60,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         //NEEDS MYTHRION TOOLS
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_MYTHRION_TOOL)
                 .add(ModBlocks.BURNING_STONE)
+                .add(ModBlocks.NYXIUM_ORE)
         ;
 
 

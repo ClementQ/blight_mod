@@ -190,6 +190,25 @@ public class ModBlocks {
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"raw_mythrion_block")))
     ));
 
+    //Nyxium
+    public static final Block NYXIUM_ORE = registerBlock("nyxium_ore", new OreBlocks(UniformIntProvider.create(1, 1), AbstractBlock.Settings.create()
+                .strength(4f)
+                .requiresTool()
+                .sounds(BlockSoundGroup.STONE)
+                .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"nyxium_ore"))),
+            ModTags.Items.MYTHRION_TOOLS
+    ));
+    public static final Block NYXIUM_BLOCK = registerBlock("nyxium_block", new Block(AbstractBlock.Settings.create()
+            .strength(4f)
+            .requiresTool()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"nyxium_block")))
+    ));
+    public static final Block RAW_NYXIUM_BLOCK = registerBlock("raw_nyxium_block", new Block(AbstractBlock.Settings.create()
+            .strength(4f)
+            .requiresTool()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"raw_nyxium_block")))
+    ));
+
 
 
 //Function
