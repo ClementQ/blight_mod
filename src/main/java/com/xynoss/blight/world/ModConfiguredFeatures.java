@@ -24,6 +24,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> BLIGHT_ORE_KEY = registerKey("blight_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> ELDRANITE_ORE_KEY = registerKey("eldranite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> MYTHRION_ORE_KEY = registerKey("mythrion_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> NYXIUM_ORE_KEY = registerKey("nyxium_ore");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
 
@@ -48,11 +49,17 @@ public class ModConfiguredFeatures {
                 List.of(
                         OreFeatureConfig.createTarget(deepslateReplacebles, ModBlocks.DEEPSLATE_MYTHRION_ORE.getDefaultState()));
 
+        //Nyxium ORES
+        List<OreFeatureConfig.Target> endNyxiumOres =
+                List.of(
+                        OreFeatureConfig.createTarget(endReplacebles, ModBlocks.NYXIUM_ORE.getDefaultState()));
+
 
         //Register ORES
         register(context, BLIGHT_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldBlightOres, 12));
         register(context, ELDRANITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherEldraniteOres, 9));
         register(context, MYTHRION_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldMythrionOres, 9));
+        register(context, NYXIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(endNyxiumOres, 5));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name){
