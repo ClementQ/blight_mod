@@ -20,6 +20,7 @@ import java.util.Collection;
 public class ModPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> BLIGHT_ORE_PLACED_KEY = registerKey("bligh_ore_placed");
+    public static final RegistryKey<PlacedFeature> ELDRANITE_ORE_PLACED_KEY = registerKey("eldranite_ore_placed");
 
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
@@ -27,6 +28,12 @@ public class ModPlacedFeatures {
 
         //Blight ORE
         register(context, BLIGHT_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.BLIGHT_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(14,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80)))
+                );
+
+        //Eldranite ORE
+        register(context, ELDRANITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ELDRANITE_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(14,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80)))
                 );
