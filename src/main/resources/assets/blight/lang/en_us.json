@@ -1,70 +1,77 @@
 {
 //TOOLS
-  "item.blight.blight_sword":     "Blight Sword",
-  "item.blight.blight_pickaxe":   "Blight Pickaxe",
-  "item.blight.blight_axe":       "Blight Axe",
-  "item.blight.blight_shovel":    "Blight Shovel",
-  "item.blight.blight_hoe":       "Blight Hoe",
-  "item.blight.blight_hammer":    "Blight Hammer",
-  "item.blight.blight_bow":       "Blight Bow",
-  "item.blight.music_disc_arise": "Arise Music Disc",
+  "item.blight.blight_sword"          : "Blight Sword",
+  "item.blight.blight_pickaxe"        : "Blight Pickaxe",
+  "item.blight.blight_axe"            : "Blight Axe",
+  "item.blight.blight_shovel"         : "Blight Shovel",
+  "item.blight.blight_hoe"            : "Blight Hoe",
+  "item.blight.blight_hammer"         : "Blight Hammer",
+  "item.blight.blight_bow"            : "Blight Bow",
+  "item.blight.music_disc_arise"      : "Arise Music Disc",
 
-  "item.blight.mythrion_sword":   "Mythrion Sword",
-  "item.blight.mythrion_pickaxe": "Mythrion Pickaxe",
-  "item.blight.mythrion_axe":     "Mythrion Axe",
-  "item.blight.mythrion_shovel":  "Mythrion Shovel",
-  "item.blight.mythrion_hoe":     "Mythrion Hoe",
-  "item.blight.mythrion_hammer":  "Mythrion Hammer",
+  "item.blight.mythrion_sword"        : "Mythrion Sword",
+  "item.blight.mythrion_pickaxe"      : "Mythrion Pickaxe",
+  "item.blight.mythrion_axe"          : "Mythrion Axe",
+  "item.blight.mythrion_shovel"       : "Mythrion Shovel",
+  "item.blight.mythrion_hoe"          : "Mythrion Hoe",
+  "item.blight.mythrion_hammer"       : "Mythrion Hammer",
 
-  "item.blight.music_disc_arise.desc": "The song of a certain boss",
+  "item.blight.music_disc_arise.desc" : "The song of a certain boss",
 
 //ARMORS
-  "item.blight.blight_helmet": "Blight Helmet",
-  "item.blight.blight_chestplate": "Blight Chestplate",
-  "item.blight.blight_leggings": "Blight Leggings",
-  "item.blight.blight_boots": "Blight Boots",
-  "item.blight.blight_horse_armor": "Blight Horse Armor",
+  "item.blight.blight_helmet"         : "Blight Helmet",
+  "item.blight.blight_chestplate"     : "Blight Chestplate",
+  "item.blight.blight_leggings"       : "Blight Leggings",
+  "item.blight.blight_boots"          : "Blight Boots",
+  "item.blight.blight_horse_armor"    : "Blight Horse Armor",
 
 //ORES
   //Ores Items
-  "item.blight.blight_ingot": "Blight Ingot",
-  "item.blight.raw_blight": "Raw Blight",
-  "item.blight.raw_eldranite": "Raw Eldranite",
-  "item.blight.eldranite_ingot": "Eldranite Ingot",
-  "item.blight.mythrion_ingot": "Mythrion Ingot",
-  "item.blight.raw_mythrion": "Raw Mythrion",
-  "item.blight.raw_nyxium": "Raw Nyxium",
-  "item.blight.nyxium_ingot": "Nyxium Ingot",
+  "item.blight.blight_ingot"          : "Blight Ingot",
+  "item.blight.raw_blight"            : "Raw Blight",
+  "item.blight.mythrion_ingot"        : "Mythrion Ingot",
+  "item.blight.raw_mythrion"          : "Raw Mythrion",
+  "item.blight.raw_eldranite"         : "Raw Eldranite",
+  "item.blight.eldranite_ingot"       : "Eldranite Ingot",
+  "item.blight.raw_trionite"          : "Raw Eldranite",
+  "item.blight.trionite_ingot"        : "Trionite Ingot",
+  "item.blight.raw_nyxium"            : "Raw Nyxium",
+  "item.blight.nyxium_ingot"          : "Nyxium Ingot",
 
   //Ores block
-  "item.blight.burning_stone" : "Burning Stone",
-  "item.blight.eldranite_ore": "Eldranite Ore",
-  "item.blight.blight_ore" : "Blight Ore",
-  "item.blight.deepslate_blight_ore" : "Deepslate Blight Ore",
+  "item.blight.burning_stone"         : "Burning Stone",
   "item.blight.deepslate_mythrion_ore": "Deepslate Mythrion Ore",
-  "item.blight.nyxium_ore" : "Nyxium Ore",
+  "item.blight.nether_eldranite_ore"  : "Eldranite Ore",
+  "item.blight.nether_trionite_ore"   : "Trionite Ore",
+  "item.blight.nyxium_ore"            : "Nyxium Ore",
+  "item.blight.blight_ore"            : "Blight Ore",
+  "item.blight.deepslate_blight_ore"  : "Deepslate Blight Ore",
 
 //Block
-  "item.blight.mythrion_block" : "Block of Mythrion",
-  "item.blight.blight_block": "Block of Blight",
-  "item.blight.eldranite_block" : "Block of Eldranite",
-  "item.blight.raw_mythrion_block" : "Raw Block of Mytrhion",
-  "item.blight.raw_blight_block" : "Raw Block of Blight",
-  "item.blight.raw_eldranite_block" : "Raw Block of Eldranite",
-  "item.blight.nyxium_block" : "Block of Nyxium",
-  "item.blight.raw_nyxium_block" : "Raw Block of Nyxium",
+  "item.blight.raw_mythrion_block"    : "Raw Block of Mytrhion",
+  "item.blight.raw_eldranite_block"   : "Raw Block of Eldranite",
+  "item.blight.raw_trionite_block"    : "Raw Block of Trionite",
+  "item.blight.raw_nyxium_block"      : "Raw Block of Nyxium",
+  "item.blight.raw_blight_block"      : "Raw Block of Blight",
+
+  "item.blight.mythrion_block"        : "Block of Mythrion",
+  "item.blight.eldranite_block"       : "Block of Eldranite",
+  "item.blight.trionite_block"        : "Block of Trionite",
+  "item.blight.nyxium_block"          : "Block of Nyxium",
+  "item.blight.blight_block"          : "Block of Blight",
+
 
 //ITEMS
-  "item.blight.burning_stone_ashes": "Burning Stone Ashes",
-  "item.blight.arise_music_disc": "Arise Music Disc",
-  "item.blight.arise_music_disc.desc": "The Boss fight music of Arise Boss",
+  "item.blight.burning_stone_ashes"   : "Burning Stone Ashes",
+  "item.blight.arise_music_disc"      : "Arise Music Disc",
+  "item.blight.arise_music_disc.desc" : "The Boss fight music of Arise Boss",
 
 //TOOLTIPS
 
 //TABS
-  "itemgroup.blight.blight_blocks": "Blight Blocks",
-  "itemgroup.blight.blight_items": "Blight Items",
-  "itemgroup.blight.blight_tools": "Blight Tools",
+  "itemgroup.blight.blight_blocks"    : "Blight Blocks",
+  "itemgroup.blight.blight_items"     : "Blight Items",
+  "itemgroup.blight.blight_tools"     : "Blight Tools",
 
 
 //TUTO

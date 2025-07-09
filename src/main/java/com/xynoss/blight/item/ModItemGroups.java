@@ -65,12 +65,15 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BLIGHT_ORE);
                         entries.add(ModBlocks.DEEPSLATE_BLIGHT_ORE);
                         entries.add(ModBlocks.BURNING_STONE);
-                        entries.add(ModBlocks.ELDRANITE_ORE);
-                        entries.add(ModBlocks.ELDRANITE_BLOCK);
-                        entries.add(ModBlocks.RAW_ELDRANITE_BLOCK);
                         entries.add(ModBlocks.DEEPSLATE_MYTHRION_ORE);
                         entries.add(ModBlocks.MYTHRION_BLOCK);
                         entries.add(ModBlocks.RAW_MYTHRION_BLOCK);
+                        entries.add(ModBlocks.NETHER_ELDRANITE_ORE);
+                        entries.add(ModBlocks.ELDRANITE_BLOCK);
+                        entries.add(ModBlocks.RAW_ELDRANITE_BLOCK);
+                        entries.add(ModBlocks.NETHER_TRIONITE_ORE);
+                        entries.add(ModBlocks.TRIONITE_BLOCK);
+                        entries.add(ModBlocks.RAW_TRIONITE_BLOCK);
                         entries.add(ModBlocks.RAW_NYXIUM_BLOCK);
                         entries.add(ModBlocks.NYXIUM_BLOCK);
                         entries.add(ModBlocks.NYXIUM_ORE);
@@ -88,10 +91,12 @@ public class ModItemGroups {
                         entries.add(ModItems.BLIGHT_INGOT);
                         entries.add(ModItems.RAW_BLIGHT);
                         entries.add(ModItems.BURNING_STONE_ASHES);
-                        entries.add(ModItems.RAW_ELDRANITE);
-                        entries.add(ModItems.ELDRANITE_INGOT);
                         entries.add(ModItems.RAW_MYTHRION);
                         entries.add(ModItems.MYTHRION_INGOT);
+                        entries.add(ModItems.RAW_ELDRANITE);
+                        entries.add(ModItems.ELDRANITE_INGOT);
+                        entries.add(ModItems.RAW_TRIONITE);
+                        entries.add(ModItems.TRIONITE_INGOT);
                         entries.add(ModItems.NYXIUM_INGOT);
                         entries.add(ModItems.RAW_NYXIUM);
 

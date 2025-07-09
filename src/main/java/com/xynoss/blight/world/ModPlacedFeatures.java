@@ -19,29 +19,30 @@ import java.util.Collection;
 
 public class ModPlacedFeatures {
 
-    public static final RegistryKey<PlacedFeature> BLIGHT_ORE_PLACED_KEY = registerKey("bligh_ore_placed");
-    public static final RegistryKey<PlacedFeature> ELDRANITE_ORE_PLACED_KEY = registerKey("eldranite_ore_placed");
     public static final RegistryKey<PlacedFeature> MYTHRION_ORE_PLACED_KEY = registerKey("mythrion_ore_placed");
+    public static final RegistryKey<PlacedFeature> ELDRANITE_ORE_PLACED_KEY = registerKey("eldranite_ore_placed");
+    public static final RegistryKey<PlacedFeature> TRIONITE_ORE_PLACED_KEY = registerKey("trionite_ore_placed");
     public static final RegistryKey<PlacedFeature> NYXIUM_ORE_PLACED_KEY = registerKey("nyxium_ore_placed");
-
+    public static final RegistryKey<PlacedFeature> BLIGHT_ORE_PLACED_KEY = registerKey("bligh_ore_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
-        //Blight ORE
-        register(context, BLIGHT_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.BLIGHT_ORE_KEY),
+
+        //Mythrion ORE
+        register(context, MYTHRION_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MYTHRION_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(14,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80)))
-                );
+        );
 
         //Eldranite ORE
         register(context, ELDRANITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ELDRANITE_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(14,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80)))
-                );
+        );
 
-        //Mythrion ORE
-        register(context, MYTHRION_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MYTHRION_ORE_KEY),
+        //Trionite ORE
+        register(context, TRIONITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.TRIONITE_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(14,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80)))
         );
@@ -51,6 +52,12 @@ public class ModPlacedFeatures {
                 ModOrePlacement.modifiersWithCount(14,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80)))
         );
+
+        //Blight ORE
+        register(context, BLIGHT_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.BLIGHT_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(14,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80)))
+                );
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {

@@ -6,7 +6,7 @@
     "targets": [
       {
         "state": {
-          "Name": "blight:eldranite_ore"
+          "Name": "blight:nether_eldranite_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",

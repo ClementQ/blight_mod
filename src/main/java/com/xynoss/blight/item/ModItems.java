@@ -64,17 +64,23 @@ public class ModItems {
     public static final Item BURNING_STONE_ASHES = registerItem("burning_stone_ashes", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"burning_stone_ashes")))
     ));
+    public static final Item RAW_MYTHRION = registerItem("raw_mythrion", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"raw_mythrion")))
+    ));
+    public static final Item MYTHRION_INGOT = registerItem("mythrion_ingot", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"mythrion_ingot")))
+    ));
     public static final Item RAW_ELDRANITE = registerItem("raw_eldranite", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"raw_eldranite")))
     ));
     public static final Item ELDRANITE_INGOT = registerItem("eldranite_ingot", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"eldranite_ingot")))
     ));
-    public static final Item RAW_MYTHRION = registerItem("raw_mythrion", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"raw_mythrion")))
+    public static final Item RAW_TRIONITE = registerItem("raw_trionite", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"raw_trionite")))
     ));
-    public static final Item MYTHRION_INGOT = registerItem("mythrion_ingot", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"mythrion_ingot")))
+    public static final Item TRIONITE_INGOT = registerItem("trionite_ingot", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"trionite_ingot")))
     ));
     public static final Item RAW_NYXIUM = registerItem("raw_nyxium", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"raw_nyxium")))

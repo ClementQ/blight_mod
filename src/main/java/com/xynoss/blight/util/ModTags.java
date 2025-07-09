@@ -18,6 +18,10 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_MYTHRION_TOOL = createTag("needs_mythrion_tool");
         public static final TagKey<Block> INCORRECT_FOR_MYTHRION_TOOL = createTag("incorrect_for_mythrion_tool");
 
+        //ELDRANITE
+        public static final TagKey<Block> NEEDS_ELDRANITE_TOOL = createTag("needs_eldranite_tool");
+        public static final TagKey<Block> INCORRECT_FOR_ELDRANITE_TOOL = createTag("incorrect_for_eldranite_tool");
+
         //NYXIUM
         public static final TagKey<Block> NEEDS_NYXIUM_TOOL = createTag("needs_nyxium_tool");
         public static final TagKey<Block> INCORRECT_FOR_NYXIUM_TOOL = createTag("incorrect_for_nyxium_tool");
@@ -41,6 +45,16 @@ public class ModTags {
         public static final TagKey<Item> MYTHRION_TOOLS = createTag("mythrion_tools");
         public static final TagKey<Item> MYTHRION_REPAIR = createTag("mythrion_repair");
         public static final TagKey<Item> MYTHRION_ARMOR = TagKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID, "mythrion_armor"));
+
+        //ELDRANITE
+        public static final TagKey<Item> ELDRANITE_TOOLS = createTag("eldranite_tools");
+        public static final TagKey<Item> ELDRANITE_REPAIR = createTag("eldrtanite_repair");
+        public static final TagKey<Item> ELDRANITE_ARMOR = TagKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID, "eldranite_armor"));
+
+        //NYXIUM
+        public static final TagKey<Item> NYXIUM_TOOLS = createTag("nyxium_tools");
+        public static final TagKey<Item> NYXIUM_REPAIR = createTag("eldrtanite_repair");
+        public static final TagKey<Item> NYXIUM_ARMOR = TagKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID, "nyxium_armor"));
 
         private static TagKey<Item> createTag(String name){
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID, name));

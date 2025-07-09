@@ -50,20 +50,25 @@ public class ModModelProvider extends FabricModelProvider {
 //BLight Models
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_BLIGHT_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLIGHT_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ELDRANITE_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_ELDRANITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MYTHRION_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_MYTHRION_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ELDRANITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_ELDRANITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TRIONITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_TRIONITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NYXIUM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_NYXIUM_BLOCK);
+
 
         //ORES
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BURNING_STONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLIGHT_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_BLIGHT_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ELDRANITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_MYTHRION_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NYXIUM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_ELDRANITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_TRIONITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NYXIUM_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_NYXIUM_BLOCK);
+
 
 
 
@@ -78,15 +83,20 @@ public class ModModelProvider extends FabricModelProvider {
 
 
 //Blight Items
+        //ORES
         itemModelGenerator.register(ModItems.RAW_BLIGHT, Models.GENERATED);
         itemModelGenerator.register(ModItems.BLIGHT_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.BURNING_STONE_ASHES, Models.GENERATED);
-        itemModelGenerator.register(ModItems.RAW_ELDRANITE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ELDRANITE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_MYTHRION, Models.GENERATED);
         itemModelGenerator.register(ModItems.MYTHRION_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_ELDRANITE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ELDRANITE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_TRIONITE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TRIONITE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.NYXIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_NYXIUM, Models.GENERATED);
+
+
         itemModelGenerator.register(ModItems.MUSIC_DISC_ARISE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.BLIGHT_SWORD, Models.HANDHELD);

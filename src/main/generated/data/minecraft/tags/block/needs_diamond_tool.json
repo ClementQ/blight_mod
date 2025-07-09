@@ -2,7 +2,6 @@
   "values": [
     "blight:blight_ore",
     "blight:deepslate_blight_ore",
-    "blight:eldranite_ore",
-    "#blight:needs_blight_tools"
+    "blight:nether_eldranite_ore"
   ]
 }

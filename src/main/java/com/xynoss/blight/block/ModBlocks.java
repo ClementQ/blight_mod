@@ -151,32 +151,13 @@ public class ModBlocks {
         }
     });
 
-    //ELDRANITE
-    public static final Block ELDRANITE_ORE = registerBlock("eldranite_ore",new ExperienceDroppingBlock(
-            UniformIntProvider.create(1, 1),
-            AbstractBlock.Settings.create().
-                    strength(4f)
-                    .requiresTool()
-                    .sounds(BlockSoundGroup.DEEPSLATE)
-                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"eldranite_ore")))
-    ));
-    public static final Block ELDRANITE_BLOCK = registerBlock("eldranite_block", new Block(AbstractBlock.Settings.create()
-            .strength(4f)
-            .requiresTool()
-            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"eldranite_block")))
-    ));
-    public static final Block RAW_ELDRANITE_BLOCK = registerBlock("raw_eldranite_block", new Block(AbstractBlock.Settings.create()
-            .strength(4f)
-            .requiresTool()
-            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"raw_eldranite_block")))
-    ));
     //Mythrion
     public static final Block DEEPSLATE_MYTHRION_ORE = registerBlock("deepslate_mythrion_ore",new OreBlocks(
             UniformIntProvider.create(1, 1), AbstractBlock.Settings.create().
-                    strength(4f)
-                    .requiresTool()
-                    .sounds(BlockSoundGroup.DEEPSLATE)
-                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"deepslate_mythrion_ore"))),
+            strength(4f)
+            .requiresTool()
+            .sounds(BlockSoundGroup.DEEPSLATE)
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"deepslate_mythrion_ore"))),
             ModTags.Items.BLIGHT_TOOLS
     ));
     public static final Block MYTHRION_BLOCK = registerBlock("mythrion_block", new Block(AbstractBlock.Settings.create()
@@ -189,6 +170,49 @@ public class ModBlocks {
             .requiresTool()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"raw_mythrion_block")))
     ));
+
+    //ELDRANITE
+    public static final Block NETHER_ELDRANITE_ORE = registerBlock("nether_eldranite_ore",new OreBlocks(
+            UniformIntProvider.create(1, 1),
+            AbstractBlock.Settings.create().
+                    strength(4f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.DEEPSLATE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"eldranite_ore"))),
+            ModTags.Items.MYTHRION_TOOLS
+    ));
+    public static final Block ELDRANITE_BLOCK = registerBlock("eldranite_block", new Block(AbstractBlock.Settings.create()
+            .strength(4f)
+            .requiresTool()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"eldranite_block")))
+    ));
+    public static final Block RAW_ELDRANITE_BLOCK = registerBlock("raw_eldranite_block", new Block(AbstractBlock.Settings.create()
+            .strength(4f)
+            .requiresTool()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"raw_eldranite_block")))
+    ));
+
+    //TRIONITE
+    public static final Block NETHER_TRIONITE_ORE = registerBlock("nether_trionite_ore",new OreBlocks(
+            UniformIntProvider.create(1, 1),
+            AbstractBlock.Settings.create().
+                    strength(4f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.NETHER_ORE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"nether_trionite_ore"))),
+            ModTags.Items.ELDRANITE_TOOLS
+    ));
+    public static final Block TRIONITE_BLOCK = registerBlock("trionite_block", new Block(AbstractBlock.Settings.create()
+            .strength(4f)
+            .requiresTool()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"trionite_block")))
+    ));
+    public static final Block RAW_TRIONITE_BLOCK = registerBlock("raw_trionite_block", new Block(AbstractBlock.Settings.create()
+            .strength(4f)
+            .requiresTool()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"raw_trionite_block")))
+    ));
+
 
     //Nyxium
     public static final Block NYXIUM_ORE = registerBlock("nyxium_ore", new OreBlocks(UniformIntProvider.create(1, 1), AbstractBlock.Settings.create()
