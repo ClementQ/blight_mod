@@ -7,9 +7,15 @@
     "blight:pink_garnet_block",
     "blight:raw_pink_garnet_block",
     "blight:magic_block",
+    "blight:deepslate_mythrion_ore",
     "blight:nether_eldranite_ore",
     "blight:eldranite_block",
+    "blight:raw_eldranite_block",
+    "blight:nether_trionite_ore",
+    "blight:trionite_block",
+    "blight:raw_trionite_block",
     "blight:nyxium_ore",
-    "blight:nyxium_block"
+    "blight:nyxium_block",
+    "blight:raw_nyxium_block"
   ]
 }

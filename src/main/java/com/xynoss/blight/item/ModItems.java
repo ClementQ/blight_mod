@@ -120,8 +120,6 @@ public class ModItems {
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"blight_bow")))
     ));
 
-
-    //MYTHRION
     public static final Item MYTHRION_SWORD = registerItem("mythrion_sword", new SwordItem(ModToolMaterials.MYTHRION, 10,-2.4f, new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"mythrion_sword")))
     ));
@@ -139,6 +137,25 @@ public class ModItems {
     ));
     public static final Item MYTHRION_HAMMER = registerItem("mythrion_hammer", new HammerItem(ModToolMaterials.BLIGHT, 7,-3.4f, new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"mythrion_hammer")))
+    ));
+
+    public static final Item ELDRANITE_SWORD = registerItem("eldranite_sword", new SwordItem(ModToolMaterials.ELDRANITE, 15,-2.4f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"eldranite_sword")))
+    ));
+    public static final Item ELDRANITE_PICKAXE = registerItem("eldranite_pickaxe", new PickaxeItem(ModToolMaterials.ELDRANITE, 1,-2.8f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"eldranite_pickaxe")))
+    ));
+    public static final Item ELDRANITE_SHOVEL = registerItem("eldranite_shovel", new ShovelItem(ModToolMaterials.BLIGHT, 1.5f,-3.0f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"eldranite_shovel")))
+    ));
+    public static final Item ELDRANITE_AXE = registerItem("eldranite_axe", new AxeItem(ModToolMaterials.BLIGHT, 6,-3.2f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"eldranite_axe")))
+    ));
+    public static final Item ELDRANITE_HOE = registerItem("eldranite_hoe", new HoeItem(ModToolMaterials.BLIGHT, 0,-3.0f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"eldranite_hoe")))
+    ));
+    public static final Item ELDRANITE_HAMMER = registerItem("eldranite_hammer", new HammerItem(ModToolMaterials.BLIGHT, 7,-3.4f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"eldranite_hammer")))
     ));
 
 

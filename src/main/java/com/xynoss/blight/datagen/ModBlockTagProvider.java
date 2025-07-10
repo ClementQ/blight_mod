@@ -4,10 +4,8 @@ import com.xynoss.blight.block.ModBlocks;
 import com.xynoss.blight.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.minecraft.item.BlockItem;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -26,10 +24,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PINK_GARNET_BLOCK)
                 .add(ModBlocks.RAW_PINK_GARNET_BLOCK)
                 .add(ModBlocks.MAGIC_BLOCK)
+                .add(ModBlocks.DEEPSLATE_MYTHRION_ORE)
                 .add(ModBlocks.NETHER_ELDRANITE_ORE)
                 .add(ModBlocks.ELDRANITE_BLOCK)
+                .add(ModBlocks.RAW_ELDRANITE_BLOCK)
+                .add(ModBlocks.NETHER_TRIONITE_ORE)
+                .add(ModBlocks.TRIONITE_BLOCK)
+                .add(ModBlocks.RAW_TRIONITE_BLOCK)
                 .add(ModBlocks.NYXIUM_ORE)
                 .add(ModBlocks.NYXIUM_BLOCK)
+                .add(ModBlocks.RAW_NYXIUM_BLOCK)
         ;
 
 
@@ -41,9 +45,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         ;
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.BLIGHT_ORE)
-                .add(ModBlocks.DEEPSLATE_BLIGHT_ORE)
-                .add(ModBlocks.NETHER_ELDRANITE_ORE)
+                .add(ModBlocks.DEEPSLATE_MYTHRION_ORE)
         ;
 
         getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.PINK_GARNET_FENCE);
@@ -54,13 +56,25 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         //NEEDS BLIGHT TOOLS
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_BLIGHT_TOOL)
 //                .add(ModBlocks.BURNING_STONE)
-                .add(ModBlocks.DEEPSLATE_MYTHRION_ORE)
+//                .add(ModBlocks.DEEPSLATE_MYTHRION_ORE)
         ;
 
         //NEEDS MYTHRION TOOLS
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_MYTHRION_TOOL)
                 .add(ModBlocks.BURNING_STONE)
-                .add(ModBlocks.NYXIUM_ORE)
+                .add(ModBlocks.NETHER_ELDRANITE_ORE)
+        ;
+
+        //NEEDS ELDRANITE TOOLS
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_ELDRANITE_TOOL)
+                .addTag(ModTags.Blocks.NEEDS_MYTHRION_TOOL)
+                .add(ModBlocks.NETHER_TRIONITE_ORE)
+        ;
+
+        //NEEDS TRIONITE TOOLS
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_TRIONITE_TOOL)
+                .addTag(ModTags.Blocks.NEEDS_TRIONITE_TOOL)
+                .add(ModBlocks.NETHER_TRIONITE_ORE)
         ;
 
 

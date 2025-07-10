@@ -128,6 +128,13 @@ public class ModItemGroups {
                         entries.add(ModItems.MYTHRION_HOE);
                         entries.add(ModItems.MYTHRION_HAMMER);
 
+                        entries.add(ModItems.ELDRANITE_PICKAXE);
+                        entries.add(ModItems.ELDRANITE_SWORD);
+                        entries.add(ModItems.ELDRANITE_SHOVEL);
+                        entries.add(ModItems.ELDRANITE_AXE);
+                        entries.add(ModItems.ELDRANITE_HOE);
+                        entries.add(ModItems.ELDRANITE_HAMMER);
+
                     })
                     .build());
 

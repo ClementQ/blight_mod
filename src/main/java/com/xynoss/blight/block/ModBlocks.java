@@ -21,6 +21,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.BlockView;
 
+import java.util.List;
+
 
 public class ModBlocks {
 
@@ -152,13 +154,12 @@ public class ModBlocks {
     });
 
     //Mythrion
-    public static final Block DEEPSLATE_MYTHRION_ORE = registerBlock("deepslate_mythrion_ore",new OreBlocks(
-            UniformIntProvider.create(1, 1), AbstractBlock.Settings.create().
-            strength(4f)
+    public static final Block DEEPSLATE_MYTHRION_ORE = registerBlock("deepslate_mythrion_ore",new Block(
+            AbstractBlock.Settings.create()
+            .strength(4f)
             .requiresTool()
             .sounds(BlockSoundGroup.DEEPSLATE)
-            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"deepslate_mythrion_ore"))),
-            ModTags.Items.BLIGHT_TOOLS
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"deepslate_mythrion_ore")))
     ));
     public static final Block MYTHRION_BLOCK = registerBlock("mythrion_block", new Block(AbstractBlock.Settings.create()
             .strength(4f)
@@ -178,8 +179,8 @@ public class ModBlocks {
                     strength(4f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.DEEPSLATE)
-                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"eldranite_ore"))),
-            ModTags.Items.MYTHRION_TOOLS
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"nether_eldranite_ore"))),
+            List.of(ModTags.Items.MYTHRION_TOOLS, ModTags.Items.ELDRANITE_TOOLS)
     ));
     public static final Block ELDRANITE_BLOCK = registerBlock("eldranite_block", new Block(AbstractBlock.Settings.create()
             .strength(4f)
@@ -200,7 +201,7 @@ public class ModBlocks {
                     .requiresTool()
                     .sounds(BlockSoundGroup.NETHER_ORE)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"nether_trionite_ore"))),
-            ModTags.Items.ELDRANITE_TOOLS
+            List.of(ModTags.Items.ELDRANITE_TOOLS, ModTags.Items.TRIONITE_TOOLS)
     ));
     public static final Block TRIONITE_BLOCK = registerBlock("trionite_block", new Block(AbstractBlock.Settings.create()
             .strength(4f)
@@ -220,7 +221,7 @@ public class ModBlocks {
                 .requiresTool()
                 .sounds(BlockSoundGroup.STONE)
                 .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"nyxium_ore"))),
-            ModTags.Items.MYTHRION_TOOLS
+            List.of(ModTags.Items.MYTHRION_TOOLS)
     ));
     public static final Block NYXIUM_BLOCK = registerBlock("nyxium_block", new Block(AbstractBlock.Settings.create()
             .strength(4f)

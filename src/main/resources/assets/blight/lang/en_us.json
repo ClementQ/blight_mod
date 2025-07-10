@@ -16,6 +16,13 @@
   "item.blight.mythrion_hoe"          : "Mythrion Hoe",
   "item.blight.mythrion_hammer"       : "Mythrion Hammer",
 
+  "item.blight.eldranite_sword"        : "Eldranite Sword",
+  "item.blight.eldranite_pickaxe"      : "Eldranite Pickaxe",
+  "item.blight.eldranite_axe"          : "Eldranite Axe",
+  "item.blight.eldranite_shovel"       : "Eldranite Shovel",
+  "item.blight.eldranite_hoe"          : "Eldranite Hoe",
+  "item.blight.eldranite_hammer"       : "Eldranite Hammer",
+
   "item.blight.music_disc_arise.desc" : "The song of a certain boss",
 
 //ARMORS
@@ -33,7 +40,7 @@
   "item.blight.raw_mythrion"          : "Raw Mythrion",
   "item.blight.raw_eldranite"         : "Raw Eldranite",
   "item.blight.eldranite_ingot"       : "Eldranite Ingot",
-  "item.blight.raw_trionite"          : "Raw Eldranite",
+  "item.blight.raw_trionite"          : "Raw Trionite",
   "item.blight.trionite_ingot"        : "Trionite Ingot",
   "item.blight.raw_nyxium"            : "Raw Nyxium",
   "item.blight.nyxium_ingot"          : "Nyxium Ingot",

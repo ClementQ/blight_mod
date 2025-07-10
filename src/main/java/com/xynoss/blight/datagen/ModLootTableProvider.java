@@ -8,16 +8,12 @@ import com.xynoss.blight.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
-import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
-import net.minecraft.loot.condition.MatchToolLootCondition;
+import net.minecraft.loot.condition.*;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
@@ -32,9 +28,7 @@ import net.minecraft.predicate.item.ItemPredicate;
 import net.minecraft.predicate.item.ItemSubPredicateTypes;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.loot.condition.InvertedLootCondition;
 import net.minecraft.registry.tag.TagKey;
-
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -89,117 +83,122 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
 
 //Loottable Blight
-        addDrop(ModBlocks.BLIGHT_BLOCK);
-        addDrop(ModBlocks.RAW_BLIGHT_BLOCK);
 
-        addDrop(ModBlocks.BLIGHT_ORE, multipleOreDrops(ModBlocks.BLIGHT_ORE, ModItems.RAW_BLIGHT, 1,3));
-        addDrop(ModBlocks.DEEPSLATE_BLIGHT_ORE, multipleOreDrops(ModBlocks.DEEPSLATE_BLIGHT_ORE, ModItems.RAW_BLIGHT, 3,7));
 
 //        addDrop(ModBlocks.BURNING_STONE, createRequiredToolMultipleDrops(ModBlocks.BURNING_STONE, ModItems.BURNING_STONE_ASHES, 1, 3, ModTags.Items.BLIGHT_TOOLS));
 
-        addDrop(ModBlocks.DEEPSLATE_MYTHRION_ORE, createRequiredToolMultipleDrops(ModBlocks.DEEPSLATE_MYTHRION_ORE, ModItems.RAW_MYTHRION, 1, 3, ModTags.Items.BLIGHT_TOOLS));
-        addDrop(ModBlocks.MYTHRION_BLOCK);
-        addDrop(ModBlocks.RAW_MYTHRION_BLOCK);
-        addDrop(ModBlocks.NETHER_ELDRANITE_ORE, oreDrops(ModBlocks.NETHER_ELDRANITE_ORE, ModItems.RAW_ELDRANITE));
-        addDrop(ModBlocks.ELDRANITE_BLOCK);
-        addDrop(ModBlocks.RAW_ELDRANITE_BLOCK);
-        addDrop(ModBlocks.NETHER_TRIONITE_ORE, oreDrops(ModBlocks.NETHER_TRIONITE_ORE, ModItems.RAW_TRIONITE));
-        addDrop(ModBlocks.ELDRANITE_BLOCK);
-        addDrop(ModBlocks.RAW_ELDRANITE_BLOCK);
+        addDrop(ModBlocks.BURNING_STONE, createRequiredToolMultipleDrops(ModBlocks.BURNING_STONE, ModItems.BURNING_STONE_ASHES, 1, 3, List.of(ModTags.Items.MYTHRION_TOOLS)));
 
-//Lootable Mythrion
-        addDrop(ModBlocks.BURNING_STONE, createRequiredToolMultipleDrops(ModBlocks.BURNING_STONE, ModItems.BURNING_STONE_ASHES, 1, 3, ModTags.Items.MYTHRION_TOOLS));
+        addDrop(ModBlocks.DEEPSLATE_MYTHRION_ORE, multipleOreDrops(ModBlocks.DEEPSLATE_MYTHRION_ORE, ModItems.RAW_MYTHRION, 1,3));
+        addDrop(ModBlocks.NETHER_ELDRANITE_ORE,     createRequiredToolMultipleDrops(ModBlocks.NETHER_ELDRANITE_ORE, ModItems.RAW_ELDRANITE, 1,  1, List.of(ModTags.Items.MYTHRION_TOOLS, ModTags.Items.ELDRANITE_TOOLS)));
+        addDrop(ModBlocks.NETHER_TRIONITE_ORE,      createRequiredToolMultipleDrops(ModBlocks.NETHER_TRIONITE_ORE,  ModItems.RAW_TRIONITE,  1,  1, List.of(ModTags.Items.ELDRANITE_TOOLS)));
+        addDrop(ModBlocks.NYXIUM_ORE,               createRequiredToolMultipleDrops(ModBlocks.NYXIUM_ORE,           ModItems.RAW_NYXIUM,    1,  1, List.of(ModTags.Items.MYTHRION_TOOLS)));
+        addDrop(ModBlocks.BLIGHT_ORE, multipleOreDrops(ModBlocks.BLIGHT_ORE, ModItems.RAW_BLIGHT, 1,3));
+        addDrop(ModBlocks.DEEPSLATE_BLIGHT_ORE, multipleOreDrops(ModBlocks.DEEPSLATE_BLIGHT_ORE, ModItems.RAW_BLIGHT, 3,7));
 
-//Lootable Nyxium
-        addDrop(ModBlocks.NYXIUM_ORE, createRequiredToolMultipleDrops(ModBlocks.NYXIUM_ORE, ModItems.RAW_NYXIUM, 1, 3, ModTags.Items.MYTHRION_TOOLS));
+
         addDrop(ModBlocks.MYTHRION_BLOCK);
+        addDrop(ModBlocks.ELDRANITE_BLOCK);
+        addDrop(ModBlocks.TRIONITE_BLOCK);
+        addDrop(ModBlocks.NYXIUM_BLOCK);
+        addDrop(ModBlocks.BLIGHT_BLOCK);
+
+
         addDrop(ModBlocks.RAW_MYTHRION_BLOCK);
+        addDrop(ModBlocks.RAW_ELDRANITE_BLOCK);
+        addDrop(ModBlocks.RAW_TRIONITE_BLOCK);
+        addDrop(ModBlocks.RAW_MYTHRION_BLOCK);
+        addDrop(ModBlocks.RAW_BLIGHT_BLOCK);
+
 
     }
 
-
-
-
-    public LootTable.Builder createRequiredToolMultipleDrops(Block drop, Item item, float minDrops, float maxDrops, TagKey<Item> requiredToolTag) {
+    public LootTable.Builder createRequiredToolMultipleDrops(Block drop, Item item, float minDrops, float maxDrops, List<TagKey<Item>> requiredToolTags) {
         RegistryWrapper.Impl<Item> itemRegistry = this.registries.getOrThrow(RegistryKeys.ITEM);
         RegistryWrapper.Impl<Enchantment> impl = this.registries.getOrThrow(RegistryKeys.ENCHANTMENT);
 
-        // Utiliser l'approche dropsWithSilkTouch comme référence
-        return LootTable.builder()
-                // Pool pour Silk Touch - drop le bloc lui-même
-                .pool(LootPool.builder()
-                        .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(drop))
-                        .conditionally(MatchToolLootCondition.builder(
-                                ItemPredicate.Builder.create().tag(itemRegistry,requiredToolTag)
-                        ))
-                        .conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create()
-                                        .subPredicate(ItemSubPredicateTypes.ENCHANTMENTS, EnchantmentsPredicate.enchantments(
-                                                List.of(new EnchantmentPredicate(impl.getOrThrow(Enchantments.SILK_TOUCH), NumberRange.IntRange.atLeast(1)))
-                                        ))
-                        ))
-                        // Condition Silk Touch prédéfinie
-                )
-                // Pool pour les drops normaux (sans Silk Touch)
-                .pool(LootPool.builder()
-                        .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(item)
-                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(minDrops, maxDrops)))
-                                .apply(ApplyBonusLootFunction.oreDrops(impl.getOrThrow(Enchantments.FORTUNE)))
-                        )
-                        .conditionally(MatchToolLootCondition.builder(
-                                ItemPredicate.Builder.create().tag(itemRegistry,requiredToolTag)
-                        ))
-                        .conditionally(InvertedLootCondition.builder(
-                                MatchToolLootCondition.builder(
-                                        ItemPredicate.Builder.create()
-                                                .subPredicate(ItemSubPredicateTypes.ENCHANTMENTS, EnchantmentsPredicate.enchantments(
-                                                        List.of(new EnchantmentPredicate(impl.getOrThrow(Enchantments.SILK_TOUCH), NumberRange.IntRange.atLeast(1)))
-                                                )) // Condition Silk Touch inversée
-                                        )
-                        ))
-                );
-    }
-//    public LootTable.Builder createRequiredToolMultipleDrops(Block drop, Item item, float minDrops, float maxDrops, Item requiredTool) {
-//        RegistryWrapper.Impl<Item> itemRegistry = this.registries.getOrThrow(RegistryKeys.ITEM);
-//        RegistryWrapper.Impl<Enchantment> impl = this.registries.getOrThrow(RegistryKeys.ENCHANTMENT);
+        LootTable.Builder lootTable = LootTable.builder();
+
+        for (TagKey<Item> tag : requiredToolTags) {
+            // Pool avec Silk Touch
+            lootTable.pool(LootPool.builder()
+                    .rolls(ConstantLootNumberProvider.create(1))
+                    .with(ItemEntry.builder(drop))
+                    .conditionally(MatchToolLootCondition.builder(
+                            ItemPredicate.Builder.create().tag(itemRegistry, tag)))
+                    .conditionally(MatchToolLootCondition.builder(
+                            ItemPredicate.Builder.create().subPredicate(
+                                    ItemSubPredicateTypes.ENCHANTMENTS,
+                                    EnchantmentsPredicate.enchantments(List.of(
+                                            new EnchantmentPredicate(impl.getOrThrow(Enchantments.SILK_TOUCH), NumberRange.IntRange.atLeast(1)))
+                                    )
+                            )
+                    ))
+            );
+
+            // Pool sans Silk Touch
+            lootTable.pool(LootPool.builder()
+                    .rolls(ConstantLootNumberProvider.create(1))
+                    .with(ItemEntry.builder(item)
+                            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(minDrops, maxDrops)))
+                            .apply(ApplyBonusLootFunction.oreDrops(impl.getOrThrow(Enchantments.FORTUNE)))
+                    )
+                    .conditionally(MatchToolLootCondition.builder(
+                            ItemPredicate.Builder.create().tag(itemRegistry, tag)))
+                    .conditionally(InvertedLootCondition.builder(
+                            MatchToolLootCondition.builder(
+                                    ItemPredicate.Builder.create().subPredicate(
+                                            ItemSubPredicateTypes.ENCHANTMENTS,
+                                            EnchantmentsPredicate.enchantments(List.of(
+                                                    new EnchantmentPredicate(impl.getOrThrow(Enchantments.SILK_TOUCH), NumberRange.IntRange.atLeast(1)))
+                                            )
+                                    )
+                            )
+                    ))
+            );
+        }
+
+//        for (TagKey<Item> tag : requiredToolTags) {
+//            LootTable.builder()
+//                    // Pool pour Silk Touch - drop le bloc lui-même
+//                    .pool(LootPool.builder()
+//                                    .rolls(ConstantLootNumberProvider.create(1))
+//                                    .with(ItemEntry.builder(drop))
+//                                    .conditionally(MatchToolLootCondition.builder(
+//                                            ItemPredicate.Builder.create().tag(itemRegistry, tag))
+//                                    )
+//                                    .conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create()
+//                                            .subPredicate(ItemSubPredicateTypes.ENCHANTMENTS, EnchantmentsPredicate.enchantments(
+//                                                    List.of(new EnchantmentPredicate(impl.getOrThrow(Enchantments.SILK_TOUCH), NumberRange.IntRange.atLeast(1)))
+//                                            ))
+//                                    ))
 //
-//        // Utiliser l'approche dropsWithSilkTouch comme référence
-//        return LootTable.builder()
-//                // Pool pour Silk Touch - drop le bloc lui-même
-//                .pool(LootPool.builder()
-//                        .rolls(ConstantLootNumberProvider.create(1))
-//                        .with(ItemEntry.builder(drop))
-//                        .conditionally(MatchToolLootCondition.builder(
-//                                ItemPredicate.Builder.create().items(itemRegistry, requiredTool)
-//                        ))
-//                        .conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create()
-//                                        .subPredicate(ItemSubPredicateTypes.ENCHANTMENTS, EnchantmentsPredicate.enchantments(
-//                                                List.of(new EnchantmentPredicate(impl.getOrThrow(Enchantments.SILK_TOUCH), NumberRange.IntRange.atLeast(1)))
-//                                        ))
-//                        ))
-//                        // Condition Silk Touch prédéfinie
-//                )
-//                // Pool pour les drops normaux (sans Silk Touch)
-//                .pool(LootPool.builder()
-//                        .rolls(ConstantLootNumberProvider.create(1))
-//                        .with(ItemEntry.builder(item)
-//                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(minDrops, maxDrops)))
-//                                .apply(ApplyBonusLootFunction.oreDrops(impl.getOrThrow(Enchantments.FORTUNE)))
-//                        )
-//                        .conditionally(MatchToolLootCondition.builder(
-//                                ItemPredicate.Builder.create().items(itemRegistry, requiredTool)
-//                        ))
-//                        .conditionally(InvertedLootCondition.builder(
-//                                MatchToolLootCondition.builder(
-//                                        ItemPredicate.Builder.create()
-//                                                .subPredicate(ItemSubPredicateTypes.ENCHANTMENTS, EnchantmentsPredicate.enchantments(
-//                                                        List.of(new EnchantmentPredicate(impl.getOrThrow(Enchantments.SILK_TOUCH), NumberRange.IntRange.atLeast(1)))
-//                                                )) // Condition Silk Touch inversée
-//                                        )
-//                        ))
-//                );
-//    }
+//                            // Condition Silk Touch prédéfinie
+//                    )
+//        };
+//                    // Pool pour les drops normaux (sans Silk Touch)
+//                    LootTable.pool(LootPool.builder()
+//                            .rolls(ConstantLootNumberProvider.create(1))
+//                            .with(ItemEntry.builder(item)
+//                                    .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(minDrops, maxDrops)))
+//                                    .apply(ApplyBonusLootFunction.oreDrops(impl.getOrThrow(Enchantments.FORTUNE)))
+//                            )
+//                            .conditionally(MatchToolLootCondition.builder(
+//                                    ItemPredicate.Builder.create().tag(itemRegistry, tag)
+//                            ))
+//                            .conditionally(InvertedLootCondition.builder(
+//                                    MatchToolLootCondition.builder(
+//                                            ItemPredicate.Builder.create()
+//                                                    .subPredicate(ItemSubPredicateTypes.ENCHANTMENTS, EnchantmentsPredicate.enchantments(
+//                                                            List.of(new EnchantmentPredicate(impl.getOrThrow(Enchantments.SILK_TOUCH), NumberRange.IntRange.atLeast(1)))
+//                                                    )) // Condition Silk Touch inversée
+//                                    )
+//                            ))
+//                    );
+
+
+        return lootTable;
+    }
 
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {
         RegistryWrapper.Impl<Enchantment> impl = this.registries.getOrThrow(RegistryKeys.ENCHANTMENT);
