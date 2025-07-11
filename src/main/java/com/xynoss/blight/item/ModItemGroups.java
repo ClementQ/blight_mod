@@ -74,6 +74,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.NETHER_TRIONITE_ORE);
                         entries.add(ModBlocks.TRIONITE_BLOCK);
                         entries.add(ModBlocks.RAW_TRIONITE_BLOCK);
+                        entries.add(ModBlocks.NETHER_PYRALITE_ORE);
+                        entries.add(ModBlocks.PYRALITE_BLOCK);
+                        entries.add(ModBlocks.RAW_PYRALITE_BLOCK);
                         entries.add(ModBlocks.RAW_NYXIUM_BLOCK);
                         entries.add(ModBlocks.NYXIUM_BLOCK);
                         entries.add(ModBlocks.NYXIUM_ORE);
@@ -97,6 +100,8 @@ public class ModItemGroups {
                         entries.add(ModItems.ELDRANITE_INGOT);
                         entries.add(ModItems.RAW_TRIONITE);
                         entries.add(ModItems.TRIONITE_INGOT);
+                        entries.add(ModItems.RAW_PYRALITE);
+                        entries.add(ModItems.PYRALITE_INGOT);
                         entries.add(ModItems.NYXIUM_INGOT);
                         entries.add(ModItems.RAW_NYXIUM);
 
@@ -134,6 +139,20 @@ public class ModItemGroups {
                         entries.add(ModItems.ELDRANITE_AXE);
                         entries.add(ModItems.ELDRANITE_HOE);
                         entries.add(ModItems.ELDRANITE_HAMMER);
+
+                        entries.add(ModItems.TRIONITE_PICKAXE);
+                        entries.add(ModItems.TRIONITE_SWORD);
+                        entries.add(ModItems.TRIONITE_SHOVEL);
+                        entries.add(ModItems.TRIONITE_AXE);
+                        entries.add(ModItems.TRIONITE_HOE);
+                        entries.add(ModItems.TRIONITE_HAMMER);
+
+                        entries.add(ModItems.PYRALITE_PICKAXE);
+                        entries.add(ModItems.PYRALITE_SWORD);
+                        entries.add(ModItems.PYRALITE_SHOVEL);
+                        entries.add(ModItems.PYRALITE_AXE);
+                        entries.add(ModItems.PYRALITE_HOE);
+                        entries.add(ModItems.PYRALITE_HAMMER);
 
                     })
                     .build());

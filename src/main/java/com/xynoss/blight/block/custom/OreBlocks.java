@@ -1,5 +1,6 @@
 package com.xynoss.blight.block.custom;
 
+import com.xynoss.blight.Blight;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.entity.player.PlayerEntity;

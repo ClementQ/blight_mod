@@ -178,9 +178,9 @@ public class ModBlocks {
             AbstractBlock.Settings.create().
                     strength(4f)
                     .requiresTool()
-                    .sounds(BlockSoundGroup.DEEPSLATE)
+                    .sounds(BlockSoundGroup.NETHER_ORE)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"nether_eldranite_ore"))),
-            List.of(ModTags.Items.MYTHRION_TOOLS, ModTags.Items.ELDRANITE_TOOLS)
+            List.of(ModTags.Items.MYTHRION_TOOLS, ModTags.Items.ELDRANITE_TOOLS, ModTags.Items.TRIONITE_TOOLS, ModTags.Items.PYRALITE_TOOLS)
     ));
     public static final Block ELDRANITE_BLOCK = registerBlock("eldranite_block", new Block(AbstractBlock.Settings.create()
             .strength(4f)
@@ -201,7 +201,7 @@ public class ModBlocks {
                     .requiresTool()
                     .sounds(BlockSoundGroup.NETHER_ORE)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"nether_trionite_ore"))),
-            List.of(ModTags.Items.ELDRANITE_TOOLS, ModTags.Items.TRIONITE_TOOLS)
+            List.of(ModTags.Items.ELDRANITE_TOOLS, ModTags.Items.TRIONITE_TOOLS, ModTags.Items.PYRALITE_TOOLS)
     ));
     public static final Block TRIONITE_BLOCK = registerBlock("trionite_block", new Block(AbstractBlock.Settings.create()
             .strength(4f)
@@ -212,6 +212,27 @@ public class ModBlocks {
             .strength(4f)
             .requiresTool()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"raw_trionite_block")))
+    ));
+
+    //PYRALITE
+    public static final Block NETHER_PYRALITE_ORE = registerBlock("nether_pyralite_ore",new OreBlocks(
+            UniformIntProvider.create(1, 1),
+            AbstractBlock.Settings.create().
+                    strength(4f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.NETHER_ORE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"nether_pyralite_ore"))),
+            List.of(ModTags.Items.TRIONITE_TOOLS, ModTags.Items.PYRALITE_TOOLS)
+    ));
+    public static final Block PYRALITE_BLOCK = registerBlock("pyralite_block", new Block(AbstractBlock.Settings.create()
+            .strength(4f)
+            .requiresTool()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"pyralite_block")))
+    ));
+    public static final Block RAW_PYRALITE_BLOCK = registerBlock("raw_pyralite_block", new Block(AbstractBlock.Settings.create()
+            .strength(4f)
+            .requiresTool()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"raw_pyralite_block")))
     ));
 
 

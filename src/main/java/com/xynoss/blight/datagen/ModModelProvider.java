@@ -56,6 +56,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_ELDRANITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TRIONITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_TRIONITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PYRALITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_PYRALITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NYXIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_NYXIUM_BLOCK);
 
@@ -67,6 +69,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_MYTHRION_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_ELDRANITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_TRIONITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_PYRALITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NYXIUM_ORE);
 
 
@@ -93,6 +96,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ELDRANITE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_TRIONITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.TRIONITE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_PYRALITE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PYRALITE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.NYXIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_NYXIUM, Models.GENERATED);
 
@@ -120,6 +125,20 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ELDRANITE_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ELDRANITE_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ELDRANITE_HAMMER, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.TRIONITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.TRIONITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.TRIONITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.TRIONITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.TRIONITE_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.TRIONITE_HAMMER, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.PYRALITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PYRALITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PYRALITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PYRALITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PYRALITE_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PYRALITE_HAMMER, Models.HANDHELD);
 
 
         //ARMORS

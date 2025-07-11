@@ -82,6 +82,12 @@ public class ModItems {
     public static final Item TRIONITE_INGOT = registerItem("trionite_ingot", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"trionite_ingot")))
     ));
+    public static final Item RAW_PYRALITE = registerItem("raw_pyralite", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"raw_pyralite")))
+    ));
+    public static final Item PYRALITE_INGOT = registerItem("pyralite_ingot", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"pyralite_ingot")))
+    ));
     public static final Item RAW_NYXIUM = registerItem("raw_nyxium", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"raw_nyxium")))
     ));
@@ -145,17 +151,55 @@ public class ModItems {
     public static final Item ELDRANITE_PICKAXE = registerItem("eldranite_pickaxe", new PickaxeItem(ModToolMaterials.ELDRANITE, 1,-2.8f, new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"eldranite_pickaxe")))
     ));
-    public static final Item ELDRANITE_SHOVEL = registerItem("eldranite_shovel", new ShovelItem(ModToolMaterials.BLIGHT, 1.5f,-3.0f, new Item.Settings()
+    public static final Item ELDRANITE_SHOVEL = registerItem("eldranite_shovel", new ShovelItem(ModToolMaterials.ELDRANITE, 1.5f,-3.0f, new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"eldranite_shovel")))
     ));
-    public static final Item ELDRANITE_AXE = registerItem("eldranite_axe", new AxeItem(ModToolMaterials.BLIGHT, 6,-3.2f, new Item.Settings()
+    public static final Item ELDRANITE_AXE = registerItem("eldranite_axe", new AxeItem(ModToolMaterials.ELDRANITE, 6,-3.2f, new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"eldranite_axe")))
     ));
-    public static final Item ELDRANITE_HOE = registerItem("eldranite_hoe", new HoeItem(ModToolMaterials.BLIGHT, 0,-3.0f, new Item.Settings()
+    public static final Item ELDRANITE_HOE = registerItem("eldranite_hoe", new HoeItem(ModToolMaterials.ELDRANITE, 0,-3.0f, new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"eldranite_hoe")))
     ));
-    public static final Item ELDRANITE_HAMMER = registerItem("eldranite_hammer", new HammerItem(ModToolMaterials.BLIGHT, 7,-3.4f, new Item.Settings()
+    public static final Item ELDRANITE_HAMMER = registerItem("eldranite_hammer", new HammerItem(ModToolMaterials.ELDRANITE, 7,-3.4f, new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"eldranite_hammer")))
+    ));
+
+    public static final Item TRIONITE_SWORD = registerItem("trionite_sword", new SwordItem(ModToolMaterials.TRIONITE, 15,-2.4f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"trionite_sword")))
+    ));
+    public static final Item TRIONITE_PICKAXE = registerItem("trionite_pickaxe", new PickaxeItem(ModToolMaterials.TRIONITE, 1,-2.8f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"trionite_pickaxe")))
+    ));
+    public static final Item TRIONITE_SHOVEL = registerItem("trionite_shovel", new ShovelItem(ModToolMaterials.TRIONITE, 1.5f,-3.0f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"trionite_shovel")))
+    ));
+    public static final Item TRIONITE_AXE = registerItem("trionite_axe", new AxeItem(ModToolMaterials.TRIONITE, 6,-3.2f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"trionite_axe")))
+    ));
+    public static final Item TRIONITE_HOE = registerItem("trionite_hoe", new HoeItem(ModToolMaterials.TRIONITE, 0,-3.0f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"trionite_hoe")))
+    ));
+    public static final Item TRIONITE_HAMMER = registerItem("trionite_hammer", new HammerItem(ModToolMaterials.TRIONITE, 7,-3.4f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"trionite_hammer")))
+    ));
+
+    public static final Item PYRALITE_SWORD = registerItem("pyralite_sword", new SwordItem(ModToolMaterials.PYRALITE, 15,-2.4f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"pyralite_sword")))
+    ));
+    public static final Item PYRALITE_PICKAXE = registerItem("pyralite_pickaxe", new PickaxeItem(ModToolMaterials.PYRALITE, 1,-2.8f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"pyralite_pickaxe")))
+    ));
+    public static final Item PYRALITE_SHOVEL = registerItem("pyralite_shovel", new ShovelItem(ModToolMaterials.PYRALITE, 1.5f,-3.0f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"pyralite_shovel")))
+    ));
+    public static final Item PYRALITE_AXE = registerItem("pyralite_axe", new AxeItem(ModToolMaterials.PYRALITE, 6,-3.2f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"pyralite_axe")))
+    ));
+    public static final Item PYRALITE_HOE = registerItem("pyralite_hoe", new HoeItem(ModToolMaterials.PYRALITE, 0,-3.0f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"pyralite_hoe")))
+    ));
+    public static final Item PYRALITE_HAMMER = registerItem("pyralite_hammer", new HammerItem(ModToolMaterials.PYRALITE, 7,-3.4f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"pyralite_hammer")))
     ));
 
 

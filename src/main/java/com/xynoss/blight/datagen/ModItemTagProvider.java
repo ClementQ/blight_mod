@@ -86,6 +86,28 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.ELDRANITE_HOE)
                 .add(ModItems.ELDRANITE_HAMMER);
 
+        //TRIONITE TOOLS
+        getOrCreateTagBuilder(ModTags.Items.TRIONITE_REPAIR)
+                .add(ModItems.TRIONITE_INGOT);
+        getOrCreateTagBuilder(ModTags.Items.TRIONITE_TOOLS)
+                .add(ModItems.TRIONITE_PICKAXE)
+                .add(ModItems.TRIONITE_SWORD)
+                .add(ModItems.TRIONITE_SHOVEL)
+                .add(ModItems.TRIONITE_AXE)
+                .add(ModItems.TRIONITE_HOE)
+                .add(ModItems.TRIONITE_HAMMER);
+
+        //PYRALITE TOOLS
+        getOrCreateTagBuilder(ModTags.Items.PYRALITE_REPAIR)
+                .add(ModItems.PYRALITE_INGOT);
+        getOrCreateTagBuilder(ModTags.Items.PYRALITE_TOOLS)
+                .add(ModItems.PYRALITE_PICKAXE)
+                .add(ModItems.PYRALITE_SWORD)
+                .add(ModItems.PYRALITE_SHOVEL)
+                .add(ModItems.PYRALITE_AXE)
+                .add(ModItems.PYRALITE_HOE)
+                .add(ModItems.PYRALITE_HAMMER);
+
 
 
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)

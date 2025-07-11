@@ -14,6 +14,9 @@
     "blight:nether_trionite_ore",
     "blight:trionite_block",
     "blight:raw_trionite_block",
+    "blight:nether_pyralite_ore",
+    "blight:pyralite_block",
+    "blight:raw_pyralite_block",
     "blight:nyxium_ore",
     "blight:nyxium_block",
     "blight:raw_nyxium_block"

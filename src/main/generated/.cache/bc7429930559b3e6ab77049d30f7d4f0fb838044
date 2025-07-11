@@ -5,7 +5,7 @@ b7c05aaddf8f3cc325077c65efcb15962e1d9c87 data/blight/tags/block/needs_mythrion_t
 4e979d5d534b104da113aef249882e2465333d23 data/blight/tags/block/needs_trionite_tool.json
 0c3afe952012c59f8d8c742180f9b3c76fb1b25f data/minecraft/tags/block/fence_gates.json
 17e5fd38c2497aff1bd050941d76c5f23dea7311 data/minecraft/tags/block/fences.json
-85b987a6ba86972ef88f00f7d190fc69f659bd21 data/minecraft/tags/block/mineable/pickaxe.json
+0da582f38a78b731820dcbbd48d5e306843a30af data/minecraft/tags/block/mineable/pickaxe.json
 1fbd674040e0ea7374cea3ea6bdd8e2aa06389d1 data/minecraft/tags/block/needs_diamond_tool.json
 ad8cab974f04da42c60095f0e8e83a73bfd44824 data/minecraft/tags/block/needs_iron_tool.json
 c682f7c33111cefc99c91f39219e0b65f17c80ba data/minecraft/tags/block/walls.json

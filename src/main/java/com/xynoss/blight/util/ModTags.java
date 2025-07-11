@@ -26,6 +26,10 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_TRIONITE_TOOL = createTag("needs_trionite_tool");
         public static final TagKey<Block> INCORRECT_FOR_TRIONITE_TOOL = createTag("incorrect_for_trionite_tool");
 
+        //PYRALITE
+        public static final TagKey<Block> NEEDS_PYRALITE_TOOL = createTag("needs_pyralite_tool");
+        public static final TagKey<Block> INCORRECT_FOR_PYRALITE_TOOL = createTag("incorrect_for_pyralite_tool");
+
         //NYXIUM
         public static final TagKey<Block> NEEDS_NYXIUM_TOOL = createTag("needs_nyxium_tool");
         public static final TagKey<Block> INCORRECT_FOR_NYXIUM_TOOL = createTag("incorrect_for_nyxium_tool");
@@ -59,6 +63,11 @@ public class ModTags {
         public static final TagKey<Item> TRIONITE_TOOLS = createTag("trionite_tools");
         public static final TagKey<Item> TRIONITE_REPAIR = createTag("trionite_repair");
         public static final TagKey<Item> TRIONITE_ARMOR = TagKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID, "trionite_armor"));
+
+        //PYRALITE
+        public static final TagKey<Item> PYRALITE_TOOLS = createTag("pyralite_tools");
+        public static final TagKey<Item> PYRALITE_REPAIR = createTag("pyralite_repair");
+        public static final TagKey<Item> PYRALITE_ARMOR = TagKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID, "pyralite_armor"));
 
         //NYXIUM
         public static final TagKey<Item> NYXIUM_TOOLS = createTag("nyxium_tools");
