@@ -108,6 +108,17 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.PYRALITE_HOE)
                 .add(ModItems.PYRALITE_HAMMER);
 
+        //VALTHERIUM TOOLS
+        getOrCreateTagBuilder(ModTags.Items.VALTHERIUM_REPAIR)
+                .add(ModItems.VALTHERIUM_INGOT);
+        getOrCreateTagBuilder(ModTags.Items.VALTHERIUM_TOOLS)
+                .add(ModItems.VALTHERIUM_PICKAXE)
+                .add(ModItems.VALTHERIUM_SWORD)
+                .add(ModItems.VALTHERIUM_SHOVEL)
+                .add(ModItems.VALTHERIUM_AXE)
+                .add(ModItems.VALTHERIUM_HOE)
+                .add(ModItems.VALTHERIUM_HAMMER);
+
 
 
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)

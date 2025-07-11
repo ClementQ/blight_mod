@@ -11,6 +11,8 @@ d2f2e02ed151b1b5a92fc628daf790fc9f062a97 data/blight/tags/item/pyralite_repair.j
 59137a80725551822ffc70d4d879d3725e1735ea data/blight/tags/item/transformable_items.json
 fa5d5fde7af290b4e4862ff7b9e2a3b359afe57d data/blight/tags/item/trionite_repair.json
 1ee1e44cc0cfaafcd852d9e11478cdc6ec013d9b data/blight/tags/item/trionite_tools.json
+ee2f6c25f2cc04f34af83ef22741981bb401d729 data/blight/tags/item/valtherium_repair.json
+fade2fc5f421ec762c75b50e405072d14fc5e90f data/blight/tags/item/valtherium_tools.json
 f344b9ec5a19b6e89fe6d0884c564dbcc2e1fc78 data/minecraft/tags/item/axes.json
 f7554b4f5e2f7759fb65dbc32552d05d288dc075 data/minecraft/tags/item/hoes.json
 cc87aa100897892b184d3596e568abc690fdab7c data/minecraft/tags/item/pickaxes.json

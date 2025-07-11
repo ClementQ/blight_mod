@@ -3,7 +3,6 @@ package com.xynoss.blight.world;
 import com.xynoss.blight.Blight;
 import com.xynoss.blight.block.ModBlocks;
 import net.minecraft.block.Blocks;
-import net.minecraft.client.search.IdentifierSearcher;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -25,6 +24,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> ELDRANITE_ORE_KEY = registerKey("eldranite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> TRIONITE_ORE_KEY = registerKey("trionite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PYRALITE_ORE_KEY = registerKey("pyralite_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> VALTHERIUM_ORE_KEY = registerKey("valtherium_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> NYXIUM_ORE_KEY = registerKey("nyxium_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> BLIGHT_ORE_KEY = registerKey("blight_ore");
 
@@ -58,6 +58,11 @@ public class ModConfiguredFeatures {
                 List.of(
                         OreFeatureConfig.createTarget(netherReplacebles, ModBlocks.NETHER_PYRALITE_ORE.getDefaultState()));
 
+        //Valtherium ORES
+        List<OreFeatureConfig.Target> endValtheriumOres =
+                List.of(
+                        OreFeatureConfig.createTarget(endReplacebles, ModBlocks.VALTHERIUM_ORE.getDefaultState()));
+
         //Nyxium ORES
         List<OreFeatureConfig.Target> endNyxiumOres =
                 List.of(
@@ -75,6 +80,7 @@ public class ModConfiguredFeatures {
         register(context, ELDRANITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherEldraniteOres, 9));
         register(context, TRIONITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherTrioniteOres, 9));
         register(context, PYRALITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherPyraliteOres, 9));
+        register(context, VALTHERIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(endValtheriumOres, 5));
         register(context, NYXIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(endNyxiumOres, 5));
         register(context, BLIGHT_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldBlightOres, 12));
 

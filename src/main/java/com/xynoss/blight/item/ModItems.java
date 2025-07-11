@@ -88,6 +88,12 @@ public class ModItems {
     public static final Item PYRALITE_INGOT = registerItem("pyralite_ingot", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"pyralite_ingot")))
     ));
+    public static final Item RAW_VALTHERIUM = registerItem("raw_valtherium", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"raw_valtherium")))
+    ));
+    public static final Item VALTHERIUM_INGOT = registerItem("valtherium_ingot", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"valtherium_ingot")))
+    ));
     public static final Item RAW_NYXIUM = registerItem("raw_nyxium", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"raw_nyxium")))
     ));
@@ -200,6 +206,25 @@ public class ModItems {
     ));
     public static final Item PYRALITE_HAMMER = registerItem("pyralite_hammer", new HammerItem(ModToolMaterials.PYRALITE, 7,-3.4f, new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"pyralite_hammer")))
+    ));
+
+    public static final Item VALTHERIUM_SWORD = registerItem("valtherium_sword", new SwordItem(ModToolMaterials.VALTHERIUM, 15,-2.4f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"valtherium_sword")))
+    ));
+    public static final Item VALTHERIUM_PICKAXE = registerItem("valtherium_pickaxe", new PickaxeItem(ModToolMaterials.VALTHERIUM, 1,-2.8f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"valtherium_pickaxe")))
+    ));
+    public static final Item VALTHERIUM_SHOVEL = registerItem("valtherium_shovel", new ShovelItem(ModToolMaterials.VALTHERIUM, 1.5f,-3.0f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"valtherium_shovel")))
+    ));
+    public static final Item VALTHERIUM_AXE = registerItem("valtherium_axe", new AxeItem(ModToolMaterials.VALTHERIUM, 6,-3.2f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"valtherium_axe")))
+    ));
+    public static final Item VALTHERIUM_HOE = registerItem("valtherium_hoe", new HoeItem(ModToolMaterials.VALTHERIUM, 0,-3.0f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"valtherium_hoe")))
+    ));
+    public static final Item VALTHERIUM_HAMMER = registerItem("valtherium_hammer", new HammerItem(ModToolMaterials.VALTHERIUM, 7,-3.4f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"valtherium_hammer")))
     ));
 
 
