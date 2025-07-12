@@ -44,6 +44,13 @@
   "item.blight.valtherium_hoe"        : "Valtherium Hoe",
   "item.blight.valtherium_hammer"     : "Valtherium Hammer",
 
+  "item.blight.obrythium_sword"       : "Obrythium Sword",
+  "item.blight.obrythium_pickaxe"     : "Obrythium Pickaxe",
+  "item.blight.obrythium_axe"         : "Obrythium Axe",
+  "item.blight.obrythium_shovel"      : "Obrythium Shovel",
+  "item.blight.obrythium_hoe"         : "Obrythium Hoe",
+  "item.blight.obrythium_hammer"      : "Obrythium Hammer",
+
   "item.blight.music_disc_arise.desc" : "The song of a certain boss",
 
 //ARMORS
@@ -67,6 +74,8 @@
   "item.blight.pyralite_ingot"        : "Pyralite Ingot",
   "item.blight.raw_valtherium"        : "Raw Valtherium",
   "item.blight.valtherium_ingot"      : "Valtherium Ingot",
+  "item.blight.raw_obrythium"         : "Raw Obrythium",
+  "item.blight.obrythium_ingot"       : "Obrythium Ingot",
   "item.blight.raw_nyxium"            : "Raw Nyxium",
   "item.blight.nyxium_ingot"          : "Nyxium Ingot",
 
@@ -77,6 +86,7 @@
   "item.blight.nether_trionite_ore"   : "Trionite Ore",
   "item.blight.nether_pyralite_ore"   : "Pyralite Ore",
   "item.blight.valtherium_ore"        : "Valtherium Ore",
+  "item.blight.obrythium_ore"         : "Obrythium Ore",
   "item.blight.nyxium_ore"            : "Nyxium Ore",
   "item.blight.blight_ore"            : "Blight Ore",
   "item.blight.deepslate_blight_ore"  : "Deepslate Blight Ore",
@@ -87,6 +97,7 @@
   "item.blight.raw_trionite_block"    : "Raw Block of Trionite",
   "item.blight.raw_pyralite_block"    : "Raw Block of Pyralite",
   "item.blight.raw_valtherium_block"  : "Raw Block of Valtherium",
+  "item.blight.raw_obrythium_block"   : "Raw Block of Obrythium",
   "item.blight.raw_nyxium_block"      : "Raw Block of Nyxium",
   "item.blight.raw_blight_block"      : "Raw Block of Blight",
 
@@ -95,6 +106,7 @@
   "item.blight.trionite_block"        : "Block of Trionite",
   "item.blight.pyralite_block"        : "Block of Pyralite",
   "item.blight.valtherium_block"      : "Block of Valtherium",
+  "item.blight.obrythium_block"        : "Block of Obrythium",
   "item.blight.nyxium_block"          : "Block of Nyxium",
   "item.blight.blight_block"          : "Block of Blight",
 

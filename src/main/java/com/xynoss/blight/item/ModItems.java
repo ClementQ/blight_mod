@@ -94,6 +94,12 @@ public class ModItems {
     public static final Item VALTHERIUM_INGOT = registerItem("valtherium_ingot", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"valtherium_ingot")))
     ));
+    public static final Item RAW_OBRYTHIUM = registerItem("raw_obrythium", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"raw_obrythium")))
+    ));
+    public static final Item OBRYTHIUM_INGOT = registerItem("obrythium_ingot", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"obrythium_ingot")))
+    ));
     public static final Item RAW_NYXIUM = registerItem("raw_nyxium", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"raw_nyxium")))
     ));
@@ -225,6 +231,25 @@ public class ModItems {
     ));
     public static final Item VALTHERIUM_HAMMER = registerItem("valtherium_hammer", new HammerItem(ModToolMaterials.VALTHERIUM, 7,-3.4f, new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"valtherium_hammer")))
+    ));
+
+    public static final Item OBRYTHIUM_SWORD = registerItem("obrythium_sword", new SwordItem(ModToolMaterials.OBRYTHIUM, 15,-2.4f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"obrythium_sword")))
+    ));
+    public static final Item OBRYTHIUM_PICKAXE = registerItem("obrythium_pickaxe", new PickaxeItem(ModToolMaterials.OBRYTHIUM, 1,-2.8f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"obrythium_pickaxe")))
+    ));
+    public static final Item OBRYTHIUM_SHOVEL = registerItem("obrythium_shovel", new ShovelItem(ModToolMaterials.OBRYTHIUM, 1.5f,-3.0f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"obrythium_shovel")))
+    ));
+    public static final Item OBRYTHIUM_AXE = registerItem("obrythium_axe", new AxeItem(ModToolMaterials.OBRYTHIUM, 6,-3.2f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"obrythium_axe")))
+    ));
+    public static final Item OBRYTHIUM_HOE = registerItem("obrythium_hoe", new HoeItem(ModToolMaterials.OBRYTHIUM, 0,-3.0f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"obrythium_hoe")))
+    ));
+    public static final Item OBRYTHIUM_HAMMER = registerItem("obrythium_hammer", new HammerItem(ModToolMaterials.OBRYTHIUM, 7,-3.4f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"obrythium_hammer")))
     ));
 
 

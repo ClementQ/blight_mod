@@ -34,6 +34,10 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_VALTHERIUM_TOOL = createTag("needs_valtherium_tool");
         public static final TagKey<Block> INCORRECT_FOR_VALTHERIUM_TOOL = createTag("incorrect_for_valtherium_tool");
 
+        //OBRYTHIUM
+        public static final TagKey<Block> NEEDS_OBRYTHIUM_TOOL = createTag("needs_obrythium_tool");
+        public static final TagKey<Block> INCORRECT_FOR_OBRYTHIUM_TOOL = createTag("incorrect_for_obrythium_tool");
+
         //NYXIUM
         public static final TagKey<Block> NEEDS_NYXIUM_TOOL = createTag("needs_nyxium_tool");
         public static final TagKey<Block> INCORRECT_FOR_NYXIUM_TOOL = createTag("incorrect_for_nyxium_tool");
@@ -73,10 +77,15 @@ public class ModTags {
         public static final TagKey<Item> PYRALITE_REPAIR = createTag("pyralite_repair");
         public static final TagKey<Item> PYRALITE_ARMOR = TagKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID, "pyralite_armor"));
 
-        //PYRALITE
+        //VALTHERIUM
         public static final TagKey<Item> VALTHERIUM_TOOLS = createTag("valtherium_tools");
         public static final TagKey<Item> VALTHERIUM_REPAIR = createTag("valtherium_repair");
         public static final TagKey<Item> VALTHERIUM_ARMOR = TagKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID, "valtherium_armor"));
+
+        //OBRYTHIUM
+        public static final TagKey<Item> OBRYTHIUM_TOOLS = createTag("obrythium_tools");
+        public static final TagKey<Item> OBRYTHIUM_REPAIR = createTag("obrythium_repair");
+        public static final TagKey<Item> OBRYTHIUM_ARMOR = TagKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID, "obrythium_armor"));
 
         //NYXIUM
         public static final TagKey<Item> NYXIUM_TOOLS = createTag("nyxium_tools");

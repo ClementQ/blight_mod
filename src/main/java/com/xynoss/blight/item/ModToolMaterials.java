@@ -11,5 +11,6 @@ public class ModToolMaterials {
     public static final ToolMaterial TRIONITE = new ToolMaterial(ModTags.Blocks.INCORRECT_FOR_TRIONITE_TOOL, 1500, 10.0f, 2.0f, 22, ModTags.Items.TRIONITE_REPAIR);
     public static final ToolMaterial PYRALITE = new ToolMaterial(ModTags.Blocks.INCORRECT_FOR_PYRALITE_TOOL, 1500, 10.0f, 2.0f, 22, ModTags.Items.PYRALITE_REPAIR);
     public static final ToolMaterial VALTHERIUM = new ToolMaterial(ModTags.Blocks.INCORRECT_FOR_VALTHERIUM_TOOL, 1500, 10.0f, 2.0f, 22, ModTags.Items.VALTHERIUM_REPAIR);
+    public static final ToolMaterial OBRYTHIUM = new ToolMaterial(ModTags.Blocks.INCORRECT_FOR_OBRYTHIUM_TOOL, 1500, 10.0f, 2.0f, 22, ModTags.Items.OBRYTHIUM_REPAIR);
     public static final ToolMaterial NYXIUM = new ToolMaterial(ModTags.Blocks.INCORRECT_FOR_NYXIUM_TOOL, 1500, 10.0f, 2.0f, 22, ModTags.Items.NYXIUM_REPAIR);
 }

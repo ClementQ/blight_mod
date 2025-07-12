@@ -60,6 +60,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_PYRALITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VALTHERIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_VALTHERIUM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.OBRYTHIUM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_OBRYTHIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NYXIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_NYXIUM_BLOCK);
 
@@ -73,6 +75,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_TRIONITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_PYRALITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VALTHERIUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.OBRYTHIUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NYXIUM_ORE);
 
 
@@ -103,6 +106,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PYRALITE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_VALTHERIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.VALTHERIUM_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_OBRYTHIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OBRYTHIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.NYXIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_NYXIUM, Models.GENERATED);
 
@@ -151,6 +156,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.VALTHERIUM_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.VALTHERIUM_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.VALTHERIUM_HAMMER, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.OBRYTHIUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.OBRYTHIUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.OBRYTHIUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.OBRYTHIUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.OBRYTHIUM_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.OBRYTHIUM_HAMMER, Models.HANDHELD);
 
 
         //ARMORS

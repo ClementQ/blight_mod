@@ -80,6 +80,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.VALTHERIUM_ORE);
                         entries.add(ModBlocks.VALTHERIUM_BLOCK);
                         entries.add(ModBlocks.RAW_VALTHERIUM_BLOCK);
+                        entries.add(ModBlocks.OBRYTHIUM_ORE);
+                        entries.add(ModBlocks.OBRYTHIUM_BLOCK);
+                        entries.add(ModBlocks.RAW_OBRYTHIUM_BLOCK);
                         entries.add(ModBlocks.RAW_NYXIUM_BLOCK);
                         entries.add(ModBlocks.NYXIUM_BLOCK);
                         entries.add(ModBlocks.NYXIUM_ORE);
@@ -107,6 +110,8 @@ public class ModItemGroups {
                         entries.add(ModItems.PYRALITE_INGOT);
                         entries.add(ModItems.RAW_VALTHERIUM);
                         entries.add(ModItems.VALTHERIUM_INGOT);
+                        entries.add(ModItems.RAW_OBRYTHIUM);
+                        entries.add(ModItems.OBRYTHIUM_INGOT);
                         entries.add(ModItems.NYXIUM_INGOT);
                         entries.add(ModItems.RAW_NYXIUM);
 
@@ -165,6 +170,13 @@ public class ModItemGroups {
                         entries.add(ModItems.VALTHERIUM_AXE);
                         entries.add(ModItems.VALTHERIUM_HOE);
                         entries.add(ModItems.VALTHERIUM_HAMMER);
+
+                        entries.add(ModItems.OBRYTHIUM_PICKAXE);
+                        entries.add(ModItems.OBRYTHIUM_SWORD);
+                        entries.add(ModItems.OBRYTHIUM_SHOVEL);
+                        entries.add(ModItems.OBRYTHIUM_AXE);
+                        entries.add(ModItems.OBRYTHIUM_HOE);
+                        entries.add(ModItems.OBRYTHIUM_HAMMER);
 
                     })
                     .build());

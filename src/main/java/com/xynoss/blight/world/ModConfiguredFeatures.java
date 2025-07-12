@@ -25,6 +25,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> TRIONITE_ORE_KEY = registerKey("trionite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PYRALITE_ORE_KEY = registerKey("pyralite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> VALTHERIUM_ORE_KEY = registerKey("valtherium_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> OBRYTHIUM_ORE_KEY = registerKey("obrythium_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> NYXIUM_ORE_KEY = registerKey("nyxium_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> BLIGHT_ORE_KEY = registerKey("blight_ore");
 
@@ -63,6 +64,11 @@ public class ModConfiguredFeatures {
                 List.of(
                         OreFeatureConfig.createTarget(endReplacebles, ModBlocks.VALTHERIUM_ORE.getDefaultState()));
 
+        //Obrythium ORES
+        List<OreFeatureConfig.Target> endObrythiumOres =
+                List.of(
+                        OreFeatureConfig.createTarget(endReplacebles, ModBlocks.OBRYTHIUM_ORE.getDefaultState()));
+
         //Nyxium ORES
         List<OreFeatureConfig.Target> endNyxiumOres =
                 List.of(
@@ -81,6 +87,7 @@ public class ModConfiguredFeatures {
         register(context, TRIONITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherTrioniteOres, 9));
         register(context, PYRALITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherPyraliteOres, 9));
         register(context, VALTHERIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(endValtheriumOres, 5));
+        register(context, OBRYTHIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(endObrythiumOres, 5));
         register(context, NYXIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(endNyxiumOres, 5));
         register(context, BLIGHT_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldBlightOres, 12));
 

@@ -180,7 +180,7 @@ public class ModBlocks {
                     .requiresTool()
                     .sounds(BlockSoundGroup.NETHER_ORE)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"nether_eldranite_ore"))),
-            List.of(ModTags.Items.MYTHRION_TOOLS, ModTags.Items.ELDRANITE_TOOLS, ModTags.Items.TRIONITE_TOOLS, ModTags.Items.PYRALITE_TOOLS, ModTags.Items.VALTHERIUM_TOOLS)
+            List.of(ModTags.Items.MYTHRION_TOOLS, ModTags.Items.ELDRANITE_TOOLS, ModTags.Items.TRIONITE_TOOLS, ModTags.Items.PYRALITE_TOOLS, ModTags.Items.VALTHERIUM_TOOLS, ModTags.Items.OBRYTHIUM_TOOLS)
     ));
     public static final Block ELDRANITE_BLOCK = registerBlock("eldranite_block", new Block(AbstractBlock.Settings.create()
             .strength(4f)
@@ -201,7 +201,7 @@ public class ModBlocks {
                     .requiresTool()
                     .sounds(BlockSoundGroup.NETHER_ORE)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"nether_trionite_ore"))),
-            List.of(ModTags.Items.ELDRANITE_TOOLS, ModTags.Items.TRIONITE_TOOLS, ModTags.Items.PYRALITE_TOOLS, ModTags.Items.VALTHERIUM_TOOLS)
+            List.of(ModTags.Items.ELDRANITE_TOOLS, ModTags.Items.TRIONITE_TOOLS, ModTags.Items.PYRALITE_TOOLS, ModTags.Items.VALTHERIUM_TOOLS, ModTags.Items.OBRYTHIUM_TOOLS)
     ));
     public static final Block TRIONITE_BLOCK = registerBlock("trionite_block", new Block(AbstractBlock.Settings.create()
             .strength(4f)
@@ -222,7 +222,7 @@ public class ModBlocks {
                     .requiresTool()
                     .sounds(BlockSoundGroup.NETHER_ORE)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"nether_pyralite_ore"))),
-            List.of(ModTags.Items.TRIONITE_TOOLS, ModTags.Items.PYRALITE_TOOLS, ModTags.Items.VALTHERIUM_TOOLS)
+            List.of(ModTags.Items.TRIONITE_TOOLS, ModTags.Items.PYRALITE_TOOLS, ModTags.Items.VALTHERIUM_TOOLS, ModTags.Items.OBRYTHIUM_TOOLS)
     ));
     public static final Block PYRALITE_BLOCK = registerBlock("pyralite_block", new Block(AbstractBlock.Settings.create()
             .strength(4f)
@@ -243,7 +243,7 @@ public class ModBlocks {
                     .requiresTool()
                     .sounds(BlockSoundGroup.STONE)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"valtherium_ore"))),
-            List.of(ModTags.Items.PYRALITE_TOOLS, ModTags.Items.VALTHERIUM_TOOLS)
+            List.of(ModTags.Items.PYRALITE_TOOLS, ModTags.Items.VALTHERIUM_TOOLS, ModTags.Items.OBRYTHIUM_TOOLS)
     ));
     public static final Block VALTHERIUM_BLOCK = registerBlock("valtherium_block", new Block(AbstractBlock.Settings.create()
             .strength(4f)
@@ -256,6 +256,27 @@ public class ModBlocks {
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"raw_valtherium_block")))
     ));
 
+    //OBRYTHIUM
+    public static final Block OBRYTHIUM_ORE = registerBlock("obrythium_ore",new OreBlocks(
+            UniformIntProvider.create(1, 1),
+            AbstractBlock.Settings.create().
+                    strength(4f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"obrythium_ore"))),
+            List.of(ModTags.Items.VALTHERIUM_TOOLS, ModTags.Items.OBRYTHIUM_TOOLS)
+    ));
+    public static final Block OBRYTHIUM_BLOCK = registerBlock("obrythium_block", new Block(AbstractBlock.Settings.create()
+            .strength(4f)
+            .requiresTool()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"obrythium_block")))
+    ));
+    public static final Block RAW_OBRYTHIUM_BLOCK = registerBlock("raw_obrythium_block", new Block(AbstractBlock.Settings.create()
+            .strength(4f)
+            .requiresTool()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"raw_obrythium_block")))
+    ));
+
 
     //Nyxium
     public static final Block NYXIUM_ORE = registerBlock("nyxium_ore", new OreBlocks(UniformIntProvider.create(1, 1), AbstractBlock.Settings.create()
@@ -263,7 +284,7 @@ public class ModBlocks {
                 .requiresTool()
                 .sounds(BlockSoundGroup.STONE)
                 .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Blight.MOD_ID,"nyxium_ore"))),
-            List.of(ModTags.Items.MYTHRION_TOOLS)
+            List.of(ModTags.Items.OBRYTHIUM_TOOLS)
     ));
     public static final Block NYXIUM_BLOCK = registerBlock("nyxium_block", new Block(AbstractBlock.Settings.create()
             .strength(4f)

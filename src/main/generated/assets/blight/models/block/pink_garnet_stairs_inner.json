@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "blight:block/pink_garnet_block",
-    "side": "blight:block/pink_garnet_block",
-    "top": "blight:block/pink_garnet_block"
-  }
-}

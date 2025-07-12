@@ -24,6 +24,7 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> TRIONITE_ORE_PLACED_KEY = registerKey("trionite_ore_placed");
     public static final RegistryKey<PlacedFeature> PYRALITE_ORE_PLACED_KEY = registerKey("pyralite_ore_placed");
     public static final RegistryKey<PlacedFeature> VALTHERIUM_ORE_PLACED_KEY = registerKey("valtherium_ore_placed");
+    public static final RegistryKey<PlacedFeature> OBRYTHIUM_ORE_PLACED_KEY = registerKey("obrythium_ore_placed");
     public static final RegistryKey<PlacedFeature> NYXIUM_ORE_PLACED_KEY = registerKey("nyxium_ore_placed");
     public static final RegistryKey<PlacedFeature> BLIGHT_ORE_PLACED_KEY = registerKey("bligh_ore_placed");
 
@@ -57,6 +58,12 @@ public class ModPlacedFeatures {
 
         //Valtherium ORE
         register(context, VALTHERIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.VALTHERIUM_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(14,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80)))
+        );
+
+        //Obrythium ORE
+        register(context, OBRYTHIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OBRYTHIUM_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(14,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80)))
         );
