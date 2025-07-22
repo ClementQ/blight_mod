@@ -252,6 +252,25 @@ public class ModItems {
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"obrythium_hammer")))
     ));
 
+    public static final Item NYXIUM_SWORD = registerItem("nyxium_sword", new SwordItem(ModToolMaterials.NYXIUM, 15,-2.4f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"nyxium_sword")))
+    ));
+    public static final Item NYXIUM_PICKAXE = registerItem("nyxium_pickaxe", new PickaxeItem(ModToolMaterials.NYXIUM, 1,-2.8f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"nyxium_pickaxe")))
+    ));
+    public static final Item NYXIUM_SHOVEL = registerItem("nyxium_shovel", new ShovelItem(ModToolMaterials.NYXIUM, 1.5f,-3.0f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"nyxium_shovel")))
+    ));
+    public static final Item NYXIUM_AXE = registerItem("nyxium_axe", new AxeItem(ModToolMaterials.NYXIUM, 6,-3.2f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"nyxium_axe")))
+    ));
+    public static final Item NYXIUM_HOE = registerItem("nyxium_hoe", new HoeItem(ModToolMaterials.NYXIUM, 0,-3.0f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"nyxium_hoe")))
+    ));
+    public static final Item NYXIUM_HAMMER = registerItem("nyxium_hammer", new HammerItem(ModToolMaterials.NYXIUM, 7,-3.4f, new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID,"nyxium_hammer")))
+    ));
+
 
     //ARMORS
     public static final Item BLIGHT_HELMET = registerItem("blight_helmet", new ModArmorItem(ModArmorMaterials.BLIGHT, EquipmentType.HELMET,new Item.Settings()

@@ -7,7 +7,6 @@
   "item.blight.blight_hoe"            : "Blight Hoe",
   "item.blight.blight_hammer"         : "Blight Hammer",
   "item.blight.blight_bow"            : "Blight Bow",
-  "item.blight.music_disc_arise"      : "Arise Music Disc",
 
   "item.blight.mythrion_sword"        : "Mythrion Sword",
   "item.blight.mythrion_pickaxe"      : "Mythrion Pickaxe",
@@ -51,7 +50,14 @@
   "item.blight.obrythium_hoe"         : "Obrythium Hoe",
   "item.blight.obrythium_hammer"      : "Obrythium Hammer",
 
-  "item.blight.music_disc_arise.desc" : "The song of a certain boss",
+  "item.blight.nyxium_sword"          : "Nyxium Sword",
+  "item.blight.nyxium_pickaxe"        : "Nyxium Pickaxe",
+  "item.blight.nyxium_axe"            : "Nyxium Axe",
+  "item.blight.nyxium_shovel"         : "Nyxium Shovel",
+  "item.blight.nyxium_hoe"            : "Nyxium Hoe",
+  "item.blight.nyxium_hammer"         : "Nyxium Hammer",
+
+
 
 //ARMORS
   "item.blight.blight_helmet"         : "Blight Helmet",

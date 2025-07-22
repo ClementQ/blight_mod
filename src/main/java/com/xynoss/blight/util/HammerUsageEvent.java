@@ -1,5 +1,6 @@
 package com.xynoss.blight.util;
 
+import com.xynoss.blight.Blight;
 import com.xynoss.blight.item.custom.HammerItem;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.minecraft.block.BlockState;
@@ -13,6 +14,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class HammerUsageEvent implements PlayerBlockBreakEvents.Before{
     // Done with the help of https://github.com/CoFH/CoFHCore/blob/c23d117dcd3b3b3408a138716b15507f709494cd/src/main/java/cofh/core/event/AreaEffectEvents.java
@@ -27,10 +29,14 @@ public class HammerUsageEvent implements PlayerBlockBreakEvents.Before{
             if(HARVESTED_BLOCKS.contains(pos)) {
                 return true;
             }
-
             for(BlockPos position : HammerItem.getBlocksToBeDestroyed(1, pos, serverPlayer)) {
                 if(pos == position || !hammer.isCorrectForDrops(mainHandItem, world.getBlockState(position))) {
-                    continue;
+
+//                    if (state.streamTags().anyMatch(tag))
+                    if (blockAndItemShareTagByName(world.getBlockState(pos), mainHandItem)) {
+                        continue;
+                    }
+//                    continue;
                 }
 
                 HARVESTED_BLOCKS.add(position);
@@ -40,5 +46,33 @@ public class HammerUsageEvent implements PlayerBlockBreakEvents.Before{
         }
 
         return true;
+    }
+
+    public static boolean blockAndItemShareTagByName(BlockState state, ItemStack stack) {
+        Set<String> itemTagPaths = stack.streamTags()
+                .map(tag -> tag.id().getPath()) // ex: mythrion_tools
+                .collect(Collectors.toSet());
+        Blight.LOGGER.info("1- itemtags : " + itemTagPaths);
+
+        return state.streamTags()
+                .map(tag -> tag.id().getPath()) // ex: needs_mythrion_tool
+                .anyMatch(blockTag -> {
+                    if (blockTag.startsWith("needs_") && blockTag.endsWith("_tool")) {
+                        String material = blockTag.substring(6, blockTag.length() - 5);
+
+                        Blight.LOGGER.info("blocktag : " + blockTag);
+                        Blight.LOGGER.info("Material : " + material);
+                        Blight.LOGGER.info("2- itemtag : " + itemTagPaths.contains(material + "_tools"));
+
+
+                        return itemTagPaths.contains(material + "_tools");
+                    } else {
+                        Blight.LOGGER.info("2- itemtag : " + false);
+                        return false;
+                    }
+
+
+//                    return false;
+                });
     }
 }

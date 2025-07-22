@@ -64,7 +64,7 @@ public class ModTags {
 
         //ELDRANITE
         public static final TagKey<Item> ELDRANITE_TOOLS = createTag("eldranite_tools");
-        public static final TagKey<Item> ELDRANITE_REPAIR = createTag("eldrtanite_repair");
+        public static final TagKey<Item> ELDRANITE_REPAIR = createTag("eldratanite_repair");
         public static final TagKey<Item> ELDRANITE_ARMOR = TagKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID, "eldranite_armor"));
 
         //TRIONITE
@@ -89,7 +89,7 @@ public class ModTags {
 
         //NYXIUM
         public static final TagKey<Item> NYXIUM_TOOLS = createTag("nyxium_tools");
-        public static final TagKey<Item> NYXIUM_REPAIR = createTag("eldrtanite_repair");
+        public static final TagKey<Item> NYXIUM_REPAIR = createTag("nyxium_repair");
         public static final TagKey<Item> NYXIUM_ARMOR = TagKey.of(RegistryKeys.ITEM, Identifier.of(Blight.MOD_ID, "nyxium_armor"));
 
         private static TagKey<Item> createTag(String name){

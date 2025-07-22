@@ -164,6 +164,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.OBRYTHIUM_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.OBRYTHIUM_HAMMER, Models.HANDHELD);
 
+        itemModelGenerator.register(ModItems.NYXIUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NYXIUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NYXIUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NYXIUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NYXIUM_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NYXIUM_HAMMER, Models.HANDHELD);
+
 
         //ARMORS
         itemModelGenerator.registerArmor(ModItems.BLIGHT_HELMET, ModEquipmentAssetKeys.BLIGHT,"helmet", false);

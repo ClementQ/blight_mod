@@ -119,7 +119,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.VALTHERIUM_HOE)
                 .add(ModItems.VALTHERIUM_HAMMER);
 
-        //VALTHERIUM TOOLS
+        //OBRYTHIUM TOOLS
         getOrCreateTagBuilder(ModTags.Items.OBRYTHIUM_REPAIR)
                 .add(ModItems.OBRYTHIUM_INGOT);
         getOrCreateTagBuilder(ModTags.Items.OBRYTHIUM_TOOLS)
@@ -129,6 +129,17 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.OBRYTHIUM_AXE)
                 .add(ModItems.OBRYTHIUM_HOE)
                 .add(ModItems.OBRYTHIUM_HAMMER);
+
+        //NYXIUM TOOLS
+        getOrCreateTagBuilder(ModTags.Items.NYXIUM_REPAIR)
+                .add(ModItems.NYXIUM_INGOT);
+        getOrCreateTagBuilder(ModTags.Items.NYXIUM_TOOLS)
+                .add(ModItems.NYXIUM_PICKAXE)
+                .add(ModItems.NYXIUM_SWORD)
+                .add(ModItems.NYXIUM_SHOVEL)
+                .add(ModItems.NYXIUM_AXE)
+                .add(ModItems.NYXIUM_HOE)
+                .add(ModItems.NYXIUM_HAMMER);
 
 
 

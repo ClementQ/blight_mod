@@ -1,6 +1,7 @@
 package com.xynoss.blight.item.custom;
 
 import net.minecraft.block.Block;
+import net.minecraft.item.Items;
 import net.minecraft.item.MiningToolItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.registry.tag.BlockTags;
@@ -15,13 +16,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HammerItem extends MiningToolItem {
-    public HammerItem(ToolMaterial material, float attackDamage, float attackSpeed,Settings settings) {
+    public HammerItem(ToolMaterial material, float attackDamage, float attackSpeed, Settings settings) {
         super(material, BlockTags.PICKAXE_MINEABLE,attackDamage,attackSpeed,settings);
     }
 
     public static List<BlockPos> getBlocksToBeDestroyed(int range, BlockPos initialBlockPos, ServerPlayerEntity player){
         List<BlockPos> positions = new ArrayList<>();
         HitResult hit = player.raycast(20,0,false);
+
         if (hit.getType() == HitResult.Type.BLOCK){
             BlockHitResult blockHit = (BlockHitResult) hit;
 

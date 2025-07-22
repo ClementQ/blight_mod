@@ -178,6 +178,13 @@ public class ModItemGroups {
                         entries.add(ModItems.OBRYTHIUM_HOE);
                         entries.add(ModItems.OBRYTHIUM_HAMMER);
 
+                        entries.add(ModItems.NYXIUM_PICKAXE);
+                        entries.add(ModItems.NYXIUM_SWORD);
+                        entries.add(ModItems.NYXIUM_SHOVEL);
+                        entries.add(ModItems.NYXIUM_AXE);
+                        entries.add(ModItems.NYXIUM_HOE);
+                        entries.add(ModItems.NYXIUM_HAMMER);
+
                     })
                     .build());
 
