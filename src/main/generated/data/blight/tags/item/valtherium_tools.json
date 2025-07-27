@@ -5,6 +5,18 @@
     "blight:valtherium_shovel",
     "blight:valtherium_axe",
     "blight:valtherium_hoe",
-    "blight:valtherium_hammer"
+    "blight:valtherium_hammer",
+    "blight:obrythium_pickaxe",
+    "blight:obrythium_sword",
+    "blight:obrythium_shovel",
+    "blight:obrythium_axe",
+    "blight:obrythium_hoe",
+    "blight:obrythium_hammer",
+    "blight:nyxium_pickaxe",
+    "blight:nyxium_sword",
+    "blight:nyxium_shovel",
+    "blight:nyxium_axe",
+    "blight:nyxium_hoe",
+    "blight:nyxium_hammer"
   ]
 }

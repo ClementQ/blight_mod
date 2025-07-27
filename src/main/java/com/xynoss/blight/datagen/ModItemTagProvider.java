@@ -73,7 +73,49 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.MYTHRION_SHOVEL)
                 .add(ModItems.MYTHRION_AXE)
                 .add(ModItems.MYTHRION_HOE)
-                .add(ModItems.MYTHRION_HAMMER);
+                .add(ModItems.MYTHRION_HAMMER)
+
+                .add(ModItems.ELDRANITE_PICKAXE)
+                .add(ModItems.ELDRANITE_SWORD)
+                .add(ModItems.ELDRANITE_SHOVEL)
+                .add(ModItems.ELDRANITE_AXE)
+                .add(ModItems.ELDRANITE_HOE)
+                .add(ModItems.ELDRANITE_HAMMER)
+
+                .add(ModItems.TRIONITE_PICKAXE)
+                .add(ModItems.TRIONITE_SWORD)
+                .add(ModItems.TRIONITE_SHOVEL)
+                .add(ModItems.TRIONITE_AXE)
+                .add(ModItems.TRIONITE_HOE)
+                .add(ModItems.TRIONITE_HAMMER)
+
+                .add(ModItems.PYRALITE_PICKAXE)
+                .add(ModItems.PYRALITE_SWORD)
+                .add(ModItems.PYRALITE_SHOVEL)
+                .add(ModItems.PYRALITE_AXE)
+                .add(ModItems.PYRALITE_HOE)
+                .add(ModItems.PYRALITE_HAMMER)
+
+                .add(ModItems.VALTHERIUM_PICKAXE)
+                .add(ModItems.VALTHERIUM_SWORD)
+                .add(ModItems.VALTHERIUM_SHOVEL)
+                .add(ModItems.VALTHERIUM_AXE)
+                .add(ModItems.VALTHERIUM_HOE)
+                .add(ModItems.VALTHERIUM_HAMMER)
+
+                .add(ModItems.OBRYTHIUM_PICKAXE)
+                .add(ModItems.OBRYTHIUM_SWORD)
+                .add(ModItems.OBRYTHIUM_SHOVEL)
+                .add(ModItems.OBRYTHIUM_AXE)
+                .add(ModItems.OBRYTHIUM_HOE)
+                .add(ModItems.OBRYTHIUM_HAMMER)
+
+                .add(ModItems.NYXIUM_PICKAXE)
+                .add(ModItems.NYXIUM_SWORD)
+                .add(ModItems.NYXIUM_SHOVEL)
+                .add(ModItems.NYXIUM_AXE)
+                .add(ModItems.NYXIUM_HOE)
+                .add(ModItems.NYXIUM_HAMMER);
 
         //ELDRANITE TOOLS
         getOrCreateTagBuilder(ModTags.Items.ELDRANITE_REPAIR)
@@ -84,7 +126,42 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.ELDRANITE_SHOVEL)
                 .add(ModItems.ELDRANITE_AXE)
                 .add(ModItems.ELDRANITE_HOE)
-                .add(ModItems.ELDRANITE_HAMMER);
+                .add(ModItems.ELDRANITE_HAMMER)
+
+                .add(ModItems.TRIONITE_PICKAXE)
+                .add(ModItems.TRIONITE_SWORD)
+                .add(ModItems.TRIONITE_SHOVEL)
+                .add(ModItems.TRIONITE_AXE)
+                .add(ModItems.TRIONITE_HOE)
+                .add(ModItems.TRIONITE_HAMMER)
+
+                .add(ModItems.PYRALITE_PICKAXE)
+                .add(ModItems.PYRALITE_SWORD)
+                .add(ModItems.PYRALITE_SHOVEL)
+                .add(ModItems.PYRALITE_AXE)
+                .add(ModItems.PYRALITE_HOE)
+                .add(ModItems.PYRALITE_HAMMER)
+
+                .add(ModItems.VALTHERIUM_PICKAXE)
+                .add(ModItems.VALTHERIUM_SWORD)
+                .add(ModItems.VALTHERIUM_SHOVEL)
+                .add(ModItems.VALTHERIUM_AXE)
+                .add(ModItems.VALTHERIUM_HOE)
+                .add(ModItems.VALTHERIUM_HAMMER)
+
+                .add(ModItems.OBRYTHIUM_PICKAXE)
+                .add(ModItems.OBRYTHIUM_SWORD)
+                .add(ModItems.OBRYTHIUM_SHOVEL)
+                .add(ModItems.OBRYTHIUM_AXE)
+                .add(ModItems.OBRYTHIUM_HOE)
+                .add(ModItems.OBRYTHIUM_HAMMER)
+
+                .add(ModItems.NYXIUM_PICKAXE)
+                .add(ModItems.NYXIUM_SWORD)
+                .add(ModItems.NYXIUM_SHOVEL)
+                .add(ModItems.NYXIUM_AXE)
+                .add(ModItems.NYXIUM_HOE)
+                .add(ModItems.NYXIUM_HAMMER);
 
         //TRIONITE TOOLS
         getOrCreateTagBuilder(ModTags.Items.TRIONITE_REPAIR)
@@ -95,7 +172,35 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.TRIONITE_SHOVEL)
                 .add(ModItems.TRIONITE_AXE)
                 .add(ModItems.TRIONITE_HOE)
-                .add(ModItems.TRIONITE_HAMMER);
+                .add(ModItems.TRIONITE_HAMMER)
+
+                .add(ModItems.PYRALITE_PICKAXE)
+                .add(ModItems.PYRALITE_SWORD)
+                .add(ModItems.PYRALITE_SHOVEL)
+                .add(ModItems.PYRALITE_AXE)
+                .add(ModItems.PYRALITE_HOE)
+                .add(ModItems.PYRALITE_HAMMER)
+
+                .add(ModItems.VALTHERIUM_PICKAXE)
+                .add(ModItems.VALTHERIUM_SWORD)
+                .add(ModItems.VALTHERIUM_SHOVEL)
+                .add(ModItems.VALTHERIUM_AXE)
+                .add(ModItems.VALTHERIUM_HOE)
+                .add(ModItems.VALTHERIUM_HAMMER)
+
+                .add(ModItems.OBRYTHIUM_PICKAXE)
+                .add(ModItems.OBRYTHIUM_SWORD)
+                .add(ModItems.OBRYTHIUM_SHOVEL)
+                .add(ModItems.OBRYTHIUM_AXE)
+                .add(ModItems.OBRYTHIUM_HOE)
+                .add(ModItems.OBRYTHIUM_HAMMER)
+
+                .add(ModItems.NYXIUM_PICKAXE)
+                .add(ModItems.NYXIUM_SWORD)
+                .add(ModItems.NYXIUM_SHOVEL)
+                .add(ModItems.NYXIUM_AXE)
+                .add(ModItems.NYXIUM_HOE)
+                .add(ModItems.NYXIUM_HAMMER);
 
         //PYRALITE TOOLS
         getOrCreateTagBuilder(ModTags.Items.PYRALITE_REPAIR)
@@ -106,7 +211,28 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.PYRALITE_SHOVEL)
                 .add(ModItems.PYRALITE_AXE)
                 .add(ModItems.PYRALITE_HOE)
-                .add(ModItems.PYRALITE_HAMMER);
+                .add(ModItems.PYRALITE_HAMMER)
+
+                .add(ModItems.VALTHERIUM_PICKAXE)
+                .add(ModItems.VALTHERIUM_SWORD)
+                .add(ModItems.VALTHERIUM_SHOVEL)
+                .add(ModItems.VALTHERIUM_AXE)
+                .add(ModItems.VALTHERIUM_HOE)
+                .add(ModItems.VALTHERIUM_HAMMER)
+
+                .add(ModItems.OBRYTHIUM_PICKAXE)
+                .add(ModItems.OBRYTHIUM_SWORD)
+                .add(ModItems.OBRYTHIUM_SHOVEL)
+                .add(ModItems.OBRYTHIUM_AXE)
+                .add(ModItems.OBRYTHIUM_HOE)
+                .add(ModItems.OBRYTHIUM_HAMMER)
+
+                .add(ModItems.NYXIUM_PICKAXE)
+                .add(ModItems.NYXIUM_SWORD)
+                .add(ModItems.NYXIUM_SHOVEL)
+                .add(ModItems.NYXIUM_AXE)
+                .add(ModItems.NYXIUM_HOE)
+                .add(ModItems.NYXIUM_HAMMER);
 
         //VALTHERIUM TOOLS
         getOrCreateTagBuilder(ModTags.Items.VALTHERIUM_REPAIR)
@@ -117,7 +243,21 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.VALTHERIUM_SHOVEL)
                 .add(ModItems.VALTHERIUM_AXE)
                 .add(ModItems.VALTHERIUM_HOE)
-                .add(ModItems.VALTHERIUM_HAMMER);
+                .add(ModItems.VALTHERIUM_HAMMER)
+
+                .add(ModItems.OBRYTHIUM_PICKAXE)
+                .add(ModItems.OBRYTHIUM_SWORD)
+                .add(ModItems.OBRYTHIUM_SHOVEL)
+                .add(ModItems.OBRYTHIUM_AXE)
+                .add(ModItems.OBRYTHIUM_HOE)
+                .add(ModItems.OBRYTHIUM_HAMMER)
+
+                .add(ModItems.NYXIUM_PICKAXE)
+                .add(ModItems.NYXIUM_SWORD)
+                .add(ModItems.NYXIUM_SHOVEL)
+                .add(ModItems.NYXIUM_AXE)
+                .add(ModItems.NYXIUM_HOE)
+                .add(ModItems.NYXIUM_HAMMER);
 
         //OBRYTHIUM TOOLS
         getOrCreateTagBuilder(ModTags.Items.OBRYTHIUM_REPAIR)
@@ -128,7 +268,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.OBRYTHIUM_SHOVEL)
                 .add(ModItems.OBRYTHIUM_AXE)
                 .add(ModItems.OBRYTHIUM_HOE)
-                .add(ModItems.OBRYTHIUM_HAMMER);
+                .add(ModItems.OBRYTHIUM_HAMMER)
+
+                .add(ModItems.NYXIUM_PICKAXE)
+                .add(ModItems.NYXIUM_SWORD)
+                .add(ModItems.NYXIUM_SHOVEL)
+                .add(ModItems.NYXIUM_AXE)
+                .add(ModItems.NYXIUM_HOE)
+                .add(ModItems.NYXIUM_HAMMER);
 
         //NYXIUM TOOLS
         getOrCreateTagBuilder(ModTags.Items.NYXIUM_REPAIR)

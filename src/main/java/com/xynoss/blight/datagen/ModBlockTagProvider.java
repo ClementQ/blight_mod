@@ -64,6 +64,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         //NEEDS MYTHRION TOOLS
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_MYTHRION_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.BURNING_STONE)
                 .add(ModBlocks.NETHER_ELDRANITE_ORE)
         ;
@@ -77,47 +78,33 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         //NEEDS TRIONITE TOOLS
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_TRIONITE_TOOL)
-                .addTag(ModTags.Blocks.NEEDS_TRIONITE_TOOL)
-                .add(ModBlocks.NETHER_ELDRANITE_ORE)
-                .add(ModBlocks.NETHER_TRIONITE_ORE)
+                .addTag(ModTags.Blocks.NEEDS_ELDRANITE_TOOL)
                 .add(ModBlocks.NETHER_PYRALITE_ORE)
 
         ;
 
         //NEEDS PYRALITE TOOLS
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_PYRALITE_TOOL)
-                .addTag(ModTags.Blocks.NEEDS_PYRALITE_TOOL)
-                .add(ModBlocks.NETHER_ELDRANITE_ORE)
-                .add(ModBlocks.NETHER_TRIONITE_ORE)
-                .add(ModBlocks.NETHER_PYRALITE_ORE)
+                .addTag(ModTags.Blocks.NEEDS_TRIONITE_TOOL)
                 .add(ModBlocks.VALTHERIUM_ORE)
         ;
 
         //NEEDS VALTHERIUM TOOLS
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_VALTHERIUM_TOOL)
-                .addTag(ModTags.Blocks.NEEDS_VALTHERIUM_TOOL)
-                .add(ModBlocks.NETHER_ELDRANITE_ORE)
-                .add(ModBlocks.NETHER_TRIONITE_ORE)
-                .add(ModBlocks.NETHER_PYRALITE_ORE)
-                .add(ModBlocks.VALTHERIUM_ORE)
+                .addTag(ModTags.Blocks.NEEDS_PYRALITE_TOOL)
                 .add(ModBlocks.OBRYTHIUM_ORE)
         ;
 
         //NEEDS NYXIUM TOOLS
-        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_VALTHERIUM_TOOL)
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_NYXIUM_TOOL)
                 .addTag(ModTags.Blocks.NEEDS_VALTHERIUM_TOOL)
-                .add(ModBlocks.NETHER_ELDRANITE_ORE)
-                .add(ModBlocks.NETHER_TRIONITE_ORE)
-                .add(ModBlocks.NETHER_PYRALITE_ORE)
-                .add(ModBlocks.VALTHERIUM_ORE)
-                .add(ModBlocks.OBRYTHIUM_ORE)
                 .add(ModBlocks.NYXIUM_ORE)
                 .add(ModBlocks.BLIGHT_ORE)
         ;
 
         //NEEDS BLIGHT TOOLS
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_BLIGHT_TOOL)
-                .addTag(ModTags.Blocks.NEEDS_BLIGHT_TOOL)
+                .addTag(ModTags.Blocks.NEEDS_NYXIUM_TOOL)
                 .add(ModBlocks.NETHER_ELDRANITE_ORE)
                 .add(ModBlocks.NETHER_TRIONITE_ORE)
                 .add(ModBlocks.NETHER_PYRALITE_ORE)
