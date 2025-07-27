@@ -1,5 +1,6 @@
 package com.xynoss.blight.datagen;
 
+import com.jcraft.jorbis.Block;
 import com.xynoss.blight.block.ModBlocks;
 import com.xynoss.blight.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -45,7 +46,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RAW_NYXIUM_BLOCK)
         ;
 
-
+        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+        ;
+        
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.RAW_BLIGHT_BLOCK)
                 .add(ModBlocks.BLIGHT_BLOCK)
@@ -65,6 +68,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         //NEEDS MYTHRION TOOLS
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_MYTHRION_TOOL)
                 .addTag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL)
+                .addTag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.BURNING_STONE)
                 .add(ModBlocks.NETHER_ELDRANITE_ORE)
         ;
@@ -105,13 +110,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         //NEEDS BLIGHT TOOLS
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_BLIGHT_TOOL)
                 .addTag(ModTags.Blocks.NEEDS_NYXIUM_TOOL)
-                .add(ModBlocks.NETHER_ELDRANITE_ORE)
-                .add(ModBlocks.NETHER_TRIONITE_ORE)
-                .add(ModBlocks.NETHER_PYRALITE_ORE)
-                .add(ModBlocks.VALTHERIUM_ORE)
-                .add(ModBlocks.OBRYTHIUM_ORE)
-                .add(ModBlocks.NYXIUM_ORE)
-                .add(ModBlocks.BLIGHT_ORE)
         ;
 
 

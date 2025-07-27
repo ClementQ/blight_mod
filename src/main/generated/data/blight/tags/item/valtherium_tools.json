@@ -17,6 +17,12 @@
     "blight:nyxium_shovel",
     "blight:nyxium_axe",
     "blight:nyxium_hoe",
-    "blight:nyxium_hammer"
+    "blight:nyxium_hammer",
+    "blight:blight_pickaxe",
+    "blight:blight_sword",
+    "blight:blight_shovel",
+    "blight:blight_axe",
+    "blight:blight_hoe",
+    "blight:blight_hammer"
   ]
 }

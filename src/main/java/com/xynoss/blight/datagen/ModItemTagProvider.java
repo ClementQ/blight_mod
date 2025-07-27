@@ -115,7 +115,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.NYXIUM_SHOVEL)
                 .add(ModItems.NYXIUM_AXE)
                 .add(ModItems.NYXIUM_HOE)
-                .add(ModItems.NYXIUM_HAMMER);
+                .add(ModItems.NYXIUM_HAMMER)
+
+                .add(ModItems.BLIGHT_PICKAXE)
+                .add(ModItems.BLIGHT_SWORD)
+                .add(ModItems.BLIGHT_SHOVEL)
+                .add(ModItems.BLIGHT_AXE)
+                .add(ModItems.BLIGHT_HOE)
+                .add(ModItems.BLIGHT_HAMMER);
 
         //ELDRANITE TOOLS
         getOrCreateTagBuilder(ModTags.Items.ELDRANITE_REPAIR)
@@ -161,7 +168,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.NYXIUM_SHOVEL)
                 .add(ModItems.NYXIUM_AXE)
                 .add(ModItems.NYXIUM_HOE)
-                .add(ModItems.NYXIUM_HAMMER);
+                .add(ModItems.NYXIUM_HAMMER)
+
+                .add(ModItems.BLIGHT_PICKAXE)
+                .add(ModItems.BLIGHT_SWORD)
+                .add(ModItems.BLIGHT_SHOVEL)
+                .add(ModItems.BLIGHT_AXE)
+                .add(ModItems.BLIGHT_HOE)
+                .add(ModItems.BLIGHT_HAMMER);
 
         //TRIONITE TOOLS
         getOrCreateTagBuilder(ModTags.Items.TRIONITE_REPAIR)
@@ -200,7 +214,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.NYXIUM_SHOVEL)
                 .add(ModItems.NYXIUM_AXE)
                 .add(ModItems.NYXIUM_HOE)
-                .add(ModItems.NYXIUM_HAMMER);
+                .add(ModItems.NYXIUM_HAMMER)
+
+                .add(ModItems.BLIGHT_PICKAXE)
+                .add(ModItems.BLIGHT_SWORD)
+                .add(ModItems.BLIGHT_SHOVEL)
+                .add(ModItems.BLIGHT_AXE)
+                .add(ModItems.BLIGHT_HOE)
+                .add(ModItems.BLIGHT_HAMMER);
 
         //PYRALITE TOOLS
         getOrCreateTagBuilder(ModTags.Items.PYRALITE_REPAIR)
@@ -232,7 +253,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.NYXIUM_SHOVEL)
                 .add(ModItems.NYXIUM_AXE)
                 .add(ModItems.NYXIUM_HOE)
-                .add(ModItems.NYXIUM_HAMMER);
+                .add(ModItems.NYXIUM_HAMMER)
+
+                .add(ModItems.BLIGHT_PICKAXE)
+                .add(ModItems.BLIGHT_SWORD)
+                .add(ModItems.BLIGHT_SHOVEL)
+                .add(ModItems.BLIGHT_AXE)
+                .add(ModItems.BLIGHT_HOE)
+                .add(ModItems.BLIGHT_HAMMER);
 
         //VALTHERIUM TOOLS
         getOrCreateTagBuilder(ModTags.Items.VALTHERIUM_REPAIR)
@@ -257,7 +285,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.NYXIUM_SHOVEL)
                 .add(ModItems.NYXIUM_AXE)
                 .add(ModItems.NYXIUM_HOE)
-                .add(ModItems.NYXIUM_HAMMER);
+                .add(ModItems.NYXIUM_HAMMER)
+
+                .add(ModItems.BLIGHT_PICKAXE)
+                .add(ModItems.BLIGHT_SWORD)
+                .add(ModItems.BLIGHT_SHOVEL)
+                .add(ModItems.BLIGHT_AXE)
+                .add(ModItems.BLIGHT_HOE)
+                .add(ModItems.BLIGHT_HAMMER);
 
         //OBRYTHIUM TOOLS
         getOrCreateTagBuilder(ModTags.Items.OBRYTHIUM_REPAIR)
@@ -275,7 +310,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.NYXIUM_SHOVEL)
                 .add(ModItems.NYXIUM_AXE)
                 .add(ModItems.NYXIUM_HOE)
-                .add(ModItems.NYXIUM_HAMMER);
+                .add(ModItems.NYXIUM_HAMMER)
+
+                .add(ModItems.BLIGHT_PICKAXE)
+                .add(ModItems.BLIGHT_SWORD)
+                .add(ModItems.BLIGHT_SHOVEL)
+                .add(ModItems.BLIGHT_AXE)
+                .add(ModItems.BLIGHT_HOE)
+                .add(ModItems.BLIGHT_HAMMER);
 
         //NYXIUM TOOLS
         getOrCreateTagBuilder(ModTags.Items.NYXIUM_REPAIR)
@@ -286,7 +328,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.NYXIUM_SHOVEL)
                 .add(ModItems.NYXIUM_AXE)
                 .add(ModItems.NYXIUM_HOE)
-                .add(ModItems.NYXIUM_HAMMER);
+                .add(ModItems.NYXIUM_HAMMER)
+
+                .add(ModItems.BLIGHT_PICKAXE)
+                .add(ModItems.BLIGHT_SWORD)
+                .add(ModItems.BLIGHT_SHOVEL)
+                .add(ModItems.BLIGHT_AXE)
+                .add(ModItems.BLIGHT_HOE)
+                .add(ModItems.BLIGHT_HAMMER);
 
 
 
